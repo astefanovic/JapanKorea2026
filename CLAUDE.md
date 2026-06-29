@@ -34,6 +34,7 @@
 | Jeju → Busan | 20 Jul | 7C504 | CJU 10:45 | PUS 11:45 | Aleks, Ralph |
 | Busan → Seoul (KTX 072) | 21 Jul | Train | Busan 22:00 | Seoul 00:27+1 | Aleks, Ralph |
 | Seoul → Melbourne | 23 Jul | 5J 185 + 5J 49 | ICN T1 06:35 | MEL T2 23:10 | Aleks, Ralph |
+| Manila → Melbourne | 23 Jul | 5J 49 | MNL T3 12:55 | MEL T2 23:10 | Ceci |
 
 ## Accommodation
 
@@ -49,10 +50,10 @@
 
 ## Booked Activities
 
-| Activity | Date | Booker | Notes |
-|----------|------|--------|-------|
-| Ghibli Park | 9 Jul | Ralph | Tickets in Drive |
-| Tokyo DisneySea | 8 Jul | Ralph | Confirm tickets |
-| Tokyo Disneyland | 11 Jul | Ralph | Confirm tickets |
-| Universal Studios Japan | 14 Jul | Aleks | 4x @ ¥9,400 (Calendar B, valid 14 Jul–12 Oct) — need Area Timed Entry for Super Nintendo World |
-| Kansai Pass | — | Aleks | Booked |
+| Activity | Date | Booker | Ref | Notes |
+|----------|------|--------|-----|-------|
+| Ghibli Park | 9 Jul | Ralph | — | Tickets in Drive |
+| Tokyo DisneySea | 8 Jul | Ralph | A00590649634 | 2x 1-Day Passport @ ¥7,900 — ⚠️ only 2 tickets, check Angela/Ceci |
+| Tokyo Disneyland | 7 Jul (after 5pm) | Ralph | A00590693309 | 2x After 5 Summer Passport @ ¥4,500 — ⚠️ itinerary says 11 Jul; only 2 tickets |
+| Universal Studios Japan | 14 Jul | Aleks | USJ-P1X000000BKPMJ | 4x @ ¥9,400 (Calendar B, valid 14 Jul–12 Oct) — need Area Timed Entry for Super Nintendo World |
+| Kansai Pass | — | Aleks | — | Booked |

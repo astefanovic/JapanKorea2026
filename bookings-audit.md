@@ -96,8 +96,18 @@
 
 ---
 
-### Jeju → Manila → Melbourne *(Angela & Ceci)*
-Angela & Ceci fly out of Jeju on 20 Jul (HK Express YBTTYT above). Their onwards MNL→Melbourne travel is handled separately and is out of scope for this audit.
+### Manila → Melbourne *(Ceci only)*
+| Field | Detail |
+|-------|--------|
+| Date | Thu 23 Jul 2026 |
+| Flight | Cebu Pacific **5J 49** — MNL T3 **12:55** → MEL T2 **23:10** (8h 15m) |
+| Passenger | Ceci — seat **45B** |
+| Baggage | 1x 20kg checked |
+| Booking ref | **LDSH4Y** |
+
+> **Note:** Same flight as Aleks (45C) and Ralph (45A) — all three seated together in row 45. Ceci connects from her Jeju→Manila flight on 20 Jul, spending 20–23 Jul in Manila before this leg.
+>
+> Angela's return from Manila to Melbourne is out of scope for this audit.
 
 ---
 
@@ -207,6 +217,39 @@ Angela & Ceci fly out of Jeju on 20 Jul (HK Express YBTTYT above). Their onwards
 
 ---
 
+## Booked Activities
+
+### ✅ Tokyo DisneySea
+| Field | Detail |
+|-------|--------|
+| Date | Wed 8 Jul 2026 |
+| Park | Tokyo DisneySea |
+| Ticket type | 1-Day Passport (Adult) |
+| Qty | 2 tickets |
+| Price | ¥7,900 × 2 = ¥15,800 |
+| Booking ref | **A00590649634** (Ralph Santos) |
+| Ticket codes | 2102112-620-06121627-6 · 2102112-620-06121628-3 |
+
+> ⚠️ **See Issue #3** — Only 2 tickets. Need to confirm whether Angela & Ceci have separate tickets.
+
+---
+
+### ⚠️ Tokyo Disneyland
+| Field | Detail |
+|-------|--------|
+| Date booked for | **Tue 7 Jul 2026 (after 5pm only)** |
+| Park | Tokyo Disneyland |
+| Ticket type | After 5 Summer Passport (Limited Period) |
+| Qty | 2 tickets |
+| Price | ¥4,500 × 2 = ¥9,000 |
+| Booking ref | **A00590693309** (Ralph Santos) |
+| Ticket codes | 2109842-621-00496789-0 · 2109842-621-00496790-6 |
+| Entry restriction | Valid from 5:00 PM onwards only |
+
+> ⚠️ **See Issue #3** — Date is 7 Jul (evening), not 11 Jul as in the itinerary. Only 2 tickets.
+
+---
+
 ## Issues
 
 ### ⚠️ Issue #1 — Airport Hotel (T2) vs Departure Gate (T1)
@@ -237,6 +280,14 @@ The group must leave the hotel by **~09:00** to reach the airport by 09:45 (chec
 
 ---
 
+### ⚠️ Issue #3 — Disney Tickets: Date Mismatch & Incomplete Quantity
+
+**Disneyland date:** Tickets are booked for **7 Jul (after 5pm)** but the itinerary has Disneyland on **11 Jul**. Confirm which is correct. Note the After 5 Summer Passport only allows entry from 5pm — a full day at Disneyland is not possible on this ticket type.
+
+**Ticket count:** Both DisneySea (8 Jul) and Disneyland (7 Jul) have **2 tickets each**, covering only 2 of the 4 travellers. Confirm whether Angela & Ceci have separate Disney tickets, or whether 2 was intentional (e.g. Aleks & Ralph only).
+
+---
+
 ## Clean Timeline
 
 | Date | Time | Event | Status |
@@ -252,6 +303,7 @@ The group must leave the hotel by **~09:00** to reach the airport by 09:45 (chec
 | 18 Jul | 11:50 | Arrive Jeju — check in Airbnb Aewol (from 16:00) | ✅ |
 | 20 Jul | 06:00 | Angela & Ceci leave for CJU airport | ✅ |
 | 20 Jul | 07:30 | Angela & Ceci depart CJU → HKG → MNL — UO699/534 | ✅ |
+| 20–23 Jul | — | Ceci in Manila | ✅ |
 | 20 Jul | 10:45 | Aleks & Ralph depart CJU → PUS — 7C504 | ✅ |
 | 20 Jul | 11:45 | Aleks & Ralph arrive Busan — check in Lion Hotel (~15:00) | ✅ |
 | 21 Jul | 22:00 | Aleks & Ralph depart Busan → Seoul — KTX 072 | ✅ |
@@ -259,7 +311,7 @@ The group must leave the hotel by **~09:00** to reach the airport by 09:45 (chec
 | 22 Jul | ~noon | Check out Hotel Manu Seoul | ✅ |
 | 22 Jul | 15:00 | Check in ibis Styles ICN T2 | ✅ |
 | 23 Jul | 04:30 | Wake up — shuttle T2 → T1 | ⚠️ Plan needed |
-| 23 Jul | 06:35 | Depart ICN T1 — 5J 185 | ✅ |
-| 23 Jul | 09:55 | Arrive MNL — 3h layover | ✅ |
-| 23 Jul | 12:55 | Depart MNL — 5J 49 | ✅ |
+| 23 Jul | 06:35 | Depart ICN T1 — 5J 185 (Aleks, Ralph) | ✅ |
+| 23 Jul | 09:55 | Arrive MNL — 3h layover (Aleks, Ralph) | ✅ |
+| 23 Jul | 12:55 | Depart MNL — 5J 49 (Aleks seat 45C · Ralph 45A · Ceci 45B) | ✅ |
 | 23 Jul | 23:10 | Arrive MEL T2 | ✅ |
