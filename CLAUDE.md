@@ -53,7 +53,7 @@
 | Activity | Date | Booker | Ref | Notes |
 |----------|------|--------|-----|-------|
 | Ghibli Park | 9 Jul | Ralph | — | Tickets in Drive |
-| Tokyo DisneySea | 8 Jul | Ralph | A00590649634 | 2x 1-Day Passport @ ¥7,900 — ⚠️ only 2 tickets, check Angela/Ceci |
-| Tokyo Disneyland | 7 Jul (after 5pm) | Ralph | A00590693309 | 2x After 5 Summer Passport @ ¥4,500 — ⚠️ itinerary says 11 Jul; only 2 tickets |
+| Tokyo DisneySea | 8 Jul | Ralph | A00590649634 | 2x 1-Day Passport @ ¥7,900 — Ralph + Angela. Aleks & Ceci skipping. |
+| Tokyo Disneyland | 7 Jul (after 5pm) | Ralph | A00590693309 | 2x After 5 Summer Passport @ ¥4,500 — Ralph + Angela. ⚠️ TBC: Aleks & Ceci tickets needed? |
 | Universal Studios Japan | 14 Jul | Aleks | USJ-P1X000000BKPMJ | 4x @ ¥9,400 (Calendar B, valid 14 Jul–12 Oct) — need Area Timed Entry for Super Nintendo World |
 | Kansai Pass | — | Aleks | — | Booked |

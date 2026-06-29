@@ -7,11 +7,11 @@
 | Date | Plan |
 |------|------|
 | 6 Jul | Arrival @ 22:35 — transfer & check-in |
-| 7 Jul | Shinjuku Gyoen, Akihabara Electric Town, Golden Gai (dinner & izakayas) |
-| 8 Jul | Tokyo DisneySea (full day) |
+| 7 Jul | Shinjuku Gyoen, Akihabara Electric Town, Golden Gai → Tokyo Disneyland from 5pm (Ralph + Angela — BOOKED; Aleks + Ceci TBC) |
+| 8 Jul | Tokyo DisneySea — Ralph + Angela (BOOKED). Aleks + Ceci: free day (Akihabara, Nakano Broadway, etc.) |
 | 9 Jul | Ghibli Park (BOOKED) |
 | 10 Jul | Yokohama or Nikko day trip |
-| 11 Jul | Tokyo Disneyland (full day) |
+| 11 Jul | TBD |
 | 12 Jul | Check-out, travel to Osaka |
 
 **Transport:**

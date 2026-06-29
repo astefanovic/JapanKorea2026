@@ -225,28 +225,28 @@
 | Date | Wed 8 Jul 2026 |
 | Park | Tokyo DisneySea |
 | Ticket type | 1-Day Passport (Adult) |
-| Qty | 2 tickets |
+| Qty | 2 tickets — Ralph + Angela |
 | Price | ¥7,900 × 2 = ¥15,800 |
 | Booking ref | **A00590649634** (Ralph Santos) |
 | Ticket codes | 2102112-620-06121627-6 · 2102112-620-06121628-3 |
 
-> ⚠️ **See Issue #3** — Only 2 tickets. Need to confirm whether Angela & Ceci have separate tickets.
+> **Note:** Aleks & Ceci are skipping DisneySea. Ralph + Angela only.
 
 ---
 
-### ⚠️ Tokyo Disneyland
+### ✅ Tokyo Disneyland
 | Field | Detail |
 |-------|--------|
-| Date booked for | **Tue 7 Jul 2026 (after 5pm only)** |
+| Date booked for | **Tue 7 Jul 2026 (from 5pm only)** |
 | Park | Tokyo Disneyland |
 | Ticket type | After 5 Summer Passport (Limited Period) |
-| Qty | 2 tickets |
+| Qty | 2 tickets — Ralph + Angela |
 | Price | ¥4,500 × 2 = ¥9,000 |
 | Booking ref | **A00590693309** (Ralph Santos) |
 | Ticket codes | 2109842-621-00496789-0 · 2109842-621-00496790-6 |
 | Entry restriction | Valid from 5:00 PM onwards only |
 
-> ⚠️ **See Issue #3** — Date is 7 Jul (evening), not 11 Jul as in the itinerary. Only 2 tickets.
+> ⚠️ **TBC:** Aleks & Ceci may still need tickets for Disneyland (7 Jul evening). Not yet purchased.
 
 ---
 
@@ -280,11 +280,11 @@ The group must leave the hotel by **~09:00** to reach the airport by 09:45 (chec
 
 ---
 
-### ⚠️ Issue #3 — Disney Tickets: Date Mismatch & Incomplete Quantity
+### ⚠️ Issue #3 — Disneyland: Aleks & Ceci Tickets TBC
 
-**Disneyland date:** Tickets are booked for **7 Jul (after 5pm)** but the itinerary has Disneyland on **11 Jul**. Confirm which is correct. Note the After 5 Summer Passport only allows entry from 5pm — a full day at Disneyland is not possible on this ticket type.
+DisneySea (8 Jul) is **Ralph + Angela only** — Aleks & Ceci are skipping.
 
-**Ticket count:** Both DisneySea (8 Jul) and Disneyland (7 Jul) have **2 tickets each**, covering only 2 of the 4 travellers. Confirm whether Angela & Ceci have separate Disney tickets, or whether 2 was intentional (e.g. Aleks & Ralph only).
+Disneyland (7 Jul, from 5pm) is confirmed for **Ralph + Angela** (After 5 Summer Passport). Aleks & Ceci may want to join — tickets not yet purchased. Decide and book if needed.
 
 ---
 
