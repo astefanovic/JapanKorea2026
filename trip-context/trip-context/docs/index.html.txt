@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Japan · Korea 2026 — Group Planner</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',system-ui,sans-serif;background:#F8F7F4;color:#1C1A17;font-size:14px;line-height:1.5}
+#app{max-width:980px;margin:0 auto;padding:12px 16px 60px}
+
+/* HEADER */
+.ah{display:flex;align-items:center;justify-content:space-between;padding:14px 0 12px;border-bottom:1.5px solid #E0DDD8;margin-bottom:14px;gap:12px;flex-wrap:wrap}
+h1.at{font-family:'DM Serif Display',serif;font-size:20px;font-weight:400;letter-spacing:-.01em}
+h1.at span{font-family:'DM Sans',sans-serif;font-size:12px;font-weight:400;color:#9A9590;margin-left:8px}
+#snav{display:flex;gap:6px;flex-wrap:wrap}
+.sb{padding:7px 15px;border-radius:999px;border:1.5px solid #D6D3CD;background:#fff;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;color:#4A4640;cursor:pointer;transition:all .15s;white-space:nowrap}
+.sb:hover{background:#F0EDE8;border-color:#B0ADA6}
+.sb.on{background:#1C1A17;border-color:#1C1A17;color:#fff}
+
+/* PANELS */
+.sp{display:none}.sp.on{display:block}
+
+/* CONTROLS BAR */
+.cb{display:flex;align-items:center;gap:12px;padding:10px 14px;background:#fff;border:1px solid #E5E2DC;border-radius:12px;margin-bottom:12px;flex-wrap:wrap}
+.cg{display:flex;align-items:center;gap:8px}
+.cg label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:#9A9590;white-space:nowrap}
+.cg select{padding:5px 10px;border-radius:8px;border:1.5px solid #D6D3CD;background:#FAFAF8;font-family:'DM Sans',sans-serif;font-size:13px;color:#1C1A17;cursor:pointer}
+.cg select:focus{outline:none;border-color:#9A9590}
+.tp{display:flex;gap:4px;margin-left:auto}
+.tpb{padding:6px 13px;border-radius:8px;border:1.5px solid #D6D3CD;background:#fff;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;color:#4A4640;cursor:pointer;transition:all .15s}
+.tpb:hover{background:#F0EDE8;border-color:#B0ADA6}
+.tpb.on{background:#F0EDE8;border-color:#9A9590;color:#1C1A17}
+
+/* TAB CONTENT */
+.tc{display:none}.tc.on{display:block}
+
+/* PLANNER TABLE */
+.pw{overflow-x:auto}
+.pt{width:100%;border-collapse:separate;border-spacing:0 4px;min-width:560px}
+.pt thead th{padding:5px 10px;text-align:left;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:#9A9590}
+.pt thead th:first-child{width:128px}
+.pr td{padding:0;vertical-align:top}
+
+/* ROW LABEL — clickable city cell */
+.cl{padding:8px 10px;border-radius:8px 0 0 8px;cursor:pointer;vertical-align:middle;transition:filter .12s;position:relative;user-select:none}
+.cl:hover{filter:brightness(.95)}
+.cl-inner{display:flex;align-items:flex-start;justify-content:space-between;gap:4px}
+.cn{font-weight:600;font-size:12px;line-height:1.3}
+.cd{font-size:11px;opacity:.65;margin-top:2px}
+.ei{font-size:9px;opacity:.55;margin-left:2px}/* ▾ edit hint */
+.rem-btn{background:rgba(0,0,0,.12);border:none;border-radius:50%;width:18px;height:18px;font-size:11px;cursor:pointer;display:none;align-items:center;justify-content:center;flex-shrink:0;color:rgba(0,0,0,.45);margin-top:1px}
+.cl:hover .rem-btn{display:flex}
+.rem-btn:hover{background:rgba(0,0,0,.22);color:#fff}
+
+/* SLOT CELLS */
+.cs{padding:5px 4px;cursor:pointer;transition:filter .1s}
+.cs:hover{filter:brightness(.93)}
+.cs:last-child{border-radius:0 8px 8px 0}
+.si{min-height:56px;border-radius:6px;display:flex;align-items:center;justify-content:center;padding:5px 7px}
+.se .si{border:1.5px dashed #D6D3CD}
+.se:hover .si{border-color:#9A9590}
+.sal{font-size:11px;color:#C5C1BA}
+.sf .si{border:1.5px solid rgba(0,0,0,.07);position:relative;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:2px}
+.sem{font-size:14px}
+.snm{font-size:11px;font-weight:500;line-height:1.35}
+.sdur{font-size:10px;opacity:.55;margin-left:2px;font-weight:400}
+.scb{position:absolute;top:2px;right:2px;background:rgba(0,0,0,.12);border:none;border-radius:50%;width:16px;height:16px;font-size:10px;cursor:pointer;display:none;align-items:center;justify-content:center;color:rgba(0,0,0,.5)}
+.sf:hover .scb{display:flex}
+
+/* ADD ROW BUTTON */
+.add-row-wrap{padding:4px 0 8px}
+.add-row-btn{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:8px;border:1.5px dashed #C8C5BF;background:transparent;font-family:'DM Sans',sans-serif;font-size:12px;color:#9A9590;cursor:pointer;transition:all .12s;margin-top:2px}
+.add-row-btn:hover{border-color:#9A9590;color:#4A4640;background:#F0EDE8}
+
+/* ACTIVITY BANK */
+.bk{display:flex;flex-direction:column;gap:10px}
+.bcc{border-radius:12px;overflow:hidden;border:1px solid rgba(0,0,0,.07)}
+.bch{padding:9px 14px;font-family:'DM Serif Display',serif;font-size:15px}
+.bcb{background:#fff;padding:12px 14px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media(max-width:640px){.bcb{grid-template-columns:1fr}}
+.bt h4{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#9A9590;margin-bottom:7px;padding-bottom:4px;border-bottom:1px solid #F0EDE8}
+/* activity chip with description */
+.ac{display:flex;align-items:flex-start;gap:7px;padding:6px 8px;border-radius:6px;background:#F8F7F4;border:1px solid #E8E5DF;margin-bottom:4px;transition:all .1s}
+.ae{font-size:14px;flex-shrink:0;padding-top:2px}
+.ac-body{flex:1;min-width:0}
+.an{font-weight:500;font-size:12px;line-height:1.3}
+.bdur{font-size:10px;opacity:.55;font-weight:400;margin-left:4px}
+.adesc{font-size:11px;color:#9A9590;line-height:1.35;margin-top:2px}
+.addb{display:flex;align-items:center;gap:5px;padding:5px 7px;border-radius:6px;border:1.5px dashed #D6D3CD;background:transparent;font-family:'DM Sans',sans-serif;font-size:11px;color:#B8B5AE;cursor:pointer;width:100%;margin-top:2px;transition:all .1s}
+.addb:hover{border-color:#9A9590;color:#7A776F}
+
+/* MODALS */
+.mb{position:fixed;inset:0;background:rgba(0,0,0,.35);display:flex;align-items:center;justify-content:center;z-index:999;padding:20px;backdrop-filter:blur(2px)}
+.mb.hd{display:none}
+.mbx{background:#fff;border-radius:16px;width:100%;max-width:400px;max-height:82vh;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 24px 64px rgba(0,0,0,.18)}
+.mhd{padding:14px 18px;border-bottom:1px solid #F0EDE8;display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
+.mhd h3{font-family:'DM Serif Display',serif;font-size:17px;font-weight:400}
+.ms{font-size:12px;color:#9A9590;margin-top:2px}
+.mcb{width:28px;height:28px;border:none;background:#F0EDE8;border-radius:50%;font-size:15px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:#4A4640}
+.mcb:hover{background:#E5E2DC}
+.mbd{padding:12px 18px 18px;overflow-y:auto;flex:1}
+
+/* SLOT PICKER */
+.par{display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:8px;cursor:pointer;margin-bottom:2px;transition:background .1s}
+.par:hover{background:#F8F7F4}.par.sel{background:#F0EDE8}
+.pe{font-size:15px}.pn{font-size:13px;font-weight:500;flex:1}
+.pdur{font-size:11px;color:#9A9590;white-space:nowrap}
+
+/* CITY PICKER */
+.city-opt{display:flex;align-items:center;padding:10px 14px;border-radius:10px;border:2px solid transparent;cursor:pointer;margin-bottom:6px;transition:all .12s}
+.city-opt:hover{filter:brightness(.94)}
+.city-opt.sel{border-color:currentColor}
+.co-name{font-weight:600;font-size:14px}
+
+/* ADD FORM */
+.fr{display:flex;flex-direction:column;gap:4px;margin-bottom:12px}
+.fr label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:#9A9590}
+.fr input,.fr select,.fr textarea{padding:8px 10px;border-radius:8px;border:1.5px solid #D6D3CD;font-family:'DM Sans',sans-serif;font-size:13px;color:#1C1A17;background:#fff;resize:none}
+.fr input:focus,.fr select:focus,.fr textarea:focus{outline:none;border-color:#9A9590}
+.form-row-2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
+.bsub{width:100%;padding:10px;border-radius:10px;border:none;background:#1C1A17;color:#fff;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;cursor:pointer;margin-top:4px}
+.bsub:hover{background:#333}
+
+/* SAVE TOAST */
+.toast{position:fixed;bottom:16px;right:16px;background:rgba(28,26,23,.85);color:#fff;font-size:12px;padding:6px 14px;border-radius:8px;opacity:0;transition:opacity .3s;pointer-events:none;z-index:9999}
+.toast.on{opacity:1}
+</style>
+</head>
+<body>
+
+<div id="app">
+  <header class="ah">
+    <h1 class="at">Japan · Korea 2026<span> Group Planner</span></h1>
+    <nav id="snav"></nav>
+  </header>
+  <div id="panels"></div>
+</div>
+
+<!-- SLOT PICKER -->
+<div class="mb hd" id="picker-modal" onclick="if(event.target===this)closePicker()">
+  <div class="mbx" onclick="event.stopPropagation()">
+    <div class="mhd" id="picker-hd">
+      <div><h3 id="picker-ttl"></h3><div class="ms" id="picker-sub"></div></div>
+      <button class="mcb" onclick="closePicker()">×</button>
+    </div>
+    <div class="mbd" id="picker-body"></div>
+  </div>
+</div>
+
+<!-- CITY PICKER -->
+<div class="mb hd" id="city-modal" onclick="if(event.target===this)closeCityPicker()">
+  <div class="mbx" style="max-width:320px" onclick="event.stopPropagation()">
+    <div class="mhd">
+      <div><h3>Change city</h3><div class="ms" id="city-modal-sub"></div></div>
+      <button class="mcb" onclick="closeCityPicker()">×</button>
+    </div>
+    <div class="mbd" id="city-modal-body"></div>
+  </div>
+</div>
+
+<!-- ADD ACTIVITY -->
+<div class="mb hd" id="add-modal" onclick="if(event.target===this)closeAddModal()">
+  <div class="mbx" onclick="event.stopPropagation()">
+    <div class="mhd">
+      <div><h3>Add Custom Activity</h3></div>
+      <button class="mcb" onclick="closeAddModal()">×</button>
+    </div>
+    <div class="mbd">
+      <div class="fr"><label>City</label><select id="add-city-sel"></select></div>
+      <div class="fr"><label>Time of day</label>
+        <select id="add-tod-sel">
+          <option value="morning">🌅 Morning</option>
+          <option value="midday">☀️ Midday</option>
+          <option value="evening">🌙 Evening</option>
+        </select>
+      </div>
+      <div class="form-row-2">
+        <div class="fr" style="margin:0"><label>Emoji</label><input type="text" id="add-emoji-inp" maxlength="4" value="📍"></div>
+        <div class="fr" style="margin:0"><label>Duration (min)</label><input type="number" id="add-dur-inp" placeholder="e.g. 90" min="0" max="999"></div>
+      </div>
+      <div class="fr"><label>Name</label><input type="text" id="add-name-inp" placeholder="e.g. Kushida Shrine"></div>
+      <div class="fr"><label>Description <span style="font-weight:400;text-transform:none;letter-spacing:0">(optional)</span></label>
+        <textarea id="add-desc-inp" rows="2" placeholder="Brief description…"></textarea>
+      </div>
+      <button class="bsub" onclick="submitCustomAct()">Add Activity</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast">Saved ✓</div>
+
+<script>
+// ══════════════════════════════════════════════════════════════════════
+// COLOURS & LABELS
+// ══════════════════════════════════════════════════════════════════════
+const CLR={
+  tokyo:      ['#EDECEA','#908C88','#282421','#504C48'],
+  sendai:     ['#FAECE7','#F0997B','#993C1D','#D85A30'],
+  hakodate:   ['#E6F1FB','#85B7EB','#185FA5','#378ADD'],
+  sapporo:    ['#E1F5EE','#5DCAA5','#0F6E56','#1D9E75'],
+  kyoto_osaka:['#F3EAF7','#C490D8','#6A1B91','#9B40C4'],
+  hiroshima:  ['#FCF0EE','#E87870','#8B2015','#C43020'],
+  fukuoka:    ['#FEF4E4','#D4A040','#7A4805','#B87820'],
+  busan:      ['#E0F4F8','#50B8C8','#0A506A','#1690A8'],
+  jeju:       ['#E8F8E4','#72C856','#286010','#45A020'],
+  seoul:      ['#F0EAF8','#AA88D5','#4A1E82','#7848B8'],
+};
+const LBL={
+  tokyo:'Tokyo',
+  sendai:'Sendai',hakodate:'Hakodate',sapporo:'Sapporo',
+  kyoto_osaka:'Kyoto / Osaka',hiroshima:'Hiroshima',fukuoka:'Fukuoka',
+  busan:'Busan',jeju:'Jeju',seoul:'Seoul'
+};
+
+// ══════════════════════════════════════════════════════════════════════
+// SECTION CONFIG  (no route logic — rows are per-user)
+// ══════════════════════════════════════════════════════════════════════
+const CFG={
+  tokyo:{
+    label:'Tokyo',icon:'🗼',
+    starts:['Jul 6','Jul 7','Jul 8','Jul 9'],defStart:'Jul 7',
+    cities:['tokyo'],
+    defRows:['tokyo','tokyo','tokyo']  // 3 full days (arrival night Jul 6 is travel)
+  },
+  north:{
+    label:'Northern Japan',icon:'🗾',
+    starts:['Jul 7','Jul 8','Jul 9','Jul 10','Jul 11','Jul 12'],defStart:'Jul 10',
+    cities:['sendai','hakodate','sapporo'],
+    defRows:['sendai','sendai','hakodate','hakodate','sapporo','sapporo','sapporo']
+  },
+  south:{
+    label:'Southern Japan',icon:'🌸',
+    starts:['Jul 8','Jul 9','Jul 10','Jul 11','Jul 12'],defStart:'Jul 10',
+    cities:['kyoto_osaka','hiroshima','fukuoka'],
+    defRows:['kyoto_osaka','kyoto_osaka','kyoto_osaka','hiroshima','hiroshima','fukuoka','fukuoka']
+  },
+  korea:{
+    label:'Korea',icon:'🇰🇷',
+    starts:['Jul 15','Jul 16','Jul 17','Jul 18','Jul 19'],defStart:'Jul 17',
+    cities:['busan','jeju','seoul'],
+    defRows:['busan','busan','jeju','jeju','seoul','seoul']  // B/D mixed default
+  }
+};
+
+// ══════════════════════════════════════════════════════════════════════
+// ACTIVITY DATA  {emoji, name, dur (min), desc}
+// ══════════════════════════════════════════════════════════════════════
+const ACTS={
+  tokyo:{
+    morning:[
+      {emoji:'⛩️',name:'Senso-ji Temple, Asakusa',dur:90,desc:"Tokyo's oldest temple; serene and crowd-free before 8am"},
+      {emoji:'🌸',name:'Shinjuku Gyoen',dur:90,desc:'Vast formal garden with French, English, and Japanese sections; perfect morning stroll'},
+      {emoji:'🎭',name:'Shibuya Crossing & Omotesando',dur:90,desc:'The famous scramble and a wander up Omotesando avenue in morning calm'},
+      {emoji:'🧸',name:'Takeshita Street & Cat Street',dur:90,desc:'Harajuku youth-fashion lanes and vintage stores; wilder earlier in the morning'},
+      {emoji:'🏞️',name:'Hamarikyu Gardens',dur:90,desc:'Tranquil Edo-era tidal garden with a floating teahouse behind the Shiodome towers'},
+      {emoji:'🗾',name:'Ueno Park & Museums',dur:120,desc:'Expansive park housing the National Museum, zoo, and Shinobazu Pond'},
+      {emoji:'♨️',name:'Hakone day trip',dur:420,desc:'Romancecar from Shinjuku (85 min); Mt. Fuji views, Open Air Museum, and a soak in an onsen'},
+      {emoji:'🗿',name:'Kamakura & Enoshima',dur:360,desc:'1h from Shibuya; Great Buddha, Hasedera Temple, and the Enoshima island shrine walk'},
+      {emoji:'⛩️',name:'Nikko day trip',dur:420,desc:'2h Tobu Express from Asakusa; Toshogu shrine complex, Kegon Falls, cedar forest trail'},
+      {emoji:'🌊',name:'Yokohama',dur:300,desc:'30 min from Shibuya; Chinatown, Minato Mirai waterfront, and the Cup Noodles Museum'},
+      {emoji:'🌋',name:'Mt. Fuji & Kawaguchiko',dur:480,desc:'2h bus from Shinjuku; Chureito Pagoda torii gate and lake reflections — needs a full day'},
+      {emoji:'🎡',name:'Tokyo DisneySea',dur:480,desc:'Japan-exclusive Disney park themed around exploration and mythology; 20 min from Tokyo Station'},
+    ],
+    midday:[
+      {emoji:'📚',name:'Kinokuniya Bookstore, Shinjuku',dur:60,desc:'Six floors of books with an excellent English and art section; great browsing'},
+      {emoji:'🍱',name:'Depachika — Isetan Shinjuku',dur:90,desc:'World-class basement food halls: bento, wagashi, premium produce, and deli counters'},
+      {emoji:'🕹️',name:'Nakano Broadway',dur:90,desc:'Multi-floor retro manga, anime figures, and vintage games; take Chuo-Sobu Line from Shinjuku'},
+      {emoji:'🎨',name:'Sompo Museum of Art, Shinjuku',dur:90,desc:"Houses Van Gogh's Sunflowers; small but excellent collection in west Shinjuku"},
+      {emoji:'⚡',name:'Akihabara electric town',dur:120,desc:'Multi-storey arcades, anime merchandise, electronics, and maid cafés'},
+      {emoji:'🏠',name:'MoMA Design Store, Harajuku',dur:60,desc:'Beautifully curated design objects and gifts; open 11am–8pm'},
+      {emoji:'🗼',name:'Tokyo Skytree',dur:120,desc:"World's second-tallest tower; clear days reveal Mt. Fuji from the observation deck"},
+      {emoji:'🎬',name:'Warner Bros. Studio Tour Tokyo',dur:180,desc:'Making of Harry Potter experience; book tickets well in advance (Toshimaen Station)'},
+      {emoji:'🏙️',name:'TeamLab Planets, Toyosu',dur:120,desc:'Immersive floor-to-ceiling digital art installation; book timed entry online'},
+      {emoji:'🛍️',name:'Ginza SIX',dur:90,desc:"Tokyo's flagship luxury mall with a rooftop garden and excellent food basement"},
+    ],
+    evening:[
+      {emoji:'🍻',name:'Golden Gai, Shinjuku',dur:180,desc:'Six alleys of tiny 8-person bars; each has its own character — unmissable'},
+      {emoji:'🍢',name:'Omoide Yokocho (Memory Lane)',dur:90,desc:'Smoky yakitori stalls crammed beneath the Shinjuku train tracks; atmospheric and cheap'},
+      {emoji:'🌙',name:'Shibuya Crossing at night',dur:60,desc:'Most dramatic after dark; neon reflections and 3,000 people crossing at once'},
+      {emoji:'🌆',name:'Roppongi nightlife',dur:180,desc:'International bar district; also home to Mori Art Museum open until 10pm'},
+      {emoji:'🗼',name:'Tokyo Tower at night',dur:60,desc:"The retro rival to Skytree; stunning orange glow over the city's older neighbourhoods"},
+      {emoji:'🎪',name:'Robot Restaurant, Kabukicho',dur:120,desc:'Outrageous neon robot show in Shinjuku — pure Tokyo absurdity; dinner and a show'},
+      {emoji:'🏯',name:'Asakusa & Nakamise at dusk',dur:90,desc:'Senso-ji lanterns glow at sunset; Nakamise shopping street stays lively into the evening'},
+    ]
+  },
+  sendai:{
+    morning:[
+      {emoji:'⛩️',name:'Zuihoden Mausoleum',dur:90,desc:'Gold-leaf mausoleum of Date Masamune set in a cedar forest'},
+      {emoji:'🏯',name:'Aoba Castle Ruins',dur:60,desc:'Hilltop castle remnants with a sweeping panorama over Sendai'},
+      {emoji:'🌿',name:'Osaki Hachimangu Shrine',dur:60,desc:'National-treasure Momoyama shrine nestled in forested grounds'},
+      {emoji:'🛒',name:'Sendai Morning Market',dur:60,desc:'Covered arcade for fresh seafood, produce, and gyutan snacks'},
+    ],
+    midday:[
+      {emoji:'🛍️',name:'Ichibancho Arcade',dur:120,desc:'Long covered shopping street for fashion, gifts, and street food'},
+      {emoji:'🍖',name:'Gyutan lunch',dur:60,desc:"Sendai's signature grilled beef tongue with barley rice and soup"},
+      {emoji:'🏛️',name:'City Museum',dur:120,desc:'Regional history from the Date feudal clan through to modern times'},
+      {emoji:'🍱',name:'Kokubuncho dining',dur:90,desc:'Evening-friendly dining street packed with izakayas and restaurants'},
+    ],
+    evening:[
+      {emoji:'🍻',name:'Kokubuncho nightlife',dur:180,desc:'Compact bar district spanning jazz lounges, izakayas, and karaoke'},
+      {emoji:'🎋',name:'Tanabata decor stroll',dur:60,desc:'Year-round Tanabata streamers hung through the central arcades'},
+      {emoji:'✨',name:'Pageant of Starlight',dur:90,desc:'Winter illuminations along the zelkova trees of Jozenji-dori'},
+    ]
+  },
+  hakodate:{
+    morning:[
+      {emoji:'🦞',name:'Hakodate Morning Market',dur:90,desc:'Early-bird seafood market famous for live crab and ikura don'},
+      {emoji:'🏘️',name:'Motomachi historic walk',dur:120,desc:'Meiji-era churches, consulates, and steep slopes above the bay'},
+      {emoji:'🌹',name:'Trappistine Convent',dur:60,desc:'Tranquil convent gardens; sample the house-made butter toffees'},
+    ],
+    midday:[
+      {emoji:'⭐',name:'Goryokaku Fort',dur:90,desc:'Star-shaped Edo fort; now a scenic park especially stunning in spring'},
+      {emoji:'🗼',name:'Goryokaku Tower',dur:60,desc:'107m tower offering aerial views over the fort and bay'},
+      {emoji:'♨️',name:'Yunokawa Onsen',dur:120,desc:"Hakodate's main hot-spring strip; day-use baths for all visitors"},
+    ],
+    evening:[
+      {emoji:'🌃',name:'Mt. Hakodate night view',dur:90,desc:'Twin-bay panorama ranked among Japan\'s three great night views'},
+      {emoji:'🧱',name:'Kanemori Warehouses',dur:90,desc:'Red-brick waterfront complex with boutiques, bars, and restaurants'},
+      {emoji:'🦀',name:'Bay seafood dinner',dur:90,desc:'Fresh crab, squid, and sea urchin right on the historic Hakodate bay'},
+    ]
+  },
+  sapporo:{
+    morning:[
+      {emoji:'⛩️',name:'Hokkaido Shrine',dur:60,desc:'Serene forest shrine; beautiful for morning walks and hatsumode'},
+      {emoji:'🌸',name:'Hokkaido Botanic Garden',dur:90,desc:'University garden with 4,000 species; open spring through autumn'},
+      {emoji:'🐟',name:'Nijo Market',dur:60,desc:'Small but lively seafood market just a short walk from Odori Park'},
+    ],
+    midday:[
+      {emoji:'🌲',name:'Odori Park',dur:60,desc:'1.5km green spine through the city; hosts events and beer gardens'},
+      {emoji:'🍺',name:'Sapporo Beer Museum',dur:90,desc:'Meiji-era brewery turned museum with a tasting room on site'},
+      {emoji:'🕐',name:'Clock Tower',dur:30,desc:"Hokkaido's best-known colonial building; quick but charming stop"},
+      {emoji:'🛒',name:'Tanukikoji Street',dur:90,desc:'Historic covered shopping arcade spanning seven city blocks'},
+    ],
+    evening:[
+      {emoji:'🌆',name:'Susukino nightlife',dur:180,desc:"Hokkaido's biggest entertainment district for bars, clubs, and food"},
+      {emoji:'🍜',name:'Ramen Yokocho',dur:60,desc:'Atmospheric back-alley of classic Sapporo miso ramen shops'},
+      {emoji:'🍛',name:'Miso ramen dinner',dur:60,desc:'Rich, buttery Sapporo-style miso broth topped with corn and butter'},
+    ]
+  },
+  kyoto_osaka:{
+    morning:[
+      {emoji:'⛩️',name:'Fushimi Inari (early)',dur:120,desc:'Thousands of torii gates; arrive at dawn to beat the tour groups'},
+      {emoji:'🎋',name:'Arashiyama bamboo grove',dur:90,desc:'Famous bamboo path plus Tenryu-ji garden and riverside cafés'},
+      {emoji:'🏯',name:'Nijo Castle',dur:90,desc:'Shogun palace with famous nightingale floors and ornate painted halls'},
+      {emoji:'🥇',name:'Kinkakuji',dur:60,desc:'Gold-leaf Zen pavilion perfectly reflected in its tranquil mirror pond'},
+      {emoji:'👘',name:'Rental Kimono — Gion',dur:150,desc:'Dress up at Okamoto Gion Shop then stroll the Hanamikoji lanes in style'},
+      {emoji:'🌸',name:'Maruyama Park',dur:60,desc:'Peaceful Kyoto park famed for its weeping cherry tree; lovely morning wander'},
+      {emoji:'⛩️',name:'Katsuoji Temple',dur:90,desc:"Mountain temple blanketed in daruma dolls; wooded climb north of Osaka"},
+      {emoji:'🏠',name:'The Face House, Kyoto',dur:30,desc:'Iconic postmodern house with windows shaped like a face; quick photo stop'},
+      {emoji:'🚂',name:'Keihan Uji Station',dur:45,desc:'Charming 1995-built station with nostalgic architectural detail; photo stop'},
+    ],
+    midday:[
+      {emoji:'🥢',name:"Nishiki Market",dur:90,desc:"Kyoto's narrow 'kitchen' lane of pickles, tofu, and street food tastings"},
+      {emoji:'🦑',name:'Dotonbori food crawl',dur:120,desc:"Osaka's neon canal strip: takoyaki, okonomiyaki, ramen, and kushikatsu"},
+      {emoji:'🏯',name:'Osaka Castle',dur:90,desc:'Iconic castle with a history museum inside and a vast park for lunch'},
+      {emoji:'🏮',name:'Gion district stroll',dur:90,desc:'Traditional ochaya lanes; chance to spot geiko at dusk in Hanamikoji'},
+      {emoji:'🥷',name:'Samurai Ninja Museum',dur:90,desc:'Interactive armour exhibits and live ninja shows in Nakagyo Ward, Kyoto'},
+      {emoji:'🕹️',name:'Nipponbashi Den Den Town',dur:90,desc:"Osaka's answer to Akihabara: electronics, anime, manga, and cosplay shops (11am–7pm)"},
+      {emoji:'🎮',name:'Super Nintendo World',dur:180,desc:'Nintendo-themed zone at Universal Studios Japan; book timed entry in advance'},
+      {emoji:'⛩️',name:'Katsuoji Temple (Osaka)',dur:90,desc:'Daruma-doll-covered hilltop temple with scenic wooded approach from Mino'},
+    ],
+    evening:[
+      {emoji:'🍷',name:'Pontocho Alley dinner',dur:120,desc:'Narrow lantern-lit alley of kaiseki restaurants and casual sake bars'},
+      {emoji:'🎯',name:'Shinsekai bar hop',dur:180,desc:'Retro Osaka neighbourhood with kushikatsu stalls and no-frills bars'},
+      {emoji:'🌅',name:"Philosopher's Path at dusk",dur:60,desc:'Canal-side walk under cherry trees from Nanzenji to Ginkakuji'},
+    ]
+  },
+  hiroshima:{
+    morning:[
+      {emoji:'🕊️',name:'Peace Memorial Museum',dur:120,desc:'Deeply moving museum documenting the 1945 atomic bombing in detail'},
+      {emoji:'🏚️',name:'Atomic Bomb Dome',dur:60,desc:'UNESCO-listed ruin preserved as an enduring anti-war symbol'},
+      {emoji:'⛩️',name:'Miyajima + Itsukushima',dur:240,desc:'Ferry to the floating torii gate and shrine; deer roam freely on the island'},
+    ],
+    midday:[
+      {emoji:'🌿',name:'Peace Memorial Park',dur:90,desc:'Riverside park with memorials, the Flame of Peace, and the cenotaph'},
+      {emoji:'🏯',name:'Hiroshima Castle',dur:60,desc:'Reconstructed 16th-century castle with samurai exhibits and city views'},
+      {emoji:'🥞',name:'Okonomimura',dur:90,desc:'Six-floor building of stalls serving Hiroshima-style layered okonomiyaki'},
+    ],
+    evening:[
+      {emoji:'🌃',name:'Nagarekawa nightlife',dur:180,desc:"Hiroshima's lively bar and live-music district a short walk from the park"},
+      {emoji:'🌅',name:'Miyajima sunset',dur:120,desc:'Golden-hour light on the torii gate viewed from the shoreline'},
+      {emoji:'🦪',name:'Hiroshima oyster dinner',dur:90,desc:'Plump Hiroshima oysters: grilled, fried, or raw at riverside restaurants'},
+    ]
+  },
+  fukuoka:{
+    morning:[
+      {emoji:'🏞️',name:'Ohori Park morning walk',dur:60,desc:'Large lake-park with castle ruins; perfect circuit for an easy morning'},
+      {emoji:'🏯',name:'Fukuoka Castle ruins',dur:60,desc:'Scenic hilltop ruins inside Maizuru Park with views over Hakata Bay'},
+      {emoji:'⛩️',name:'Kushida Shrine',dur:60,desc:"Hakata's guardian shrine; see the enormous Yamakasa festival float on display"},
+    ],
+    midday:[
+      {emoji:'🛍️',name:'Canal City shopping',dur:120,desc:'Spiralling canal-side mega-mall with a central stage and rooftop garden'},
+      {emoji:'🏘️',name:'Hakata old town',dur:90,desc:'Quiet lanes of traditional craft workshops and centuries-old Hakata weaving'},
+      {emoji:'🪷',name:'Tochoji Temple (giant Buddha)',dur:45,desc:"Zen temple housing Japan's largest seated wooden Buddha (18m tall)"},
+    ],
+    evening:[
+      {emoji:'🍜',name:'Nakasu Yatai food stalls',dur:120,desc:'Open-air waterside stalls on the island serving ramen, yakitori, and sake'},
+      {emoji:'🎶',name:'Nakasu nightlife',dur:180,desc:"Fukuoka's main entertainment island; bars, clubs, and late-night karaoke"},
+      {emoji:'🍝',name:'Tonkotsu ramen dinner',dur:60,desc:"Birthplace of the milky pork-bone broth — Shin-Shin or Ichiran are classics"},
+    ]
+  },
+  busan:{
+    morning:[
+      {emoji:'🎨',name:'Gamcheon Culture Village',dur:120,desc:'Colourful hillside maze of street art, galleries, and quirky cafés'},
+      {emoji:'⛩️',name:'Haedong Yonggungsa Temple',dur:90,desc:'Rare oceanside temple set on rocky sea-facing cliffs north of Haeundae'},
+      {emoji:'🦀',name:'Jagalchi Fish Market',dur:90,desc:"Korea's largest seafood market; eat raw fish at the bustling upper floor"},
+    ],
+    midday:[
+      {emoji:'🛒',name:'Gukje International Market',dur:90,desc:'Sprawling traditional market for street food, clothing, and everyday goods'},
+      {emoji:'🌿',name:'Beomeo-sa Temple hike',dur:180,desc:'Mountain temple reached through pine forest and a quiet valley trail'},
+      {emoji:'🪨',name:'Taejongdae cliffs',dur:120,desc:'Dramatic sea cliffs on Yeongdo island with a scenic miniature train ride'},
+    ],
+    evening:[
+      {emoji:'🏖️',name:'Haeundae Beach sunset',dur:90,desc:"Korea's most popular urban beach buzzing with cafés, bars, and swimmers"},
+      {emoji:'🌉',name:'Gwangalli Bridge night view',dur:90,desc:'The lit Gwangan Bridge reflected in the water from the sandy beach strip'},
+      {emoji:'🦞',name:'Millak waterfront seafood',dur:90,desc:'Lively strip on the water for hoe (raw fish platters) and grilled shellfish'},
+    ]
+  },
+  jeju:{
+    morning:[
+      {emoji:'🌄',name:'Seongsan Sunrise Peak',dur:120,desc:"UNESCO tuff-cone crater; sunrise views are well worth the 5am alarm"},
+      {emoji:'🏔️',name:'Hallasan hike',dur:360,desc:"Full-day summit hike up Jeju's dormant volcano; pack snacks and layers"},
+      {emoji:'🏝️',name:'Hyeopjae Beach walk',dur:90,desc:"White coral sand and tropical-blue water on Jeju's sheltered west coast"},
+    ],
+    midday:[
+      {emoji:'🕳️',name:'Manjanggul Lava Tube',dur:90,desc:"One of the world's longest lava tubes; eerie underground formations"},
+      {emoji:'🏡',name:'Jeju Folk Village',dur:120,desc:'Open-air museum of traditional thatched haenyo and farming homesteads'},
+      {emoji:'🍵',name:"O'Sulloc Tea Museum",dur:90,desc:'Sweeping green-tea plantation with a good café and free tastings'},
+    ],
+    evening:[
+      {emoji:'🍽️',name:'Jeju city dining',dur:90,desc:"Jeju-si downtown has excellent haenyeo-sourced abalone and seafood restaurants"},
+      {emoji:'🥩',name:'Black pork BBQ dinner',dur:90,desc:"Jeju's heritage charcoal-grilled black pork — fatty, sweet, and unmissable"},
+      {emoji:'🌙',name:'Loveland sculpture park',dur:90,desc:'Adults-only outdoor sculpture park; a surprisingly fun evening stopover'},
+    ]
+  },
+  seoul:{
+    morning:[
+      {emoji:'🏯',name:'Gyeongbokgung Palace',dur:120,desc:"Joseon dynasty's main palace; changing of the guard at 10am and 2pm"},
+      {emoji:'🏘️',name:'Bukchon Hanok Village',dur:90,desc:'Hilltop residential neighbourhood of lovingly restored traditional hanok'},
+      {emoji:'🌳',name:'Changdeokgung + Secret Garden',dur:120,desc:'UNESCO palace with a stunning rear garden only accessible by guided tour'},
+      {emoji:'🗼',name:'N Seoul Tower hike',dur:120,desc:'Walk up Namsan for city views, love locks, and the revolving restaurant'},
+    ],
+    midday:[
+      {emoji:'🎭',name:'Insadong galleries & tea',dur:90,desc:'Antique shops, indie galleries, and traditional tea houses in one street'},
+      {emoji:'🛍️',name:'Myeongdong shopping',dur:120,desc:'Dense K-beauty counters, fast fashion, and excellent street-food carts'},
+      {emoji:'🥟',name:'Gwangjang Market',dur:90,desc:"Seoul's oldest market: bindaetteok pancakes, mayak gimbap, and raw beef"},
+      {emoji:'🏗️',name:'Dongdaemun Design Plaza',dur:60,desc:'Zaha Hadid futuristic landmark and 24h fashion wholesale market nearby'},
+    ],
+    evening:[
+      {emoji:'🎵',name:'Hongdae nightlife',dur:180,desc:'Student-arts district famous for live music, club culture, and busking'},
+      {emoji:'🌙',name:'Han River night picnic',dur:120,desc:'Night views of the bridges; grab fried chicken and beer from a convenience store'},
+      {emoji:'🍸',name:'Itaewon bar hop',dur:180,desc:'International bar scene with craft beer pubs, cocktail lounges, and rooftop bars'},
+      {emoji:'🥓',name:'Korean BBQ dinner',dur:90,desc:'Samgyeopsal or galbi grilled at the table; order soju and wrap in perilla leaf'},
+    ]
+  }
+};
+
+function fmtDur(m){
+  if(!m)return'';
+  if(m<60)return`${m}min`;
+  const h=m/60;
+  return`${Number.isInteger(h)?h:h.toFixed(1)}h`;
+}
+function allActs(city,tod){
+  return[...(ACTS[city]?.[tod]||[]),...(G.custom[city]||[]).filter(a=>a.tod===tod)];
+}
+
+// ══════════════════════════════════════════════════════════════════════
+// STATE
+// ══════════════════════════════════════════════════════════════════════
+function mkDefRows(sec){
+  return CFG[sec].defRows.map((c,i)=>({id:`r${i}`,c}));
+}
+
+const G={
+  sec:'tokyo',
+  secs:{
+    tokyo:{start:'Jul 7',tab:'planner',rows:mkDefRows('tokyo'),ctr:CFG.tokyo.defRows.length},
+    north:{start:'Jul 10',tab:'planner',rows:mkDefRows('north'),ctr:CFG.north.defRows.length},
+    south:{start:'Jul 10',tab:'planner',rows:mkDefRows('south'),ctr:CFG.south.defRows.length},
+    korea:{start:'Jul 17',tab:'planner',rows:mkDefRows('korea'),ctr:CFG.korea.defRows.length},
+  },
+  slots:{},   // '{sec}_{rowId}_{tod}' → {emoji,name,dur}
+  custom:{},  // '{city}'              → [{emoji,name,tod,dur,desc}]
+};
+
+// ══════════════════════════════════════════════════════════════════════
+// STORAGE  (window.storage → google.script.run → in-memory)
+// ══════════════════════════════════════════════════════════════════════
+const HAS_WS =typeof window!=='undefined'&&typeof window.storage!=='undefined';
+const HAS_GAS=typeof google!=='undefined'&&!!google.script;
+
+async function loadStorage(){
+  if(HAS_WS){
+    for(const[k,dest]of[['jpkr_slots','slots'],['jpkr_custom','custom'],['jpkr_secs','secs']]){
+      try{
+        const r=await window.storage.get(k);
+        if(r&&r.value){
+          const d=JSON.parse(r.value);
+          if(dest==='secs'){for(const[sk,v]of Object.entries(d)){if(G.secs[sk])Object.assign(G.secs[sk],v);}}
+          else{G[dest]=d||{};}
+        }
+      }catch{}
+    }
+  }else if(HAS_GAS){
+    await new Promise(res=>{
+      google.script.run
+        .withSuccessHandler(j=>{
+          try{
+            const d=JSON.parse(j);
+            if(d.slots)G.slots=d.slots;
+            if(d.custom)G.custom=d.custom;
+            if(d.secs)for(const[k,v]of Object.entries(d.secs)){if(G.secs[k])Object.assign(G.secs[k],v);}
+          }catch{}res();
+        })
+        .withFailureHandler(()=>res())
+        .getState();
+    });
+  }
+  // Sanitise — handle migration from old format (had 'route' instead of 'rows')
+  for(const sec of Object.keys(CFG)){
+    const s=G.secs[sec];
+    if(!s.rows||!Array.isArray(s.rows)||!s.rows.length){
+      s.rows=mkDefRows(sec);s.ctr=CFG[sec].defRows.length;
+    }
+    if(!s.ctr)s.ctr=s.rows.length;
+    delete s.route;
+  }
+}
+
+let _st=null;
+function scheduleSave(){clearTimeout(_st);_st=setTimeout(doSave,900);}
+async function doSave(){
+  if(HAS_WS){
+    try{
+      await window.storage.set('jpkr_slots', JSON.stringify(G.slots));
+      await window.storage.set('jpkr_custom',JSON.stringify(G.custom));
+      await window.storage.set('jpkr_secs',  JSON.stringify(G.secs));
+    }catch{}
+  }else if(HAS_GAS){
+    google.script.run.withFailureHandler(console.error)
+      .saveState(JSON.stringify(G.slots),JSON.stringify(G.custom),JSON.stringify(G.secs));
+  }
+  const t=document.getElementById('toast');
+  t.classList.add('on');setTimeout(()=>t.classList.remove('on'),1800);
+}
+
+// ══════════════════════════════════════════════════════════════════════
+// HELPERS
+// ══════════════════════════════════════════════════════════════════════
+const MM={Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11};
+const MN=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const DN=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+function dateLbl(start,vi){
+  const[m,d]=start.split(' ');const dt=new Date(2026,MM[m],+d+vi);
+  return`${DN[dt.getDay()]} ${MN[dt.getMonth()]} ${dt.getDate()}`;
+}
+function skey(sec,rowId,tod){return`${sec}_${rowId}_${tod}`;}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+
+// ══════════════════════════════════════════════════════════════════════
+// RENDER
+// ══════════════════════════════════════════════════════════════════════
+function renderNav(){
+  document.getElementById('snav').innerHTML=Object.entries(CFG).map(([k,c])=>
+    `<button class="sb${G.sec===k?' on':''}" onclick="setSec('${k}')">${c.icon} ${c.label}</button>`
+  ).join('');
+}
+
+function renderPanels(){
+  document.getElementById('panels').innerHTML=Object.keys(CFG).map(sec=>`
+    <div class="sp${G.sec===sec?' on':''}" id="sp-${sec}">
+      <div class="cb" id="cb-${sec}">${renderCB(sec)}</div>
+      <div class="tc${G.secs[sec].tab==='planner'?' on':''}" id="tc-p-${sec}">
+        <div class="pw">
+          <table class="pt">
+            <thead><tr><th>Day</th><th>🌅 Morning</th><th>☀️ Midday</th><th>🌙 Evening</th></tr></thead>
+            <tbody id="rows-${sec}"></tbody>
+          </table>
+        </div>
+        <div class="add-row-wrap">
+          <button class="add-row-btn" onclick="addRow('${sec}')">＋ Add day</button>
+        </div>
+      </div>
+      <div class="tc${G.secs[sec].tab==='bank'?' on':''}" id="tc-b-${sec}">
+        <div class="bk" id="bank-${sec}"></div>
+      </div>
+    </div>`
+  ).join('');
+  Object.keys(CFG).forEach(sec=>{renderRows(sec);renderBank(sec);});
+}
+
+function renderCB(sec){
+  const{start,tab}=G.secs[sec],c=CFG[sec];
+  return`
+    <div class="cg">
+      <label>Start date</label>
+      <select onchange="setProp('${sec}','start',this.value)">
+        ${c.starts.map(d=>`<option${d===start?' selected':''}>${d}</option>`).join('')}
+      </select>
+    </div>
+    <div class="tp">
+      <button class="tpb${tab==='planner'?' on':''}" data-tab="planner" onclick="setTab('${sec}','planner')">📅 Day Planner</button>
+      <button class="tpb${tab==='bank'?' on':''}" data-tab="bank" onclick="setTab('${sec}','bank')">🗂️ Activity Bank</button>
+    </div>`;
+}
+
+function renderRows(sec){
+  const tbody=document.getElementById(`rows-${sec}`);
+  if(!tbody)return;
+  const rows=G.secs[sec].rows,{start}=G.secs[sec];
+  const canRemove=rows.length>1;
+  tbody.innerHTML=rows.map((row,vi)=>{
+    const[bg,,dark]=CLR[row.c];
+    return`<tr class="pr" id="pr-${sec}-${row.id}">
+      <td class="cl" style="background:${bg}" onclick="openCityPicker('${sec}','${row.id}')">
+        <div class="cl-inner">
+          <div>
+            <div class="cn" style="color:${dark}">${LBL[row.c]}<span class="ei">▾</span></div>
+            <div class="cd" style="color:${dark}">Day ${vi+1} · ${dateLbl(start,vi)}</div>
+          </div>
+          ${canRemove?`<button class="rem-btn" onclick="removeRow(event,'${sec}','${row.id}')" title="Remove day">×</button>`:''}
+        </div>
+      </td>
+      ${['morning','midday','evening'].map(tod=>slotCellHtml(sec,row.id,row.c,tod)).join('')}
+    </tr>`;
+  }).join('');
+}
+
+function slotCellHtml(sec,rowId,city,tod){
+  const[bg,,dark]=CLR[city];
+  const slot=G.slots[skey(sec,rowId,tod)];
+  if(slot){
+    const durStr=slot.dur?` <span class="sdur">· ${fmtDur(slot.dur)}</span>`:'';
+    return`<td class="cs sf" style="background:${bg}" onclick="openPicker('${sec}','${rowId}','${tod}')">
+      <div class="si">
+        <span class="sem">${esc(slot.emoji)}</span>
+        <span class="snm" style="color:${dark}">${esc(slot.name)}${durStr}</span>
+        <button class="scb" onclick="clearSlot(event,'${sec}','${rowId}','${tod}')">×</button>
+      </div></td>`;
+  }
+  return`<td class="cs se" style="background:${bg}" onclick="openPicker('${sec}','${rowId}','${tod}')">
+    <div class="si"><span class="sal">+ Add</span></div></td>`;
+}
+
+function renderBank(sec){
+  const el=document.getElementById(`bank-${sec}`);
+  if(!el)return;
+  // Show ALL section cities (not just current rows) so users can browse ahead
+  el.innerHTML=CFG[sec].cities.map(city=>{
+    const[bg,,dark]=CLR[city];
+    return`<div class="bcc">
+      <div class="bch" style="background:${bg};color:${dark}">${LBL[city]}</div>
+      <div class="bcb">${[['morning','🌅 Morning'],['midday','☀️ Midday'],['evening','🌙 Evening']].map(([t,lbl])=>{
+        const acts=allActs(city,t);
+        return`<div class="bt">
+          <h4>${lbl}</h4>
+          ${acts.map(a=>`<div class="ac">
+            <span class="ae">${esc(a.emoji)}</span>
+            <div class="ac-body">
+              <div class="an">${esc(a.name)}<span class="bdur">${a.dur?` · ${fmtDur(a.dur)}`:''}</span></div>
+              ${a.desc?`<div class="adesc">${esc(a.desc)}</div>`:''}
+            </div>
+          </div>`).join('')}
+          <button class="addb" onclick="openAddModal('${city}','${t}')">+ Add activity</button>
+        </div>`;
+      }).join('')}</div>
+    </div>`;
+  }).join('');
+}
+
+// ══════════════════════════════════════════════════════════════════════
+// SLOT PICKER
+// ══════════════════════════════════════════════════════════════════════
+let _pActs=[],_pState=null;
+
+function openPicker(sec,rowId,tod){
+  const row=G.secs[sec].rows.find(r=>r.id===rowId);
+  if(!row)return;
+  const city=row.c,[bg,,dark]=CLR[city];
+  const todL={morning:'🌅 Morning',midday:'☀️ Midday',evening:'🌙 Evening'};
+  document.getElementById('picker-ttl').textContent=LBL[city];
+  document.getElementById('picker-ttl').style.color=dark;
+  document.getElementById('picker-sub').textContent=todL[tod];
+  document.getElementById('picker-hd').style.background=bg;
+  _pActs=allActs(city,tod);
+  _pState={sec,rowId,tod};
+  const cur=G.slots[skey(sec,rowId,tod)];
+  const body=document.getElementById('picker-body');
+  body.innerHTML=
+    (_pActs.length===0?'<p style="color:#9A9590;font-size:13px;padding:16px 0">No activities yet — add one below!</p>':'')+
+    _pActs.map((a,i)=>`<div class="par${cur&&cur.name===a.name?' sel':''}" data-i="${i}">
+      <span class="pe">${esc(a.emoji)}</span>
+      <span class="pn">${esc(a.name)}</span>
+      <span class="pdur">${fmtDur(a.dur)}</span>
+    </div>`).join('')+
+    `<div style="margin-top:12px;padding-top:10px;border-top:1px solid #F0EDE8">
+      <button class="addb" style="width:100%;margin-top:0" onclick="openAddFromPicker('${city}','${tod}')">+ Add custom activity</button>
+    </div>`;
+  body.querySelectorAll('.par').forEach(el=>{
+    el.addEventListener('click',()=>{
+      const a=_pActs[+el.dataset.i];
+      G.slots[skey(_pState.sec,_pState.rowId,_pState.tod)]={emoji:a.emoji,name:a.name,dur:a.dur||0};
+      renderRows(_pState.sec);closePicker();scheduleSave();
+    });
+  });
+  document.getElementById('picker-modal').classList.remove('hd');
+}
+
+function closePicker(){document.getElementById('picker-modal').classList.add('hd');_pState=null;}
+function clearSlot(e,sec,rowId,tod){
+  e.stopPropagation();delete G.slots[skey(sec,rowId,tod)];renderRows(sec);scheduleSave();
+}
+
+// ══════════════════════════════════════════════════════════════════════
+// CITY PICKER
+// ══════════════════════════════════════════════════════════════════════
+let _cpState=null;
+
+function openCityPicker(sec,rowId){
+  const rows=G.secs[sec].rows;
+  const vi=rows.findIndex(r=>r.id===rowId);
+  if(vi===-1)return;
+  const row=rows[vi];
+  document.getElementById('city-modal-sub').textContent=`Day ${vi+1} · ${dateLbl(G.secs[sec].start,vi)}`;
+  _cpState={sec,rowId};
+  document.getElementById('city-modal-body').innerHTML=CFG[sec].cities.map(city=>{
+    const[bg,,dark]=CLR[city];
+    const isSel=city===row.c;
+    return`<div class="city-opt${isSel?' sel':''}" style="background:${bg};${isSel?`border-color:${dark}`:'border-color:transparent'}"
+               onclick="changeCityForRow('${sec}','${rowId}','${city}')">
+      <span class="co-name" style="color:${dark}">${LBL[city]}</span>
+      ${isSel?`<span style="margin-left:auto;font-size:12px;color:${dark}">✓</span>`:''}
+    </div>`;
+  }).join('');
+  document.getElementById('city-modal').classList.remove('hd');
+}
+
+function closeCityPicker(){document.getElementById('city-modal').classList.add('hd');_cpState=null;}
+
+function changeCityForRow(sec,rowId,newCity){
+  const row=G.secs[sec].rows.find(r=>r.id===rowId);
+  if(!row){closeCityPicker();return;}
+  if(row.c!==newCity){
+    for(const tod of['morning','midday','evening'])delete G.slots[skey(sec,rowId,tod)];
+    row.c=newCity;
+    renderRows(sec);
+    renderBank(sec);
+    scheduleSave();
+  }
+  closeCityPicker();
+}
+
+// ══════════════════════════════════════════════════════════════════════
+// ROW MANAGEMENT
+// ══════════════════════════════════════════════════════════════════════
+function addRow(sec){
+  const s=G.secs[sec];
+  const lastCity=s.rows.length?s.rows[s.rows.length-1].c:CFG[sec].cities[0];
+  s.rows.push({id:`r${s.ctr++}`,c:lastCity});
+  renderRows(sec);scheduleSave();
+}
+
+function removeRow(e,sec,rowId){
+  e.stopPropagation();
+  const s=G.secs[sec];
+  if(s.rows.length<=1)return;
+  for(const tod of['morning','midday','evening'])delete G.slots[skey(sec,rowId,tod)];
+  s.rows=s.rows.filter(r=>r.id!==rowId);
+  renderRows(sec);scheduleSave();
+}
+
+// ══════════════════════════════════════════════════════════════════════
+// ADD ACTIVITY MODAL
+// ══════════════════════════════════════════════════════════════════════
+function openAddModal(city,tod){
+  document.getElementById('add-city-sel').innerHTML=
+    Object.keys(LBL).map(c=>`<option value="${c}"${c===city?' selected':''}>${LBL[c]}</option>`).join('');
+  document.getElementById('add-tod-sel').value=tod||'morning';
+  document.getElementById('add-emoji-inp').value='📍';
+  document.getElementById('add-dur-inp').value='';
+  document.getElementById('add-name-inp').value='';
+  document.getElementById('add-desc-inp').value='';
+  document.getElementById('add-modal').classList.remove('hd');
+}
+function openAddFromPicker(city,tod){closePicker();openAddModal(city,tod);}
+function closeAddModal(){document.getElementById('add-modal').classList.add('hd');}
+
+function submitCustomAct(){
+  const city=document.getElementById('add-city-sel').value;
+  const tod =document.getElementById('add-tod-sel').value;
+  const emoji=(document.getElementById('add-emoji-inp').value.trim()||'📍');
+  const name =document.getElementById('add-name-inp').value.trim();
+  const dur  =parseInt(document.getElementById('add-dur-inp').value)||0;
+  const desc =document.getElementById('add-desc-inp').value.trim();
+  if(!name){document.getElementById('add-name-inp').focus();return;}
+  if(!G.custom[city])G.custom[city]=[];
+  G.custom[city].push({emoji,name,tod,dur,desc});
+  closeAddModal();
+  Object.keys(CFG).forEach(sec=>{if(CFG[sec].cities.includes(city))renderBank(sec);});
+  scheduleSave();
+}
+
+// ══════════════════════════════════════════════════════════════════════
+// SECTION / TAB / PROP ACTIONS
+// ══════════════════════════════════════════════════════════════════════
+function setSec(sec){
+  G.sec=sec;renderNav();
+  Object.keys(CFG).forEach(k=>{document.getElementById(`sp-${k}`).className=`sp${k===sec?' on':''}`;});
+}
+function setTab(sec,tab){
+  G.secs[sec].tab=tab;
+  document.getElementById(`tc-p-${sec}`).className=`tc${tab==='planner'?' on':''}`;
+  document.getElementById(`tc-b-${sec}`).className=`tc${tab==='bank'?' on':''}`;
+  document.getElementById(`sp-${sec}`).querySelectorAll('.tpb').forEach(b=>{b.classList.toggle('on',b.dataset.tab===tab);});
+  scheduleSave();
+}
+function setProp(sec,prop,val){
+  G.secs[sec][prop]=val;
+  if(prop==='start')renderRows(sec);
+  scheduleSave();
+}
+
+// ══════════════════════════════════════════════════════════════════════
+// INIT
+// ══════════════════════════════════════════════════════════════════════
+async function init(){
+  await loadStorage();
+  renderNav();
+  renderPanels();
+}
+init();
+</script>
+</body>
+</html>
