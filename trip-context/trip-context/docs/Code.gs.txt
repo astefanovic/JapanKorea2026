@@ -1,0 +1,49 @@
+/**
+ * Japan · Korea 2026 Group Planner
+ * Apps Script server — Code.gs
+ *
+ * Deploy as: Web App → Execute as Me → Anyone with link
+ */
+
+function doGet() {
+  return HtmlService.createHtmlOutputFromFile('index')
+    .setTitle('Japan · Korea 2026 — Group Planner')
+    .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
+}
+
+/**
+ * Returns all stored state as a JSON string.
+ * Called by the client on page load.
+ */
+function getState() {
+  var props = PropertiesService.getScriptProperties();
+  return JSON.stringify({
+    slots:  JSON.parse(props.getProperty('jpkr_slots')  || '{}'),
+    custom: JSON.parse(props.getProperty('jpkr_custom') || '{}'),
+    secs:   JSON.parse(props.getProperty('jpkr_secs')   || '{}')
+  });
+}
+
+/**
+ * Persists all state (called ~0.9s after any change).
+ * Each arg is a JSON string to keep under the 9KB property limit.
+ */
+function saveState(slotsJson, customJson, secsJson) {
+  var props = PropertiesService.getScriptProperties();
+  props.setProperty('jpkr_slots',  slotsJson);
+  props.setProperty('jpkr_custom', customJson);
+  props.setProperty('jpkr_secs',   secsJson);
+  return true;
+}
+
+/**
+ * Nuclear reset — wipes all planner state.
+ * Run manually from the Apps Script editor if needed.
+ */
+function resetState() {
+  var props = PropertiesService.getScriptProperties();
+  props.deleteProperty('jpkr_slots');
+  props.deleteProperty('jpkr_custom');
+  props.deleteProperty('jpkr_secs');
+  Logger.log('State cleared.');
+}
