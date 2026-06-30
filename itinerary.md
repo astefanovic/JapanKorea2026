@@ -27,10 +27,8 @@ Total Shinkansen spend (all 4, all legs, if buying individually): **~¥283,000 (
 ### Korea — T-money Card
 Buy at Gimhae Airport (PUS) arrivals hall, GS25 or CU convenience store. ~KRW 4,000 for the card + load KRW 20,000–30,000. Works on Busan Metro, Seoul Metro, AREX (all-stop only, not express), and city buses. Top up at any GS25/CU/7-Eleven.
 
-### Korea — K-ETA (Aleks & Ralph)
-Australian passport holders need a **K-ETA (Korea Electronic Travel Authorization)** for entry — apply at k-eta.go.kr. ~KRW 10,000 per person, approved within minutes to hours, valid 2 years. Entering via Jeju counts as a Korea entry — apply before 6 Jul.
-
-> Angela & Ceci: their mainland visa constraint means they exit at Jeju (Jeju is visa-free without K-ETA). No K-ETA needed for them.
+### Korea — Entry (Aleks & Ralph)
+Australians are visa-exempt for South Korea (90 days). **K-ETA is not required.** Fill out the paper arrival card on the plane before landing at Jeju — name, passport number, Airbnb address, purpose of visit. Takes 3 minutes.
 
 ---
 
@@ -596,7 +594,7 @@ Evening: Explore Seomyeon (Busan's central nightlife district) or Haeundae (beac
 | 2 | ✅ **Manila accommodation (Angela & Ceci, 20–23 Jul)** | ✅ Resolved | — |
 | 3 | ⏸ **Jeju car rental** — not in expenses tracker | ⏸ Deferred | Book before departure. July peak season. Confirm driver(s) and IDP when actioning. |
 | 4 | ⏸ **IDP (International Driving Permit)** — required to rent/drive in Korea | ⏸ Deferred with #3 | Driver(s) obtain from RACV/NRMA/RAA. Present with Australian licence at car rental counter. |
-| 5 | ⚠️ **K-ETA** (Aleks & Ralph) — not yet applied | 🔴 Do now | Apply at k-eta.go.kr — ~KRW 10,000, usually approved within minutes. Trip departs in 6 days. |
+| 5 | ✅ **K-ETA** (Aleks & Ralph) — not required for Australians | ✅ No action | Visa-exempt. Skipping K-ETA is fine — just fill out the paper arrival card on the plane to Jeju. |
 | 6 | ⚠️ **Kimono rental** (13 Jul Kyoto) — not confirmed as booked | 🟡 Soon | Book online now: Kyoto Kimono Rental Wargo (wargo.jp, English, from ¥3,000), or Okamoto Kimono Rental Gion |
 | 7 | ⚠️ **Shinkansen tickets** (4 legs) — none confirmed as purchased | 🟡 On arrival | Buy at Shinagawa/Shin-Osaka Green Windows. Buy Ghibli + Tokyo→Osaka tickets on 7 or 8 Jul. |
 | 8 | ⚠️ **Kansai Pass** — type and coverage unknown | 🟡 Soon | Confirm what was booked (which pass type, how many days, which lines covered) — determines whether Hiroshima and Fukuoka Shinkansen legs need to be purchased separately |
