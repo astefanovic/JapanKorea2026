@@ -11,16 +11,19 @@ Physical alternative: Buy Suica/PASMO at vending machines inside Haneda T3 arriv
 
 ### Shinkansen Tickets — Status
 
-All legs below need separate reserved-seat tickets. Buy at JR "Midori no Madoguchi" (Green Window) ticket offices at major stations — English-speaking staff at Shinagawa, Tokyo, Shin-Osaka. Buy the Tokyo-area legs (Ghibli day trip + Tokyo→Osaka) on arrival day 7 or 8 Jul; buy the Osaka legs (Hiroshima + Fukuoka) on 12–13 Jul.
+All legs below need separate reserved-seat tickets. Buy at JR "Midori no Madoguchi" (Green Window) ticket offices — English-speaking staff at Shinagawa, Tokyo, Shin-Osaka. **Do not buy on the day** — buy a few days ahead for guaranteed adjacent seats.
 
-| Leg | Date | Route | Duration | Cost/person | Notes |
-|-----|------|-------|----------|-------------|-------|
-| Ghibli day trip | 9 Jul | Shinagawa ↔ Nagoya (Nozomi) | 1h 30m each way | ¥11,090 each way | ⚠️ TODO — buy 7 or 8 Jul |
-| Tokyo → Osaka | 12 Jul | Shinagawa → Shin-Osaka (Nozomi) | 2h 10m | ¥13,750 | ⚠️ TODO — buy 7 or 8 Jul |
-| Osaka ↔ Hiroshima | 15 Jul | Shin-Osaka ↔ Hiroshima (Nozomi/Sakura) | 50m / 1h 10m | ¥9,810 each way | ⚠️ TODO — buy at Shin-Osaka Green Window 13 or 14 Jul |
-| Osaka → Fukuoka | 16 Jul | Shin-Osaka → Hakata (Nozomi) | 2h 15m | ¥15,310 | ⚠️ TODO — buy at Shin-Osaka Green Window 13 or 14 Jul |
+**When to buy:**
+- **7 Jul (day after arrival)** at Shinagawa Green Window: buy Ghibli return (9 Jul) + Tokyo→Osaka (12 Jul) in one go. The Sunday 12 Jul Nozomi fills quickly in peak summer — this is the one not to leave late.
+- **12 or 13 Jul** at Shin-Osaka Green Window: buy Osaka→Hakata (16 Jul).
 
-Total Shinkansen spend (all 4, all legs, buying individually): **~¥283,000 (~AUD 2,830)**
+| Leg | Date | Route | Duration | Cost/person | Status |
+|-----|------|-------|----------|-------------|--------|
+| Ghibli day trip | 9 Jul | Shinagawa ↔ Nagoya (Nozomi) | 1h 30m each way | ¥11,090 each way | ⚠️ Buy 7 Jul at Shinagawa |
+| Tokyo → Osaka | 12 Jul | Shinagawa → Shin-Osaka (Nozomi) | 2h 10m | ¥13,750 | ⚠️ Buy 7 Jul at Shinagawa — Sunday, fills up |
+| Osaka → Fukuoka | 16 Jul | Shin-Osaka → Hakata (Nozomi) | 2h 15m | ¥15,310 | ⚠️ Buy 12–13 Jul at Shin-Osaka |
+
+Total Shinkansen spend (all 4, all legs): **~¥204,960 (~AUD 2,050)**
 
 ### Kansai Pass — "Have Fun in Kansai 1-Week Free Pass"
 4 tickets (one per person), order 1164184078 — tickets in Drive folder. **This is a tourist attractions pass, not a rail pass.** Each ticket covers **3 facilities** from the partner list within a **7-day window** starting from first scan. No trains, no buses, no Shinkansen.
@@ -291,34 +294,22 @@ TODO: **Buy Shinagawa→Shin-Osaka Shinkansen tickets** (4 reserved seats) on 7 
 
 ---
 
-### Day 10 — Wed 15 Jul · Hiroshima & Miyajima Day Trip (all 4)
+### Day 10 — Wed 15 Jul · Osaka free day (TBD)
 
-**Sleep:** Osaka apartment (long day, return ~20:00)
+**Sleep:** Osaka apartment
 
-> Kansai Pass confirmed as an **attractions voucher only** — no rail coverage. All Shinkansen tickets for this day must be purchased individually at Shin-Osaka Green Window (do on 13 or 14 Jul).
+> This day is unplanned — use it as a buffer, a lighter day, or pick one of the options below.
 
-| Time | Activity | Transport |
-|------|----------|-----------|
-| 07:00 | Leave apartment | |
-| 07:20 | Osaka Metro: Namba → Shin-Osaka (~20 min) | |
-| 07:40–08:00 | **Depart Shin-Osaka → Hiroshima** (Nozomi ~50 min; Sakura ~1h 10m) | ¥9,810/person. Buy tickets at Shin-Osaka Green Window on 13 or 14 Jul. |
-| ~08:50–09:10 | Arrive Hiroshima | |
-| 09:10 | JR Sanyo Line: Hiroshima → Miyajimaguchi (25 min, ¥420) | IC card |
-| 09:40 | **JR West Ferry**: Miyajimaguchi → Miyajima Island (10 min, ¥200 — **free with JR West area pass**) | Ferries depart every 10–15 min |
-| 09:50–13:00 | **Miyajima Island** — Itsukushima Shrine (¥300 entry), O-torii gate (⚠️ check tide table for 15 Jul — 2h around high tide gives the "floating" effect; at low tide you can walk to the gate — different but also photogenic), Daisho-in Temple (free, short hike), local oysters and momiji manju (maple-leaf cakes). Avoid the ropeway to Misen unless energy is high — adds 2h+. | Walk the island |
-| 13:00 | Ferry back to Miyajimaguchi | |
-| 13:30 | JR back to Hiroshima | |
-| 14:00–17:30 | **Hiroshima Peace Memorial Park** — A-Bomb Dome (Genbaku Dome, free, just outside park), Peace Memorial Museum (¥200, allow 1.5–2h). Hiroshima-style okonomiyaki for lunch (Okonomimura — 6F building packed with stalls, near Hondori arcade). | Tram from Hiroshima Station (¥220) or 25 min walk |
-| 17:30 | **Depart Hiroshima → Shin-Osaka** (Nozomi/Sakura) | ¥9,810 |
-| ~18:20–18:40 | Arrive Shin-Osaka → Metro → apartment | |
-| ~19:30 | Home. Pack for Fukuoka (checkout tomorrow 11:00). | |
+**Options to decide between:**
 
-**Shinkansen cost if buying individually (all 4 round trip):** ¥9,810 × 2 × 4 = **¥78,480**
+- **Kobe** (40 min by Hankyu/JR from Osaka, ~¥410–560) — Kitano-cho foreign residences, Meriken Park, Kobe beef lunch. Easy half-day; can combine with afternoon back in Osaka.
+- **Nara** (45 min by Kintetsu from Namba, ~¥570) — deer park, Todai-ji (¥600 entry), Kasuga Taisha, Naramachi. Best as a morning trip (deer are more active, crowds lighter). Back by early afternoon.
+- **Arashiyama / west Kyoto** (Hankyu from Osaka Umeda → Kyoto Kawaramachi, then bus; ~1h total) — bamboo grove, Tenryu-ji (¥500), Togetsukyo Bridge, Jojakko-ji. Good if Kyoto east-side day felt rushed.
+- **Osaka local** — Dotonbori/Shinsaibashi properly, Kuromon Market, Den Den Town (electronics/anime), Osaka Castle interior (skipped earlier?), rest and laundry.
 
-TODO: **Buy Shin-Osaka↔Hiroshima Shinkansen tickets** at Shin-Osaka Green Window on 13 or 14 Jul. (Kansai Pass has no rail coverage.)
-TODO: **Check tide table for 15 Jul 2026 at Miyajima** — search "Miyajima tide table July 2026" on the JMA or Tide-Forecast.com. High tide ± 2h is the target for visiting the torii.
-TODO: **Buy Shinkansen tickets** for this leg if not covered by Kansai Pass (on 13 or 14 Jul at Shin-Osaka Green Window).
-⚠️ This is the longest day — return late, then pack for Fukuoka (checkout 11:00 tomorrow). Set things out the night before.
+TODO: **Decide what to do with 15 Jul** — pick one option above (or rest day).
+
+⚠️ Whatever you do, pack for Fukuoka tonight — checkout tomorrow at 11:00.
 
 ---
 
@@ -621,4 +612,3 @@ Evening: Explore Seomyeon (Busan's central nightlife district) or Haeundae (beac
 - **USJ app:** Download and add booking before 14 Jul. ATT reservation is inside the app.
 - **Incheon airport:** ibis Styles is at T2 — return flight departs T1. Free shuttle ~18 min, starts ~05:00.
 - **Kakao T (Korea):** Install and register international Visa/Mastercard before landing in Korea. Best taxi app in Korea — avoids communication barriers.
-- **Miyajima tidal timing (15 Jul):** Check tide table in advance. High-tide torii visit is the iconic photo; low-tide means you can walk to the gate — equally worth seeing but very different.
