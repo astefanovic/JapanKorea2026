@@ -454,13 +454,7 @@ Drive south via Jeju's cross-island road (Route 16 / 1100 Road or Route 11):
 | 17:50 | **Depart HKG → MNL — UO534** · 2h 20m |
 | 20:10 | Arrive Manila |
 
-⚠️ **CRITICAL — Angela's MNL→MEL ticket (booking EK7ZKG):**
-Angela has a through-booking (EK7ZKG) that starts with an ICN→MNL segment she is **not taking** (she's routing via Jeju→HKG→MNL on booking YBTTYT). Airlines automatically cancel all subsequent connecting segments when a prior leg is no-shown. **Her MNL→MEL leg may be cancelled before she uses it.**
-Ceci avoided this problem by buying a standalone MNL→MEL ticket (ref LDSH4Y). Angela needs the same fix:
-- Contact airline to either (a) cancel the ICN→MNL segment while retaining MNL→MEL, or (b) buy a new standalone MNL→MEL ticket.
-**This needs to be resolved before 6 Jul.** Escalate as urgent — see Q8.
-
-TODO: **No Manila accommodation found for Angela & Ceci 20–23 Jul.** Book before departure — see Q9.
+✅ Angela's MNL→MEL ticket resolved. ✅ Manila accommodation confirmed.
 
 ---
 
@@ -598,11 +592,11 @@ Evening: Explore Seomyeon (Busan's central nightlife district) or Haeundae (beac
 
 | # | Issue | Priority | Action |
 |---|-------|----------|--------|
-| 1 | ⚠️ **Angela's MNL→MEL ticket (EK7ZKG)** — ICN→MNL no-show will trigger auto-cancellation of her MNL→MEL leg | 🔴 Urgent | Contact airline to protect the MNL→MEL segment, or buy a new standalone MNL→MEL ticket (as Ceci did, ref LDSH4Y) |
-| 2 | ⚠️ **Manila accommodation** — no hotel found for Angela & Ceci, 20–23 Jul | 🔴 Urgent | Book accommodation in Manila |
-| 3 | ⚠️ **Jeju car rental** — not in expenses tracker, likely not booked | 🔴 Urgent | Book now — July peak, cars sell out. Confirm which driver(s) and verify IDP status. |
-| 4 | ⚠️ **IDP (International Driving Permit)** — required to rent/drive in Korea | 🔴 Urgent | Driver(s) obtain from RACV/NRMA/RAA before 6 Jul. Present with Australian licence at car rental. |
-| 5 | ⚠️ **K-ETA** (Aleks & Ralph) — required for Korea entry including Jeju | 🟡 Soon | Apply at k-eta.go.kr (~KRW 10,000, quick approval) |
+| 1 | ✅ **Angela's MNL→MEL ticket (EK7ZKG)** | ✅ Resolved | — |
+| 2 | ✅ **Manila accommodation (Angela & Ceci, 20–23 Jul)** | ✅ Resolved | — |
+| 3 | ⏸ **Jeju car rental** — not in expenses tracker | ⏸ Deferred | Book before departure. July peak season. Confirm driver(s) and IDP when actioning. |
+| 4 | ⏸ **IDP (International Driving Permit)** — required to rent/drive in Korea | ⏸ Deferred with #3 | Driver(s) obtain from RACV/NRMA/RAA. Present with Australian licence at car rental counter. |
+| 5 | ⚠️ **K-ETA** (Aleks & Ralph) — not yet applied | 🔴 Do now | Apply at k-eta.go.kr — ~KRW 10,000, usually approved within minutes. Trip departs in 6 days. |
 | 6 | ⚠️ **Kimono rental** (13 Jul Kyoto) — not confirmed as booked | 🟡 Soon | Book online now: Kyoto Kimono Rental Wargo (wargo.jp, English, from ¥3,000), or Okamoto Kimono Rental Gion |
 | 7 | ⚠️ **Shinkansen tickets** (4 legs) — none confirmed as purchased | 🟡 On arrival | Buy at Shinagawa/Shin-Osaka Green Windows. Buy Ghibli + Tokyo→Osaka tickets on 7 or 8 Jul. |
 | 8 | ⚠️ **Kansai Pass** — type and coverage unknown | 🟡 Soon | Confirm what was booked (which pass type, how many days, which lines covered) — determines whether Hiroshima and Fukuoka Shinkansen legs need to be purchased separately |
