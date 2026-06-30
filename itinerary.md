@@ -17,10 +17,18 @@ All legs below need separate reserved-seat tickets. Buy at JR "Midori no Madoguc
 |-----|------|-------|----------|-------------|-------|
 | Ghibli day trip | 9 Jul | Shinagawa ↔ Nagoya (Nozomi) | 1h 30m each way | ¥11,090 each way | ⚠️ TODO — buy 7 or 8 Jul |
 | Tokyo → Osaka | 12 Jul | Shinagawa → Shin-Osaka (Nozomi) | 2h 10m | ¥13,750 | ⚠️ TODO — buy 7 or 8 Jul |
-| Osaka ↔ Hiroshima | 15 Jul | Shin-Osaka ↔ Hiroshima (Nozomi/Sakura) | 50m / 1h 10m | ¥9,810 each way | ⚠️ TODO — check Kansai Pass first |
-| Osaka → Fukuoka | 16 Jul | Shin-Osaka → Hakata (Nozomi) | 2h 15m | ¥15,310 | ⚠️ TODO — check Kansai Pass first |
+| Osaka ↔ Hiroshima | 15 Jul | Shin-Osaka ↔ Hiroshima (Nozomi/Sakura) | 50m / 1h 10m | ¥9,810 each way | ⚠️ TODO — buy at Shin-Osaka Green Window 13 or 14 Jul |
+| Osaka → Fukuoka | 16 Jul | Shin-Osaka → Hakata (Nozomi) | 2h 15m | ¥15,310 | ⚠️ TODO — buy at Shin-Osaka Green Window 13 or 14 Jul |
 
-Total Shinkansen spend (all 4, all legs, if buying individually): **~¥283,000 (~AUD 2,830)**
+Total Shinkansen spend (all 4, all legs, buying individually): **~¥283,000 (~AUD 2,830)**
+
+### Kansai Pass — "Have Fun in Kansai 1-Week Free Pass"
+4 tickets (one per person), order 1164184078 — tickets in Drive folder. **This is a tourist attractions pass, not a rail pass.** Each ticket covers **3 facilities** from the partner list within a **7-day window** starting from first scan. No trains, no buses, no Shinkansen.
+
+- **Activate on 12 Jul** (first day in Osaka) — 7-day window covers 12–18 Jul, the entire Osaka/Kyoto/Fukuoka stretch.
+- Each person gets 3 facility entries. USJ is already separately booked, so the pass frees up budget for other paid attractions.
+- Check the full facility list at travelcontentsapp.com/have-fun/have-fun-in-kansai-1-week-free-pass/en — includes places like Kyoto Tower, Osaka Aquarium, Abeno Harukas, various museums.
+- Same facility can only be used once per person. Cannot re-enter.
 
 > **Luggage rule:** Any bag where length + width + height exceeds 160 cm must have a reserved "Oversized Baggage Area" seat (¥1,000/bag, booked with the ticket). Much easier: use **Yamato Transport (Takuhaibin)** hotel-to-hotel forwarding — arrange 2 days ahead at the hotel front desk or any convenience store. Strongly recommended for Tokyo → Osaka (12 Jul).
 
@@ -287,7 +295,7 @@ TODO: **Buy Shinagawa→Shin-Osaka Shinkansen tickets** (4 reserved seats) on 7 
 
 **Sleep:** Osaka apartment (long day, return ~20:00)
 
-> ⚠️ **Check Kansai Pass coverage first.** If it's a JR West Kansai-Hiroshima Area Pass or Kansai Wide Area Pass, the Sakura/Hikari Shinkansen on this route may be included (Nozomi is never covered by any pass). Verify — if covered, this saves ~¥78,000 in tickets for the group.
+> Kansai Pass confirmed as an **attractions voucher only** — no rail coverage. All Shinkansen tickets for this day must be purchased individually at Shin-Osaka Green Window (do on 13 or 14 Jul).
 
 | Time | Activity | Transport |
 |------|----------|-----------|
@@ -307,7 +315,7 @@ TODO: **Buy Shinagawa→Shin-Osaka Shinkansen tickets** (4 reserved seats) on 7 
 
 **Shinkansen cost if buying individually (all 4 round trip):** ¥9,810 × 2 × 4 = **¥78,480**
 
-TODO (Q5): **Verify Kansai Pass coverage** for Shin-Osaka↔Hiroshima on Sakura/Hikari. The Kansai Pass type changes whether you need to buy tickets for this day.
+TODO: **Buy Shin-Osaka↔Hiroshima Shinkansen tickets** at Shin-Osaka Green Window on 13 or 14 Jul. (Kansai Pass has no rail coverage.)
 TODO: **Check tide table for 15 Jul 2026 at Miyajima** — search "Miyajima tide table July 2026" on the JMA or Tide-Forecast.com. High tide ± 2h is the target for visiting the torii.
 TODO: **Buy Shinkansen tickets** for this leg if not covered by Kansai Pass (on 13 or 14 Jul at Shin-Osaka Green Window).
 ⚠️ This is the longest day — return late, then pack for Fukuoka (checkout 11:00 tomorrow). Set things out the night before.
@@ -319,7 +327,7 @@ TODO: **Buy Shinkansen tickets** for this leg if not covered by Kansai Pass (on 
 **Check out:** Osaka apartment by **11:00**
 **Check in:** Hotel Trad Hakata — from **15:00** (latest midnight)
 
-> ⚠️ **Check Kansai Pass coverage** for Shin-Osaka→Hakata on Sakura/Hikari. This is the most expensive individual leg (¥15,310/person) and may be covered.
+> Kansai Pass is an attractions voucher — no rail coverage. Shinkansen tickets must be purchased individually.
 
 | Time | Event |
 |------|-------|
@@ -334,7 +342,7 @@ TODO: **Buy Shinkansen tickets** for this leg if not covered by Kansai Pass (on 
 | Evening | **Hakata old town walk** → **Nakasu Yatai food stalls** — 7pm onwards along the Naka River. Sit at a yatai (open-air stall), order Hakata ramen (thin noodles, milky pork broth — totally different from Tokyo ramen), yakitori, mentaiko dishes. Budget ¥2,000–3,000/person at the stalls. |
 
 **Shinkansen cost (if individual):** ¥15,310 × 4 = **¥61,240** (~AUD 612)
-TODO: **Buy Shin-Osaka→Hakata Shinkansen tickets** (after confirming Kansai Pass coverage). Buy in Osaka on 13 or 14 Jul.
+TODO: **Buy Shin-Osaka→Hakata Shinkansen tickets** at Shin-Osaka Green Window on 13 or 14 Jul.
 
 ---
 
@@ -597,7 +605,7 @@ Evening: Explore Seomyeon (Busan's central nightlife district) or Haeundae (beac
 | 5 | ✅ **K-ETA** (Aleks & Ralph) — not required for Australians | ✅ No action | Visa-exempt. Skipping K-ETA is fine — just fill out the paper arrival card on the plane to Jeju. |
 | 6 | ⚠️ **Kimono rental** (13 Jul Kyoto) — not confirmed as booked | 🟡 Soon | Book online now: Kyoto Kimono Rental Wargo (wargo.jp, English, from ¥3,000), or Okamoto Kimono Rental Gion |
 | 7 | ⚠️ **Shinkansen tickets** (4 legs) — none confirmed as purchased | 🟡 On arrival | Buy at Shinagawa/Shin-Osaka Green Windows. Buy Ghibli + Tokyo→Osaka tickets on 7 or 8 Jul. |
-| 8 | ⚠️ **Kansai Pass** — type and coverage unknown | 🟡 Soon | Confirm what was booked (which pass type, how many days, which lines covered) — determines whether Hiroshima and Fukuoka Shinkansen legs need to be purchased separately |
+| 8 | ✅ **Kansai Pass** — confirmed as attractions pass, not rail | ✅ No Shinkansen coverage | "Have Fun in Kansai 1-Week Free Pass" (Trip.com, order 1164184078) — 4 tickets × 3 facilities each, 7-day window from first scan. **Zero rail coverage.** All 4 Shinkansen legs must be purchased individually. Activate on 12 Jul (first day in Osaka). |
 | 9 | ⚠️ **USJ Super Nintendo World ATT** — not confirmed as reserved | 🟡 7 Jul onward | Log into USJ app with booking. Reserve Area Timed Entry for 14 Jul as soon as the app allows (typically opens 7 days before or from park open on the day). |
 | 10 | ⚠️ **Disneyland tickets pending** — marked pending in expenses tracker | 🟡 Soon | See Q1 and Q2 below |
 | 11 | ⚠️ **ZIYOLK guesthouse** — mentioned in planning docs but not in bookings audit | 🟡 Soon | Confirm: is ZIYOLK actually booked, or is Hotel Manu the only Seoul accommodation? (Booking audit only shows Hotel Manu ref 13926422366537660218) |
