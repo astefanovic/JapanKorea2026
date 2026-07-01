@@ -85,7 +85,7 @@ TODO: **Buy Shinkansen tickets** (Ghibli 9 Jul return + Tokyo→Osaka 12 Jul) fi
 | **17:00** | **Ralph + Angela → Maihama (Disneyland)** | JR Chuo-Sobu Line: Shinjuku → Tokyo (20 min), JR Keiyo Line → Maihama (15 min). Total ~35–40 min, ¥620. |
 | 17:00+ | **Tokyo Disneyland — After 5 Summer Passport** ✅ BOOKED (ref A00590693309) | Valid from 17:00 only. Park closes 22:00 in July. |
 
-**Aleks & Ceci on 7 Jul:** Evening Golden Gai / Omoide Yokocho / Shinjuku wander. Or join Ralph and Angela at Disneyland if tickets are sorted — see Q1 below.
+**Aleks & Ceci on 7 Jul:** Dinner — robatayaki or sushi omakase (TBD, see `daily-schedule.md`), then Golden Gai / Kabukicho wander. Omoide Yokocho is saved for the whole group on 11 Jul instead. Or join Ralph and Angela at Disneyland if tickets are sorted — see Q1 below.
 
 **Last trains from Maihama:** JR Keiyo Line → Tokyo → Shinjuku, last ~00:05 from Maihama.
 

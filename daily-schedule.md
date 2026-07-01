@@ -66,8 +66,8 @@
 | 16:15 | ⚠️ Ralph & Angela depart for Maihama | Ralph, Angela | JR Chuo-Sobu: Shinjuku → Tokyo (20 min) → JR Keiyo: Tokyo → Maihama (15 min). ~35 min total, ¥620 |
 | 16:15 | **Golden Gai** — explore the alleys | Aleks, Ceci | 5 min walk from Shinjuku east exit. Bars open ~18:00. |
 | **17:00** | ⚠️ **Tokyo Disneyland — gate entry** (After 5 Summer Passport, ref A00590693309) | Ralph, Angela | Valid from 17:00 only. Park closes 22:00. |
-| 18:00 | 🍜 Dinner — **Omoide Yokocho** (Memory Lane) | Aleks, Ceci | Tiny yakitori alley, Shinjuku west exit under the tracks. ¥2,000–3,000 incl drinks. |
-| 19:00–22:00 | Shinjuku evening wander — Kabukicho, more Golden Gai bars | Aleks, Ceci | |
+| 18:30 | 🍜 ❓ Dinner — **Robatayaki or sushi omakase** (choose between) | Aleks, Ceci | Robatayaki: theatrical open-hearth grill, food served on wooden paddles, ~¥4,000–6,000/person, good walk-in options in Kabukicho/Shinjuku. Sushi omakase: chef's-counter, quieter and pricier (~¥8,000–15,000/person), needs advance booking — reserve now if chosen. Omoide Yokocho is being saved for the whole group on 11 Jul instead. |
+| 19:30–22:00 | Shinjuku evening wander — Kabukicho, Golden Gai bars | Aleks, Ceci | |
 | ~22:30 | Last trains from Maihama (last JR Keiyo ~00:05) | Ralph, Angela | JR Keiyo → Tokyo → Shinjuku, ~40 min |
 | ~23:15 | Back at hotel | Ralph, Angela | |
 
@@ -207,7 +207,8 @@
 | 16:00 | JR Shonan-Shinjuku: Kamakura → Shinjuku (55 min, ¥970) | |
 | 17:00 | Arrive Shinjuku | |
 | 17:00–18:30 | Rest at hotel, freshen up | |
-| 18:30 | 🍜 Dinner — **Golden Gai** proper evening | Bars open 18:00–19:00. This is the last proper chance before Osaka. ¥2,000–4,000 with drinks. |
+| 18:30 | 🍜 **Dinner — Omoide Yokocho (Memory Lane), all 4** | Tiny yakitori alley, Shinjuku west exit under the tracks. ¥2,000–3,000/person incl drinks. This is the last proper Tokyo evening before Osaka — the whole group together. |
+| 19:30–21:00 | Optional — **Golden Gai** for drinks after | 5 min walk from Omoide Yokocho (opposite side of Shinjuku Station). Bars open ~18:00. |
 | 21:00 | ⚠️ Pack bags — checkout tomorrow 10:00 | Luggage forwarding bags should already be collected (arranged today or tomorrow morning at hotel desk) |
 
 ---
@@ -576,3 +577,4 @@ Fill these in before 6 Jul:
 | L | **Home departure time (Day 1)** | Day 1 | ❓ Adjust 03:30 departure based on actual suburb to airport transit time |
 | N | **Ceci Hong Kong TWOV conditions** | Day 16 | ❓ Confirm with HK Express/HK Immigration whether the 8h10m CJU→HKG→MNL connection qualifies for visa-free airside transit for a Vietnamese ordinary passport, and whether pre-arrangement is needed |
 | O | **Ceci entry to Philippines** | Day 16 onward | ❓ Verify Vietnamese-passport entry rules for Manila with Philippine Bureau of Immigration |
+| P | **Aleks & Ceci 7 Jul dinner: robatayaki or sushi omakase?** | Day 2 | ❓ Decide between the two. If sushi omakase, book a table now — good counters sell out. |
