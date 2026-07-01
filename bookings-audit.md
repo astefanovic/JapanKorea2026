@@ -252,6 +252,23 @@
 
 ## Issues
 
+### 🚨 Issue #0 — Angela & Ceci: Japan Visa Not Confirmed
+
+Angela (Filipino passport) and Ceci (Vietnamese passport) are **not** visa-exempt for Japan — unlike Aleks & Ralph (Australian). No mention of a Japan visa exists anywhere in this booking set.
+
+- **Filipino passport:** tourist visa required, no waiver/eVisa/VOA. Standard processing ~5 business days minimum, 2–4 weeks in peak season, via JVAC (VFS Global).
+- **Vietnamese passport:** tourist visa required, no waiver/VOA. Standard processing ~9 business days minimum.
+- Visa must be issued and in the passport **before check-in** for D7 219 at MEL on 6 Jul — this is enforced by the airline at check-in, not just at Japanese immigration.
+
+Given the trip departs in days, confirm immediately whether these visas are already issued. If not, this is the top priority ahead of any other trip planning.
+
+Secondary, lower-severity items also surfaced from the passport check:
+- Jeju entry (18 Jul) is fine for both — covered by Jeju's visa-waiver program since the FUK→CJU flight lands direct.
+- Hong Kong transit (20 Jul): Angela is visa-free regardless; Ceci needs to stay airside during the 8h10m layover to qualify for visa-free transit — worth confirming TWOV conditions with HK Express.
+- Ceci entering Manila as a Vietnamese passport holder (20–23 Jul) — not verified, check with Philippine Bureau of Immigration.
+
+---
+
 ### ⚠️ Issue #1 — Airport Hotel (T2) vs Departure Gate (T1)
 
 The ibis Styles is at **Incheon Terminal 2**. The Cebu Pacific return flight (**5J 185**) departs from **Terminal 1**.
