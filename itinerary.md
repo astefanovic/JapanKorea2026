@@ -111,6 +111,19 @@ TODO (Q1): **Decide whether Aleks & Ceci are joining Disneyland on 7 Jul.** Chec
 | Harajuku | Takeshita Street, Meiji Shrine, Yoyogi Park, Cat Street | JR Yamanote: Shinjuku → Harajuku (4 min, ¥160) |
 | Shibuya | Scramble Crossing, Shibuya Sky (¥2,000, book online at shibuya-sky.com), Daikanyama | JR Yamanote: Shinjuku → Shibuya (7 min, ¥160) |
 
+**Ceci's nail appointment:** ❓ **Sin Den** — 3-9-3 Jingumae, Shibuya-ku (Omotesando area). Fully English-operated hair/makeup/nail salon, stylists have all lived/worked overseas. Book via sinden.com or +81 3-3405-4409. Conveniently sits right between Harajuku and Shibuya on the route above — see `daily-schedule.md` for suggested timing (~13:00–15:00, TBC once booked).
+
+**Aleks — solo options while Ceci's at Sin Den** (all ~10–15 min walk of Omotesando/Jingumae): Omotesando architecture walk (Omotesando Hills, Prada Aoyama), Design Festa Gallery (free indie art gallery), Cat Street vintage/thrift shops (Chicago Thrift, RAGTAG), Nezu Museum (¥1,300 — art + traditional garden, quieter than Meiji Shrine), or just coffee at Omotesando Koffee.
+
+**🔀 Niche/further-out alternatives** — if swapping the standard Harajuku/Shibuya block for something less touristy (this day, or another free day):
+| Neighborhood | Vibe | Transport from Shinjuku |
+|--------------|------|--------------------------|
+| Shimokitazawa | Vintage clothing, vinyl records, indie theatre/live music, laid-back cafes. Top Coat's other English-friendly nail branch is here too. | Keio Inokashira Line via Shibuya, ~15 min from Shibuya |
+| Yanaka | Old Tokyo shitamachi — Yanaka Cemetery walk, cat-lined backstreets, Yanaka Ginza market | ~25 min via Nippori |
+| Nakameguro | Meguro River canal walk, boutique cafes and small fashion labels | ~15 min from Shibuya |
+| Koenji | Punk/vintage clothing, dense secondhand shops, dive bars, indie music scene | JR Chuo Line, ~10 min |
+| Kichijoji | Inokashira Park (rowboats), Harmonica Yokocho retro alley, independent shops | ~20 min |
+
 ---
 
 ### Day 4 — Thu 9 Jul · Ghibli Park Day Trip (all 4) — Nagoya
