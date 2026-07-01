@@ -41,8 +41,8 @@ Buy at Gimhae Airport (PUS) arrivals hall, GS25 or CU convenience store. ~KRW 4,
 ### Korea — Entry (Aleks & Ralph)
 Australians are visa-exempt for South Korea (90 days). **K-ETA is not required.** Fill out the paper arrival card on the plane before landing at Jeju — name, passport number, Airbnb address, purpose of visit. Takes 3 minutes.
 
-### ⚠️ Japan & Korea — Entry (Angela & Ceci)
-Angela (Filipino) and Ceci (Vietnamese) are **not** visa-exempt for Japan — a tourist visa must be obtained and in the passport before check-in for the 6 Jul Melbourne flight. See `bookings-audit.md` Issue #0 and `daily-schedule.md` critical alert for full detail. Jeju entry is separately covered by Jeju's own visa-waiver program (direct CJU arrival), so no extra Korean visa is needed for that leg.
+### Japan & Korea — Entry (Angela & Ceci)
+Angela (Filipino) and Ceci (Vietnamese) are **not** visa-exempt for Japan — unlike Aleks & Ralph. ✅ Both have their Japan tourist visas already issued and in-hand. Jeju entry is separately covered by Jeju's own visa-waiver program (direct CJU arrival), so no extra Korean visa is needed for that leg. See `bookings-audit.md` Issue #0 for remaining lower-priority notes (Hong Kong transit for Ceci, Manila entry for Ceci).
 
 ---
 

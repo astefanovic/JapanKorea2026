@@ -5,18 +5,16 @@
 
 ---
 
-## 🚨 CRITICAL — Passport & Visa Alert (read before anything else)
+## Passport & Visa Notes
 
-Angela (Filipino passport) and Ceci (Vietnamese passport) are **not** visa-exempt for Japan the way Aleks & Ralph (Australian) are. Nothing else in this trip matters if this isn't resolved.
+✅ **Japan visas for Angela and Ceci are confirmed issued and in-hand.** No action needed for the 6 Jul Japan entry.
 
 | Leg | Angela (Filipino) | Ceci (Vietnamese) |
 |-----|--------------------|--------------------|
-| **Japan entry (6 Jul, Day 1)** | ⚠️ Tourist visa required — no waiver, no eVisa/VOA. Must be in passport before MEL check-in. Standard processing ~5 business days (2–4 weeks in peak season). | ⚠️ Tourist visa required — no waiver, no VOA. Must be in passport before MEL check-in. Standard processing ~9 business days minimum. |
+| **Japan entry (6 Jul, Day 1)** | ✅ Visa confirmed in-hand. | ✅ Visa confirmed in-hand. |
 | **Jeju entry (18 Jul, Day 13)** | ✅ Covered by Jeju's visa-waiver program — flight lands direct at CJU without transiting mainland Korea. | ✅ Same — covered, provided arrival stays direct to CJU. |
 | **Hong Kong transit (20 Jul, Day 16)** | ✅ Visa-free in HK up to 14 days, even leaving the airport. | ⚠️ Ordinary passport needs a HK visa unless transiting airside within 24h — 8h10m layover fits, but must not leave the terminal. Confirm TWOV conditions with HK Express/HK Immigration. |
 | **Manila entry (20–23 Jul)** | ✅ Own passport, no issue. | ❓ Unverified — check Philippine Bureau of Immigration for Vietnamese-passport entry rules. |
-
-⚠️ **Given today's date, if Japan visas for Angela and Ceci are not already issued and in-hand, this needs to be resolved as the #1 priority — ahead of any other trip planning.**
 
 ---
 
@@ -29,7 +27,7 @@ Angela (Filipino passport) and Ceci (Vietnamese passport) are **not** visa-exemp
 | 03:00 | Wake, final bag check | |
 | 03:30 | Depart for MEL T2 | ❓ Adjust departure based on your suburb — allow 30–50 min |
 | 03:45 | Arrive MEL T2 — AirAsia check-in | 2.5h before departure |
-| 04:00–05:30 | ⚠️ Check-in + bag drop + immigration + security | Allow 90 min — budget carrier queues can be slow. **Angela & Ceci: Japan visa must already be in your passport — this is a boarding requirement, checked at MEL, not something handled at HND immigration. See critical alert at top of document.** |
+| 04:00–05:30 | Check-in + bag drop + immigration + security | Allow 90 min — budget carrier queues can be slow. Angela & Ceci: bring Japan visa passports — already confirmed issued and in-hand. |
 | 05:30 | Airside gate lounge | |
 | 06:15 | ⚠️ **Depart MEL — D7 219** | |
 | 12:55 | Arrive KUL — 1h 15m layover | Stay airside |
@@ -576,6 +574,5 @@ Fill these in before 6 Jul:
 | J | **Ceci meeting point at MNL T3** | Day 19 | ❓ Agree before parting in Jeju so there's no confusion on arrival |
 | K | **Jeju rental car booking + reference** | Days 13–16 | ⚠️ Not confirmed in bookings tracker — book before departure if not done |
 | L | **Home departure time (Day 1)** | Day 1 | ❓ Adjust 03:30 departure based on actual suburb to airport transit time |
-| M | **Angela & Ceci Japan visas** | Day 1 | 🚨 Check whether already issued — see critical alert at top of document. Highest priority item in this entire trip. |
 | N | **Ceci Hong Kong TWOV conditions** | Day 16 | ❓ Confirm with HK Express/HK Immigration whether the 8h10m CJU→HKG→MNL connection qualifies for visa-free airside transit for a Vietnamese ordinary passport, and whether pre-arrangement is needed |
 | O | **Ceci entry to Philippines** | Day 16 onward | ❓ Verify Vietnamese-passport entry rules for Manila with Philippine Bureau of Immigration |

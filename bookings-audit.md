@@ -252,15 +252,9 @@
 
 ## Issues
 
-### 🚨 Issue #0 — Angela & Ceci: Japan Visa Not Confirmed
+### ✅ Issue #0 — Angela & Ceci: Japan Visa — Resolved
 
-Angela (Filipino passport) and Ceci (Vietnamese passport) are **not** visa-exempt for Japan — unlike Aleks & Ralph (Australian). No mention of a Japan visa exists anywhere in this booking set.
-
-- **Filipino passport:** tourist visa required, no waiver/eVisa/VOA. Standard processing ~5 business days minimum, 2–4 weeks in peak season, via JVAC (VFS Global).
-- **Vietnamese passport:** tourist visa required, no waiver/VOA. Standard processing ~9 business days minimum.
-- Visa must be issued and in the passport **before check-in** for D7 219 at MEL on 6 Jul — this is enforced by the airline at check-in, not just at Japanese immigration.
-
-Given the trip departs in days, confirm immediately whether these visas are already issued. If not, this is the top priority ahead of any other trip planning.
+Angela (Filipino passport) and Ceci (Vietnamese passport) are **not** visa-exempt for Japan — unlike Aleks & Ralph (Australian). **Confirmed: both already have their Japan visas issued and in-hand.** No further action needed for the 6 Jul Japan entry.
 
 Secondary, lower-severity items also surfaced from the passport check:
 - Jeju entry (18 Jul) is fine for both — covered by Jeju's visa-waiver program since the FUK→CJU flight lands direct.
