@@ -4,8 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Japan &amp; Korea 2026 — Interactive Itinerary</title>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="anonymous"/>
 <style>
   :root{
     --bg:#0f1115; --panel:#171a21; --panel2:#1e2230; --ink:#e8eaf0; --muted:#9aa3b2;
@@ -114,8 +113,7 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-  integrity="sha256-20nQCchB9co0qIjJ2t4th3PmVN1jW+Fbqb+SLC7NRJ6="  crossorigin=""></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin="anonymous"></script>
 <script>
 /* ---------- place coordinates ---------- */
 const P = {
@@ -480,6 +478,9 @@ document.querySelectorAll('section.day').forEach(s=>io.observe(s));
 
 /* first paint */
 showMarkers(DAYS[0].markers,'');
+/* map can render at 0-size before layout settles (sticky/flex); force a recalc */
+setTimeout(()=>map.invalidateSize(),200);
+window.addEventListener('load',()=>setTimeout(()=>map.invalidateSize(),300));
 </script>
 </body>
 </html>
