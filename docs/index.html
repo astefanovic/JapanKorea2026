@@ -71,9 +71,22 @@
     font-size:12px;font-weight:800;box-shadow:0 2px 6px #0009}
   .numi.alt{background:var(--accent2)}
   .numi.gold{background:var(--gold)}
+  .numi.home{background:var(--green);color:#0c1a12}
   .leaflet-tooltip.mtip{background:#0e1017;color:#e8eaf0;border:1px solid #2a2f3d;font-size:12px;
     box-shadow:0 4px 14px #0008}
   .leaflet-tooltip.mtip::before{display:none}
+  /* dark popup with destination photo */
+  .leaflet-popup-content-wrapper{background:#12141a;color:var(--ink);border:1px solid var(--line);
+    border-radius:12px;box-shadow:0 10px 34px #000a}
+  .leaflet-popup-content{margin:0;width:200px !important}
+  .leaflet-popup-tip{background:#12141a;border:1px solid var(--line)}
+  .leaflet-popup-close-button{color:var(--muted) !important}
+  .mpop .mimg{width:100%;height:118px;border-radius:11px 11px 0 0;overflow:hidden;background:#0b0d11;
+    display:flex;align-items:center;justify-content:center}
+  .mpop .mimg img{width:100%;height:100%;object-fit:cover;display:block}
+  .mpop .mld{font-size:10.5px;color:#6b7484;letter-spacing:.3px}
+  .mpop .mcap{padding:9px 11px 10px;font-size:13px;line-height:1.35}
+  .mpop .mcap .sub{display:block;color:var(--muted);font-size:11px;margin-top:2px}
   @media (max-width:860px){
     .wrap{flex-direction:column}
     .mapcol{position:sticky;top:49px;height:46vh;width:100%;flex:none;z-index:800;
@@ -102,13 +115,14 @@
       <p>Three things are still up to the group: <b>Aleks &amp; Ceci’s Day 3</b>, the
         <b>two full-day Tokyo outings</b> (Days 5 &amp; 6 — pick any two from the pool), and the
         <b>Osaka free day</b> (Day 10).</p>
-      <span class="hint">👆 Tap option chips to preview them on the map</span>
+      <span class="hint">👆 Tap a map point for a photo · tap option chips to compare choices</span>
     </div>
     <div id="days"></div>
     <div class="foot">
       Built from <code>daily-schedule.md</code>. Times assume the 9am-wake version.
       Fixed anchors (flights, Ghibli, park openings, kimono slot) can’t move; everything else is a comfortable pace.
-      <br>Maps © OpenStreetMap contributors, tiles © CARTO.
+      <br>Maps © OpenStreetMap contributors, tiles © CARTO. Destination photos via Wikipedia.
+      The first (green 🏠) point each day is your accommodation.
     </div>
   </div>
 </div>
@@ -150,22 +164,28 @@ const P = {
   haedong:[35.1885,129.2233], gukje:[35.1010,129.0260], haeundae:[35.1587,129.1604],
   busanstn:[35.1150,129.0420],
   seoulstn:[37.5556,126.9707], bukchon:[37.5826,126.9830], myeongdong:[37.5637,126.9850],
-  gyeongbok:[37.5796,126.9770], icn:[37.4602,126.4407], manila:[14.5086,121.0198]
+  gyeongbok:[37.5796,126.9770], icn:[37.4602,126.4407], manila:[14.5086,121.0198],
+  yamashita:[35.4441,139.6512], cupnoodles:[35.4553,139.6377],
+  /* accommodations */
+  onsen:[35.7016,139.7036], manu:[37.5603,126.9843]
 };
-const m=(coord,label,time)=>({coord,label,time});
+// destination marker: coord, label, time, wikiTitle (for photo)
+const m=(coord,label,time,wiki)=>({coord,label,time,wiki});
+// accommodation marker: green home pin, no photo
+const acc=(coord,label)=>({coord,label:"🏠 "+label,home:true});
 
 /* ---------- scenes ---------- */
 const DAYS = [
  {n:1,date:"Mon 6 Jul",title:"Fly Melbourne → Tokyo",fixed:true,
-  markers:[m(P.hnd,"Land HND T3","22:35"),m(P.shinjuku,"Onsen House, Shinjuku","00:15")],
+  markers:[m(P.hnd,"Land HND Terminal 3","22:35","Haneda Airport"),acc(P.onsen,"Onsen House, Shinjuku")],
   tl:[["22:35","Arrive Haneda T3 — immigration, Suica, cash"],
       ["23:30","Keikyu → Shinagawa → JR Yamanote → Shinjuku"],
       ["00:15","Check in, sleep",]],
   note:"Long travel day. Bags 20kg + 7kg carry-on. Withdraw ¥30–50k at the 7-Eleven ATM in arrivals."},
 
  {n:2,date:"Tue 7 Jul",title:"Shinkansen tickets · Gyoen · Akihabara",who:"All 4 · Disneyland eve (Ralph & Angela)",
-  markers:[m(P.shinagawa,"Buy Shinkansen tickets","10:20"),m(P.gyoen,"Shinjuku Gyoen","11:20"),
-           m(P.akihabara,"Akihabara","14:00"),m(P.disneyland,"Disneyland (R&A)","17:00")],
+  markers:[acc(P.onsen,"Onsen House (base)"),m(P.shinagawa,"Shinkansen tickets","10:20","Shinagawa Station"),m(P.gyoen,"Shinjuku Gyoen","11:20","Shinjuku Gyoen National Garden"),
+           m(P.akihabara,"Akihabara","14:00","Akihabara"),m(P.goldengai,"Golden Gai (eve)","16:15","Golden Gai"),m(P.disneyland,"Disneyland — R&A","17:00","Tokyo Disneyland")],
   tl:[["09:00","Wake — lie-in after the late arrival"],
       ["10:20","Buy Shinkansen tickets @ Shinagawa Green Window",""],
       ["11:20","Shinjuku Gyoen (¥500)"],
@@ -177,8 +197,8 @@ const DAYS = [
 
  {n:3,date:"Wed 8 Jul",title:"DisneySea · Harajuku, nails & Shibuya",who:"Ralph & Angela: DisneySea · Aleks & Ceci: options below",
   pick:true,
-  markers:[m(P.disneysea,"DisneySea (R&A)","08:30"),m(P.meiji,"Meiji Shrine","10:15"),
-           m(P.sinden,"Sin Den — Ceci nails","12:30"),m(P.shibuya,"Shibuya","15:15")],
+  markers:[acc(P.onsen,"Onsen House (base)"),m(P.disneysea,"DisneySea — R&A","08:30","Tokyo DisneySea"),m(P.meiji,"Meiji Shrine","10:15","Meiji Shrine"),
+           m(P.sinden,"Sin Den — Ceci nails","12:30"),m(P.shibuya,"Shibuya","15:15","Shibuya Crossing")],
   tl:[["08:30","Ralph & Angela — DisneySea rope drop"],
       ["10:15","Aleks & Ceci — Meiji Shrine + Takeshita St"],
       ["12:30","Ceci: nail appointment @ Sin Den (English-run)"],
@@ -188,33 +208,33 @@ const DAYS = [
   optsLabel:"Aleks & Ceci — swap the afternoon block",
   options:[
     {label:"Harajuku + Shibuya",sub:"current plan",chosen:true,center:P.shibuya,zoom:14,
-     markers:[m(P.meiji,"Meiji Shrine"),m(P.sinden,"Sin Den nails"),m(P.omotesando,"Omotesando"),m(P.shibuya,"Shibuya"),m(P.daikanyama,"Daikanyama")],
+     markers:[m(P.meiji,"Meiji Shrine","","Meiji Shrine"),m(P.sinden,"Sin Den nails"),m(P.omotesando,"Omotesando","","Omotesando"),m(P.shibuya,"Shibuya","","Shibuya Crossing"),m(P.daikanyama,"Daikanyama","","Daikanyama")],
      blurb:"Meiji Shrine → Takeshita → nails at Sin Den → Shibuya Crossing → Shibuya Sky or Daikanyama.",
      tl:[["10:15","Meiji Shrine + Takeshita St"],["12:30","Sin Den nails / Aleks Omotesando"],["15:15","Shibuya + Daikanyama"]]},
     {label:"Shimokitazawa",sub:"vintage & vinyl",center:P.shimokita,zoom:15,
-     markers:[m(P.shimokita,"Shimokitazawa")],
+     markers:[m(P.shimokita,"Shimokitazawa","","Shimokitazawa")],
      blurb:"Thrift/vintage clothing, record shops, indie theatre, laid-back cafes. Top Coat’s other English nail branch is here too — could combine nails + neighbourhood.",
      tl:[["—","Browse vintage & vinyl, cafe-hop"],["—","Optional nails at Top Coat Shimokita"]]},
     {label:"Yanaka",sub:"old Tokyo",center:P.yanaka,zoom:15,
-     markers:[m(P.yanaka,"Yanaka")],
+     markers:[m(P.yanaka,"Yanaka","","Yanaka, Tokyo")],
      blurb:"Old ‘shitamachi’ Tokyo — cemetery walk, cat-lined backstreets, senbei shops, Yanaka Ginza market. Quiet and atmospheric.",
      tl:[["—","Yanaka Ginza + backstreets"],["—","Tea + senbei"]]},
     {label:"Nakameguro",sub:"canal & cafes",center:P.nakameguro,zoom:15,
-     markers:[m(P.nakameguro,"Nakameguro")],
+     markers:[m(P.nakameguro,"Nakameguro","","Nakameguro")],
      blurb:"Meguro River canal walk, boutique cafes and small fashion labels. Easy, stylish half-day.",
      tl:[["—","Canal walk"],["—","Cafes + boutiques"]]},
     {label:"Koenji",sub:"punk & thrift",center:P.koenji,zoom:15,
-     markers:[m(P.koenji,"Koenji")],
+     markers:[m(P.koenji,"Koenji","","Koenji")],
      blurb:"Tokyo’s punk/vintage neighbourhood — dense secondhand shops, dive bars, indie music.",
      tl:[["—","Secondhand shopping"],["—","Dive-bar hop"]]},
     {label:"Kichijoji",sub:"park & alleys",center:P.kichijoji,zoom:15,
-     markers:[m(P.kichijoji,"Kichijoji")],
+     markers:[m(P.kichijoji,"Kichijoji","","Kichijoji")],
      blurb:"Inokashira Park (rowboats), Harmonica Yokocho retro alley, indie shops. One of Tokyo’s most liveable areas.",
      tl:[["—","Inokashira Park"],["—","Harmonica Yokocho"]]}
   ]},
 
  {n:4,date:"Thu 9 Jul",title:"Ghibli Park day trip — Nagoya",who:"All 4",fixed:true,
-  markers:[m(P.shinagawa,"Nozomi from Shinagawa","09:45"),m(P.nagoya,"Nagoya","11:15"),m(P.ghibli,"Ghibli Park — 12:00 entry","12:00")],
+  markers:[acc(P.onsen,"Onsen House (base)"),m(P.shinagawa,"Nozomi from Shinagawa","09:45","Shinagawa Station"),m(P.nagoya,"Nagoya","11:15","Nagoya"),m(P.ghibli,"Ghibli Park — 12:00 entry","12:00","Ghibli Park")],
   tl:[["09:45","Nozomi Shinagawa → Nagoya (~1h30)"],
       ["11:40","Subway + Linimo to the park"],
       ["12:00","Grand Warehouse timed entry (12:00–13:00)"],
@@ -225,35 +245,35 @@ const DAYS = [
 
  {n:"5–6",date:"Fri 10 & Sat 11 Jul",title:"Two full days in/around Tokyo",who:"Pick any two — one for Friday, one for Saturday",
   pick:true,poolFirst:true,
-  markers:[m(P.shinjuku,"Base: Shinjuku")],
+  markers:[acc(P.onsen,"Onsen House, Shinjuku (base)")],
   tl:[["","These two days are interchangeable. Browse the pool below and choose two."]],
   note:"Currently pencilled: Yokohama+Nakano (Fri) and Kamakura (Sat). Swap freely — tap to compare.",
   optsLabel:"The full-day pool — choose two",
   options:[
     {label:"Yokohama + Nakano",sub:"pencilled: Fri",chosen:true,center:P.yokohama,zoom:12,
-     markers:[m(P.yokohama,"Minato Mirai"),m(P.chinatown,"Chinatown lunch"),m(P.nakano,"Nakano Broadway")],
+     markers:[m(P.yokohama,"Minato Mirai","","Minato Mirai 21"),m(P.cupnoodles,"Cup Noodles Museum","","Cup Noodles Museum"),m(P.yamashita,"Yamashita Park","","Yamashita Park"),m(P.chinatown,"Chinatown lunch","","Yokohama Chinatown"),m(P.nakano,"Nakano Broadway","","Nakano Broadway")],
      blurb:"Minato Mirai waterfront → Yokohama Chinatown lunch → Cup Noodles Museum → Nakano Broadway for retro/anime in the afternoon.",
      tl:[["10:00","Train to Yokohama"],["10:40","Minato Mirai + Yamashita Park"],["12:00","Chinatown lunch"],["13:30","Cup Noodles Museum"],["15:45","Nakano Broadway"]]},
     {label:"Kamakura",sub:"pencilled: Sat",chosen:true,center:P.kamakura,zoom:14,
-     markers:[m(P.kamakura,"Tsurugaoka Hachimangu"),m(P.greatbuddha,"Great Buddha"),m(P.hasedera,"Hase-dera")],
+     markers:[m(P.kamakura,"Tsurugaoka Hachimangu","","Tsurugaoka Hachimangu"),m(P.greatbuddha,"Great Buddha","","Kotoku-in"),m(P.hasedera,"Hase-dera","","Hase-dera")],
      blurb:"Coastal day trip — Tsurugaoka Hachimangu, the Great Buddha at Kotoku-in, Hase-dera, Komachi-dori lunch, optional Yuigahama beach.",
      tl:[["10:00","Train to Kamakura (~55m)"],["11:00","Tsurugaoka Hachimangu"],["12:10","Great Buddha + Hase-dera"],["14:15","Komachi-dori lunch + shops"],["16:20","Back to Tokyo"]]},
     {label:"Nikko",sub:"shrines & falls",center:P.nikko_toshogu,zoom:12,
-     markers:[m(P.nikko_toshogu,"Toshogu Shrine"),m(P.kegon,"Kegon Waterfall")],
+     markers:[m(P.nikko_toshogu,"Toshogu Shrine","","Nikko Tosho-gu"),m(P.kegon,"Kegon Waterfall","","Kegon Falls")],
      blurb:"The most unique option but the longest day (~2h each way). Toshogu Shrine complex, Shinkyo Bridge, Kegon Waterfall. A proper full day.",
      tl:[["07:30","Early train — it’s a long one"],["10:30","Toshogu Shrine complex"],["13:00","Kegon Waterfall"],["16:30","Long ride back"]]},
     {label:"Asakusa + Ueno",sub:"classic Tokyo",center:P.sensoji,zoom:14,
-     markers:[m(P.sensoji,"Senso-ji"),m(P.uenopark,"Ueno Park + museums")],
+     markers:[m(P.sensoji,"Senso-ji","","Senso-ji"),m(P.uenopark,"Ueno Park + museums","","Ueno Park")],
      blurb:"Traditional Tokyo — Senso-ji temple, Nakamise-dori market street, then Ueno Park and the Tokyo National Museum. Easy half/full day.",
      tl:[["10:00","Senso-ji + Nakamise-dori"],["12:30","Lunch Asakusa"],["14:00","Ueno Park + National Museum"]]},
     {label:"Odaiba",sub:"teamLab & bay",center:P.teamlab,zoom:13,
-     markers:[m(P.teamlab,"teamLab Planets"),m(P.gundam,"Gundam statue")],
+     markers:[m(P.teamlab,"teamLab Planets","","teamLab"),m(P.gundam,"Gundam statue","","Unicorn Gundam Statue")],
      blurb:"teamLab Planets (book ahead), the Gundam statue, Miraikan science museum, bayfront. A different, modern day out.",
      tl:[["10:00","teamLab Planets (booked slot)"],["13:00","Odaiba bayfront + Gundam"],["15:00","Miraikan / shopping"]]}
   ]},
 
  {n:7,date:"Sun 12 Jul",title:"Check out → Shinkansen to Osaka",who:"All 4",fixed:true,
-  markers:[m(P.shinagawa,"Nozomi → Shin-Osaka","10:30"),m(P.dotonbori,"Dotonbori","13:30"),m(P.tsurumibashi,"Osaka apartment","16:00")],
+  markers:[acc(P.onsen,"Onsen House (check out)"),m(P.shinagawa,"Nozomi → Shin-Osaka","10:30","Shinagawa Station"),m(P.dotonbori,"Dotonbori","13:30","Dotonbori"),acc(P.tsurumibashi,"Osaka apartment (check in)")],
   tl:[["09:00","Wake, light pack (bags forwarded)"],
       ["09:45","Check out Onsen House"],
       ["10:30","Nozomi Shinagawa → Shin-Osaka (2h10)"],
@@ -263,7 +283,7 @@ const DAYS = [
   note:"Checkout 10:00 → Shinkansen 10:30 is the anchor. Bags go by Yamato forwarding, arranged 10 Jul."},
 
  {n:8,date:"Mon 13 Jul",title:"Kyoto — Fushimi Inari, kimono & Gion",who:"All 4",
-  markers:[m(P.fushimi,"Fushimi Inari","10:35"),m(P.gion,"Kimono + Gion","12:30"),m(P.nishiki,"Nishiki Market","13:30"),m(P.pontocho,"Pontocho dinner","18:00")],
+  markers:[acc(P.tsurumibashi,"Osaka apartment (base)"),m(P.fushimi,"Fushimi Inari","10:35","Fushimi Inari-taisha"),m(P.gion,"Kimono + Gion","12:30","Gion"),m(P.nishiki,"Nishiki Market","13:30","Nishiki Market"),m(P.pontocho,"Pontocho dinner","18:00","Pontocho")],
   tl:[["09:00","Wake"],
       ["10:35","Fushimi Inari torii tunnels"],
       ["12:30","Kimono rental in Gion (time TBC)"],
@@ -273,7 +293,7 @@ const DAYS = [
   note:"warn|Crowd tradeoff: at 9am, Fushimi lands ~10:30 (busy) not the empty 08:05 dawn version. Keep the early wake only if empty-torii photos matter. Kimono booking (wargo.jp) still to confirm."},
 
  {n:9,date:"Tue 14 Jul",title:"Universal Studios Japan",who:"All 4",fixed:true,
-  markers:[m(P.usj,"USJ — 09:00 open","09:00")],
+  markers:[acc(P.tsurumibashi,"Osaka apartment (base)"),m(P.usj,"USJ — 09:00 open","09:00","Universal Studios Japan")],
   tl:[["09:00","Park opens — Super Nintendo World first (ATT)"],
       ["11:00","Wizarding World of Harry Potter"],
       ["13:45","Hollywood Dream + Jurassic Park"],
@@ -283,31 +303,31 @@ const DAYS = [
   note:"Reserve the Super Nintendo World Area Timed Entry in the USJ app as early as it allows."},
 
  {n:10,date:"Wed 15 Jul",title:"Osaka free day",who:"Pick one — options below",pick:true,
-  markers:[m(P.arashiyama,"Arashiyama (current)","11:35")],
+  markers:[acc(P.tsurumibashi,"Osaka apartment (base)"),m(P.arashiyama,"Arashiyama (current)","11:35","Arashiyama")],
   tl:[["","Unplanned buffer day. Current pick is Arashiyama — browse the alternatives."]],
   note:"Whatever you choose, pack for Fukuoka tonight (checkout tomorrow 10:45).",
   optsLabel:"Choose the day",
   options:[
     {label:"Arashiyama",sub:"west Kyoto",chosen:true,center:P.arashiyama,zoom:14,
-     markers:[m(P.arashiyama,"Bamboo Grove"),m(P.tenryuji,"Tenryu-ji"),m(P.togetsukyo,"Togetsukyo Bridge")],
+     markers:[m(P.arashiyama,"Bamboo Grove","","Arashiyama"),m(P.tenryuji,"Tenryu-ji","","Tenryu-ji"),m(P.togetsukyo,"Togetsukyo Bridge","","Togetsukyo Bridge")],
      blurb:"Bamboo Grove, Tenryu-ji garden, Togetsukyo Bridge, quiet temples. Pairs well if the Kyoto day felt rushed. (Grove is busy by late morning — early start optional.)",
      tl:[["10:05","Hankyu to Kyoto → bus"],["11:40","Bamboo Grove"],["12:30","Riverside lunch"],["13:30","Tenryu-ji + Togetsukyo"]]},
     {label:"Kobe",sub:"beef & bay",center:P.kobe,zoom:13,
-     markers:[m(P.kobe,"Kitano-cho"),m(P.meriken,"Meriken Park")],
+     markers:[m(P.kobe,"Kitano-cho","","Kitano-cho"),m(P.meriken,"Meriken Park","","Meriken Park")],
      blurb:"Kitano-cho foreign residences, Meriken Park, and a proper Kobe beef lunch. Easy 40-min half-day, back in Osaka by afternoon.",
      tl:[["10:00","Train to Kobe (~40m)"],["10:45","Kitano-cho"],["12:30","Kobe beef lunch"],["14:00","Meriken Park + harbour"]]},
     {label:"Nara",sub:"deer & Todai-ji",center:P.nara,zoom:14,
-     markers:[m(P.nara,"Nara Park + Todai-ji")],
+     markers:[m(P.nara,"Nara Park + Todai-ji","","Todai-ji")],
      blurb:"Deer park, the giant Todai-ji Buddha, Kasuga Taisha, Naramachi lanes. Best as a morning trip — deer livelier, crowds lighter.",
      tl:[["09:30","Kintetsu to Nara (~40m)"],["10:20","Nara Park + deer"],["11:00","Todai-ji"],["13:00","Naramachi lunch"]]},
     {label:"Osaka local",sub:"low-key",center:P.osakacastle,zoom:13,
-     markers:[m(P.osakacastle,"Osaka Castle"),m(P.kuromon,"Kuromon Market"),m(P.dotonbori,"Dotonbori")],
+     markers:[m(P.osakacastle,"Osaka Castle","","Osaka Castle"),m(P.kuromon,"Kuromon Market","","Kuromon Ichiba"),m(P.dotonbori,"Dotonbori","","Dotonbori")],
      blurb:"Stay in town — Osaka Castle, Kuromon Market, Den Den Town, Dotonbori properly, plus rest and laundry. A gentle day before the move north.",
      tl:[["—","Osaka Castle"],["—","Kuromon Market lunch"],["—","Den Den Town / rest"]]}
   ]},
 
  {n:11,date:"Thu 16 Jul",title:"Osaka → Fukuoka",who:"All 4",fixed:true,
-  markers:[m(P.shinosaka,"Nozomi → Hakata","11:40"),m(P.trad,"Hotel Trad Hakata","14:20"),m(P.nakasu,"Nakasu yatai stalls","19:00")],
+  markers:[acc(P.tsurumibashi,"Osaka apartment (check out)"),m(P.shinosaka,"Nozomi → Hakata","11:40","Shin-Osaka Station"),acc(P.trad,"Hotel Trad Hakata (check in)"),m(P.nakasu,"Nakasu yatai stalls","19:00","Nakasu")],
   tl:[["09:00","Wake, pack, clean apartment"],
       ["10:45","Check out"],
       ["11:40","Nozomi Shin-Osaka → Hakata (2h15)"],
@@ -317,7 +337,7 @@ const DAYS = [
   note:"Buy the Osaka→Hakata Shinkansen seats on 13–14 Jul at Shin-Osaka."},
 
  {n:12,date:"Fri 17 Jul",title:"Fukuoka",who:"All 4",
-  markers:[m(P.kushida,"Kushida Shrine","10:00"),m(P.canalcity,"Ramen Stadium","11:15"),m(P.tenjin,"Daimyo + Tenjin","13:00"),m(P.ohori,"Ohori Park","15:30")],
+  markers:[acc(P.trad,"Hotel Trad Hakata (base)"),m(P.kushida,"Kushida Shrine","10:00","Kushida Shrine"),m(P.canalcity,"Ramen Stadium","11:15","Canal City Hakata"),m(P.tenjin,"Daimyo + Tenjin","13:00","Tenjin, Fukuoka"),m(P.ohori,"Ohori Park","15:30","Ohori Park")],
   tl:[["09:00","Wake"],
       ["10:00","Kushida Shrine"],
       ["11:15","Canal City Ramen Stadium"],
@@ -327,7 +347,7 @@ const DAYS = [
   note:"Confirm with the bell desk tonight that bags can be stored for an 08:00 pickup tomorrow."},
 
  {n:13,date:"Sat 18 Jul",title:"Fly Fukuoka → Jeju",who:"All 4",fixed:true,
-  markers:[m(P.trad,"Leave hotel 08:15","08:15"),m(P.fukuoka_air,"FUK Intl — TW228","10:30"),m(P.cju,"Jeju (CJU)","11:50")],
+  markers:[acc(P.trad,"Hotel Trad Hakata (check out 08:15)"),m(P.fukuoka_air,"FUK Intl — TW228","10:30","Fukuoka Airport"),m(P.cju,"Jeju (CJU)","11:50","Jeju International Airport")],
   tl:[["07:30","Wake, collect bags"],
       ["08:15","Check out, subway to airport"],
       ["08:45","Intl check-in — Tway TW228 (early cutoff!)"],
@@ -336,7 +356,7 @@ const DAYS = [
   note:"warn|International bag-drop closes ~09:30–09:45 — this is the tight one. Go straight to the International terminal."},
 
  {n:14,date:"Sat 18 Jul",title:"Jeju — north coast drive",who:"All 4 · self-drive",
-  markers:[m(P.iho,"Iho Tewoo Beach","12:45"),m(P.yongduam,"Yongduam Rock","13:20"),m(P.dongmun,"Dongmun Market","13:50"),m(P.hamdeok,"Hamdeok Beach","15:30"),m(P.aewol,"Lafauza, Aewol","18:00")],
+  markers:[m(P.cju,"CJU — pick up car","12:30","Jeju International Airport"),m(P.iho,"Iho Tewoo Beach","12:45","Iho Beach"),m(P.yongduam,"Yongduam Rock","13:20","Yongduam Rock"),m(P.dongmun,"Dongmun Market","13:50","Dongmun Market"),m(P.hamdeok,"Hamdeok Beach","15:30","Hamdeok Beach"),acc(P.aewol,"Lafauza, Aewol (check in)")],
   tl:[["12:45","Iho Tewoo Beach"],
       ["13:20","Yongduam Rock"],
       ["13:50","Dongmun Market lunch — black pork"],
@@ -346,7 +366,7 @@ const DAYS = [
   note:"warn|Rental car must be booked + IDP in hand. Korea drives on the RIGHT. Use Kakao Maps."},
 
  {n:15,date:"Sun 19 Jul",title:"Jeju — south coast loop",who:"All 4 · last day together",
-  markers:[m(P.cheonjiyeon,"Cheonjiyeon Falls","10:50"),m(P.jeongbang,"Jeongbang Falls","11:20"),m(P.seogwipo,"Seogwipo Market","12:00"),m(P.jusangjeolli,"Jusangjeolli Cliff","14:00"),m(P.jungmun,"Jungmun Beach","14:50")],
+  markers:[acc(P.aewol,"Lafauza, Aewol (base)"),m(P.cheonjiyeon,"Cheonjiyeon Falls","10:50","Cheonjiyeon Falls"),m(P.jeongbang,"Jeongbang Falls","11:20","Jeongbang Falls"),m(P.seogwipo,"Seogwipo Market","12:00","Seogwipo"),m(P.jusangjeolli,"Jusangjeolli Cliff","14:00","Jusangjeolli Cliff"),m(P.jungmun,"Jungmun Beach","14:50","Jungmun Saekdal Beach")],
   tl:[["10:00","Drive south (~50m)"],
       ["10:50","Cheonjiyeon + Jeongbang waterfalls"],
       ["12:00","Seogwipo Olle Market lunch"],
@@ -356,7 +376,7 @@ const DAYS = [
   note:"Coordinate tomorrow’s split early: Angela & Ceci leave 05:45, Aleks & Ralph 08:45."},
 
  {n:16,date:"Mon 20 Jul",title:"The group splits",who:"Angela & Ceci → Manila · Aleks & Ralph → Busan",fixed:true,
-  markers:[m(P.cju,"CJU — both flights","07:30"),m(P.manila,"Angela & Ceci → Manila","20:10"),m(P.gimhae,"Aleks & Ralph → Busan","11:45"),m(P.lionhotel,"Lion Hotel","13:00")],
+  markers:[acc(P.aewol,"Lafauza, Aewol (leave)"),m(P.cju,"CJU — both flights","07:30","Jeju International Airport"),m(P.gimhae,"Busan (Gimhae) — A&R","11:45","Gimhae International Airport"),m(P.jagalchi,"Jagalchi Market","13:30","Jagalchi Market"),acc(P.lionhotel,"Lion Hotel (check in)"),m(P.manila,"Manila — A&C","20:10","Manila")],
   tl:[["05:45","Angela & Ceci → CJU (07:30 flt via HKG)"],
       ["08:45","Aleks & Ralph → CJU, return car"],
       ["10:45","Depart CJU → Busan (7C504)"],
@@ -365,7 +385,7 @@ const DAYS = [
   note:"warn|Ceci (Vietnamese passport): stay airside during the HKG layover. Manila entry rules still to verify."},
 
  {n:17,date:"Tue 21 Jul",title:"Busan + night train to Seoul",who:"Aleks & Ralph",
-  markers:[m(P.haedong,"Haedong Yonggungsa","10:35"),m(P.gukje,"Gukje Market","12:30"),m(P.haeundae,"Haeundae / Spa Land","14:00"),m(P.busanstn,"KTX → Seoul","22:00")],
+  markers:[acc(P.lionhotel,"Lion Hotel (base)"),m(P.haedong,"Haedong Yonggungsa","10:35","Haedong Yonggungsa"),m(P.gukje,"Gukje Market","12:30","Gukje Market"),m(P.haeundae,"Haeundae / Spa Land","14:00","Haeundae Beach"),m(P.busanstn,"KTX → Seoul","22:00","Busan Station")],
   tl:[["10:00","Taxi to Haedong Yonggungsa temple"],
       ["12:30","Gukje Market + BIFF Square lunch"],
       ["14:00","Haeundae Beach or Spa Land"],
@@ -374,7 +394,7 @@ const DAYS = [
   note:"Vacate the hotel room before the KTX; store bags at reception or the station."},
 
  {n:18,date:"Wed 22 Jul",title:"Seoul → Incheon Airport",who:"Aleks & Ralph",
-  markers:[m(P.bukchon,"Bukchon Hanok Village","10:15"),m(P.myeongdong,"Myeongdong","11:30"),m(P.gyeongbok,"Gyeongbokgung","14:00"),m(P.icn,"ibis Styles ICN T2","23:30")],
+  markers:[acc(P.manu,"Hotel Manu Seoul (base)"),m(P.bukchon,"Bukchon Hanok Village","10:15","Bukchon Hanok Village"),m(P.myeongdong,"Myeongdong","11:30","Myeongdong"),m(P.gyeongbok,"Gyeongbokgung","14:00","Gyeongbokgung"),acc(P.icn,"ibis Styles ICN T2 (check in)")],
   tl:[["09:00","Wake at Hotel Manu"],
       ["10:15","Bukchon Hanok Village"],
       ["11:30","Myeongdong — cosmetics & street food"],
@@ -384,7 +404,7 @@ const DAYS = [
   note:"warn|Confirm the last AREX Express time (~22:43). ibis is at T2 but the flight leaves T1."},
 
  {n:19,date:"Thu 23 Jul",title:"Fly home",who:"Aleks & Ralph (+ Ceci from Manila)",fixed:true,
-  markers:[m(P.icn,"ICN T1 — 5J185","06:35"),m(P.manila,"Manila — meet Ceci","09:55")],
+  markers:[acc(P.icn,"ibis ICN T2 (wake 04:30)"),m(P.manila,"Manila — meet Ceci","09:55","Manila")],
   tl:[["04:30","Wake, T2→T1 free shuttle (05:00)"],
       ["06:35","Depart ICN → Manila (Cebu Pacific)"],
       ["09:55","Manila — meet Ceci, 3h layover"],
@@ -399,15 +419,42 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{
   attribution:'© OpenStreetMap © CARTO',subdomains:'abcd',maxZoom:19}).addTo(map);
 let layer = L.layerGroup().addTo(map);
 
-function iconFor(i,kind){return L.divIcon({html:`<div class="numi ${kind||''}">${i}</div>`,className:'',iconSize:[24,24],iconAnchor:[12,12]});}
+function iconFor(i,cls){return L.divIcon({html:`<div class="numi ${cls||''}">${i}</div>`,className:'',iconSize:[24,24],iconAnchor:[12,12]});}
+
+/* Lazy Wikipedia thumbnail per destination. CORS-enabled; loads in normal
+   browsers. (In this test sandbox the proxy blocks wikipedia, so it degrades
+   to no-photo — that's an environment limit, not a bug.) */
+const wikiCache={};
+function popupHtml(mk){
+  const cap=(mk.time?`<b>${mk.time}</b> · `:'')+mk.label;
+  const img=mk.wiki?`<div class="mimg" data-wiki="${encodeURIComponent(mk.wiki)}"><span class="mld">loading photo…</span></div>`:'';
+  return `<div class="mpop">${img}<div class="mcap">${cap}</div></div>`;
+}
+async function loadWiki(enc,el){
+  try{
+    if(wikiCache[enc]===undefined){
+      const r=await fetch('https://en.wikipedia.org/api/rest_v1/page/summary/'+enc);
+      wikiCache[enc]= r.ok ? await r.json() : null;
+    }
+    const d=wikiCache[enc], src=d&&d.thumbnail&&d.thumbnail.source;
+    if(src){const im=new Image();im.alt='';im.onload=()=>{el.innerHTML='';el.appendChild(im);};im.onerror=()=>el.remove();im.src=src;}
+    else{el.remove();}
+  }catch(_){el.remove();}
+}
+map.on('popupopen',e=>{
+  const node=e.popup.getElement();
+  const el=node&&node.querySelector('.mimg[data-wiki]:not([data-done])');
+  if(el){el.setAttribute('data-done','1');loadWiki(el.getAttribute('data-wiki'),el);}
+});
 
 function showMarkers(markers,kind,center,zoom){
   layer.clearLayers();
   const pts=[];
   markers.forEach((mk,i)=>{
-    const mm=L.marker(mk.coord,{icon:iconFor(i+1,kind)}).addTo(layer);
-    const lbl=(mk.time?`<b>${mk.time}</b> · `:'')+mk.label;
-    mm.bindTooltip(lbl,{className:'mtip',direction:'top',offset:[0,-10]});
+    const cls = mk.home ? 'home' : (kind||'');
+    const mm=L.marker(mk.coord,{icon:iconFor(i+1,cls)}).addTo(layer);
+    mm.bindTooltip(mk.label,{className:'mtip',direction:'top',offset:[0,-10]});
+    mm.bindPopup(popupHtml(mk),{minWidth:200,maxWidth:200});
     pts.push(mk.coord);
   });
   if(markers.length>1){
