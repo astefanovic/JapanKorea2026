@@ -257,26 +257,27 @@
 
 ## Day 8 — Mon 13 Jul · Kyoto Day Trip
 
-**Wake: 06:30**
+**Wake: 09:00**
+
+> ⚠️ **Crowd tradeoff:** the 06:30 start was there to hit Fushimi Inari before ~09:30, when the torii tunnels are near-empty and genuinely magical. Arriving ~10:30 instead, the lower tunnels will be shoulder-to-shoulder — still worth doing, but you won't get the quiet-photo version. If Fushimi-at-dawn matters to you, this is the day to keep the early wake (06:30, as previously planned). Otherwise, 9am it is.
 
 | Time | Event | Notes |
 |------|-------|-------|
-| 06:30 | Wake | |
-| 06:45 | Quick breakfast — konbini | Pack snacks — lunch not until Nishiki Market |
-| 07:00 | Leave apartment | |
-| 07:10 | Osaka Metro Midosuji: Namba → Umeda (10 min, ¥240) | |
-| 07:25 | JR Kyoto Line Special Rapid: Osaka → Kyoto (29 min, ¥580) | Suica works |
-| 07:55 | Arrive Kyoto Station | |
-| 08:00 | JR Nara Line: Kyoto → Inari (5 min, ¥150) | 1 stop south |
-| 08:05 | ⚠️ **Fushimi Inari Taisha** — enter immediately | Free, 24h. Crowds arrive 09:30–10:00. Go now. |
-| 08:05–09:30 | Fushimi Inari — walk lower tunnel (20 min), push to Yotsutsuji lookout (~30 min up) | Bring water. Steep steps. Slippery if wet. Go as high as time allows. |
-| 09:30 | ⚠️ Head back — crowds building | |
-| 09:45 | Keihan Line: Fushimi Inari → Gion-Shijo (9 min, ¥200) | Suica works on Keihan |
-| 10:00 | Navigate to kimono rental shop in Gion | |
-| ❓ ~10:00–10:30 | ⚠️ **Kimono rental appointment** | ❓ UNKNOWN — exact time not confirmed. Build entire day around this slot. Fitting takes 45–90 min. |
-| ❓ ~11:30 | Out of shop, dressed | Adjust all times below based on actual appointment |
-| 12:00–14:00 | 🍜 Lunch + **Nishiki Market** in kimono | 400m covered street — mochi, dashimaki tamago, pickles, crab claw. Gets packed ~noon. ¥1,500–2,500 grazing. |
-| 14:00–16:30 | **Gion & Hanamikoji-dori** in kimono | Maiko most likely 16:00–17:00. Option: Kiyomizudera (¥500, 20 min walk east), Maruyama Park (free). |
+| 09:00 | Wake | |
+| 09:20 | Quick breakfast — konbini | Pack snacks — lunch not until Nishiki Market |
+| 09:35 | Leave apartment | |
+| 09:40 | Osaka Metro Midosuji: Namba → Umeda (10 min, ¥240) | |
+| 09:55 | JR Kyoto Line Special Rapid: Osaka → Kyoto (29 min, ¥580) | Suica works |
+| 10:25 | Arrive Kyoto Station | |
+| 10:30 | JR Nara Line: Kyoto → Inari (5 min, ¥150) | 1 stop south |
+| 10:35 | **Fushimi Inari Taisha** | Free, 24h. Busy at this hour — see crowd note above. Push past the lower tunnels to thin out the crowds higher up. |
+| 10:35–12:00 | Fushimi Inari — walk lower tunnel (20 min), push to Yotsutsuji lookout (~30 min up) | Bring water. Steep steps. Slippery if wet. Go as high as time allows. |
+| 12:00 | Keihan Line: Fushimi Inari → Gion-Shijo (9 min, ¥200) | Suica works on Keihan |
+| 12:15 | Navigate to kimono rental shop in Gion | |
+| ❓ ~12:30 | ⚠️ **Kimono rental appointment** | ❓ UNKNOWN — exact time not confirmed. Build the afternoon around this slot. Fitting takes 45–90 min. |
+| ❓ ~13:30 | Out of shop, dressed | Adjust all times below based on actual appointment |
+| 13:30–15:00 | 🍜 Lunch + **Nishiki Market** in kimono | 400m covered street — mochi, dashimaki tamago, pickles, crab claw. ¥1,500–2,500 grazing. |
+| 15:00–17:00 | **Gion & Hanamikoji-dori** in kimono | Maiko most likely 16:00–17:00. Option: Kiyomizudera (¥500, 20 min walk east), Maruyama Park (free). |
 | ❓ 17:00–18:00 | ⚠️ **Return kimono** | ❓ Confirm hard return deadline with shop — usually 17:00–18:00. Do not be late. |
 | 18:00–19:00 | 🍜 Dinner — **Pontocho Alley** | Lantern-lit lane parallel to Kamo River. Restaurants open ~17:30. ¥3,000–5,000. Book or queue early. |
 | 19:15 | Walk to Kyoto Station (~20 min) or taxi (¥1,500) | |
@@ -284,7 +285,7 @@
 | 20:00 | Osaka Metro: Umeda → Namba (10 min) | |
 | 20:15 | Back at apartment | |
 
-❓ **CRITICAL:** Kimono rental time and booking status unknown — the entire Kyoto day schedule pivots around this. Confirm or book at wargo.jp immediately.
+❓ **CRITICAL:** Kimono rental time and booking status unknown — the Kyoto afternoon schedule pivots around this. Confirm or book at wargo.jp immediately. If the shop can only fit you in the morning, you may need the early Fushimi start anyway.
 
 ---
 
