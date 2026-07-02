@@ -47,22 +47,22 @@
 
 🔀 **Aleks & Ceci's evening was chosen as Shinjuku/Golden Gai** over the alternatives (join Disneyland, or extend Akihabara into the evening). Swap if wanted.
 
-**Wake: 08:00** (everyone)
+**Wake: 09:00** (everyone)
 
 | Time | Event | Who | Notes |
 |------|-------|-----|-------|
-| 08:00 | Wake | All | |
-| 08:30 | Breakfast — hotel or nearby konbini | All | |
-| 09:00 | Walk to Shinjuku Station | All | |
-| 09:05 | JR Yamanote: Shinjuku → Shinagawa (13 min, ¥200) | All | |
-| 09:20 | ⚠️ **Buy Shinkansen tickets** — Shinagawa Green Window (Midori no Madoguchi) | All | Buy: 9 Jul Shinagawa↔Nagoya (Ghibli) + 12 Jul Shinagawa→Shin-Osaka. 4 adjacent reserved seats each. Allow 30–45 min. Pay by card. |
-| 10:05 | JR Yamanote: Shinagawa → Shinjuku (13 min) | All | |
-| 10:20 | **Shinjuku Gyoen** (¥500, opens 09:00) | All | Rose garden + French garden + tea house. Good jet lag reset. Closes 18:30. |
-| 12:00 | 🍜 Lunch — near Shinjuku Gyoen south exit | All | Budget ¥800–1,500 |
-| 13:00 | JR Chuo-Sobu: Shinjuku → Akihabara (15 min, ¥210) | All | |
-| 13:15–15:30 | **Akihabara** — Yodobashi Camera (7F/8F retro), Mandarake Complex, Radio Kaikan | All | Allow 2h+ — dense floors of hobby shops |
-| 15:30 | JR Sobu: Akihabara → Shinjuku (15 min, ¥210) | All | |
-| 15:50 | Hotel — freshen up. Ralph & Angela prep for Disney | All | |
+| 09:00 | Wake | All | Good lie-in after last night's late arrival |
+| 09:30 | Breakfast — hotel or nearby konbini | All | |
+| 10:00 | Walk to Shinjuku Station | All | |
+| 10:05 | JR Yamanote: Shinjuku → Shinagawa (13 min, ¥200) | All | |
+| 10:20 | ⚠️ **Buy Shinkansen tickets** — Shinagawa Green Window (Midori no Madoguchi) | All | Buy: 9 Jul Shinagawa↔Nagoya (Ghibli) + 12 Jul Shinagawa→Shin-Osaka. 4 adjacent reserved seats each. Allow 30–45 min. Pay by card. |
+| 11:05 | JR Yamanote: Shinagawa → Shinjuku (13 min) | All | |
+| 11:20 | **Shinjuku Gyoen** (¥500, opens 09:00) | All | Rose garden + French garden + tea house. Good jet lag reset. Closes 18:30. |
+| 12:45 | 🍜 Lunch — near Shinjuku Gyoen south exit | All | Budget ¥800–1,500 |
+| 13:45 | JR Chuo-Sobu: Shinjuku → Akihabara (15 min, ¥210) | All | |
+| 14:00–15:40 | **Akihabara** — Yodobashi Camera (7F/8F retro), Mandarake Complex, Radio Kaikan | All | Dense floors of hobby shops |
+| 15:40 | JR Sobu: Akihabara → Shinjuku (15 min, ¥210) | All | |
+| 15:55 | Hotel — freshen up. Ralph & Angela prep for Disney | All | |
 | 16:15 | ⚠️ Ralph & Angela depart for Maihama | Ralph, Angela | JR Chuo-Sobu: Shinjuku → Tokyo (20 min) → JR Keiyo: Tokyo → Maihama (15 min). ~35 min total, ¥620 |
 | 16:15 | **Golden Gai** — explore the alleys | Aleks, Ceci | 5 min walk from Shinjuku east exit. Bars open ~18:00. |
 | **17:00** | ⚠️ **Tokyo Disneyland — gate entry** (After 5 Summer Passport, ref A00590693309) | Ralph, Angela | Valid from 17:00 only. Park closes 22:00. |
@@ -174,23 +174,23 @@
 
 🔀 **Chosen over Nikko (full day) and Nakano + Harajuku (stay-in-Tokyo option).** Nikko is more unique but is a longer, more tiring day; swap if wanted.
 
-**Wake: 08:30**
+**Wake: 09:00**
 
 | Time | Event | Notes |
 |------|-------|-------|
-| 08:30 | Wake | |
-| 09:00 | Breakfast — hotel or local | |
-| 09:30 | JR Shonan-Shinjuku Line: Shinjuku → Yokohama (30 min, ¥550) | Direct, no transfer |
-| 10:00 | Arrive Yokohama — exit toward Minato Mirai | |
-| 10:10–11:00 | **Minato Mirai waterfront** — Landmark Tower, waterfront walk | Free to walk |
-| 11:00–11:30 | Walk 15 min to **Yamashita Park** — seaside promenade, Hikawa Maru | |
-| 11:30 | Walk 5 min into **Yokohama Chinatown** | Japan's largest Chinatown — 500+ restaurants |
-| 11:30–13:00 | 🍜 Lunch in Chinatown | Dim sum, char siu buns, stalls. ¥1,500–2,500. |
-| 13:00–14:00 | ❓ **Cup Noodles Museum** (¥500) | ❓ Pre-booked? Book at cupnoodles-museum.jp. Make-your-own cup noodles activity — 45 min. |
-| 14:15 | JR Negishi/Yokohama Line → Yokohama Station | |
-| 14:30 | JR Shonan-Shinjuku: Yokohama → Shinjuku (~30 min, ¥550) | |
-| 15:05 | JR Chuo: Shinjuku → Nakano (7 min, ¥160) | |
-| 15:15–18:30 | **Nakano Broadway** — Mandarake floors 2–4 (open noon–20:00), retro games, vintage anime, rare figures, doujin | 5F: cheap used goods; 2F: high-end collectibles |
+| 09:00 | Wake | |
+| 09:30 | Breakfast — hotel or local | |
+| 10:00 | JR Shonan-Shinjuku Line: Shinjuku → Yokohama (30 min, ¥550) | Direct, no transfer |
+| 10:30 | Arrive Yokohama — exit toward Minato Mirai | |
+| 10:40–11:30 | **Minato Mirai waterfront** — Landmark Tower, waterfront walk | Free to walk |
+| 11:30–12:00 | Walk 15 min to **Yamashita Park** — seaside promenade, Hikawa Maru | |
+| 12:00 | Walk 5 min into **Yokohama Chinatown** | Japan's largest Chinatown — 500+ restaurants |
+| 12:00–13:30 | 🍜 Lunch in Chinatown | Dim sum, char siu buns, stalls. ¥1,500–2,500. |
+| 13:30–14:30 | ❓ **Cup Noodles Museum** (¥500) | ❓ Pre-booked? Book at cupnoodles-museum.jp. Make-your-own cup noodles activity — 45 min. |
+| 14:45 | JR Negishi/Yokohama Line → Yokohama Station | |
+| 15:00 | JR Shonan-Shinjuku: Yokohama → Shinjuku (~30 min, ¥550) | |
+| 15:35 | JR Chuo: Shinjuku → Nakano (7 min, ¥160) | |
+| 15:45–18:30 | **Nakano Broadway** — Mandarake floors 2–4 (open noon–20:00), retro games, vintage anime, rare figures, doujin | 5F: cheap used goods; 2F: high-end collectibles |
 | 18:30 | 🍜 Dinner — Nakano Sun Mall arcade (covered street outside Broadway) | Ramen, izakaya, Korean BBQ. ¥1,500–2,500. |
 | 19:30 | JR Chuo: Nakano → Shinjuku (7 min) | |
 | 19:40 | Back at hotel | |
@@ -201,28 +201,28 @@
 
 🔀 **Chosen over full-day Disneyland (all 4), Asakusa + Ueno, and Odaiba.** Note: Angela's own itinerary doc in Google Drive shows 11 Jul as a full-day Disneyland visit — worth reconciling. If Disneyland instead, tickets need buying now.
 
-**Wake: 08:00**
+**Wake: 09:00**
 
 | Time | Event | Notes |
 |------|-------|-------|
-| 08:00 | Wake | |
-| 08:20 | Relaxed breakfast — hotel or konbini | |
-| 08:55 | Depart Shinjuku | |
-| 09:00 | JR Shonan-Shinjuku Line: Shinjuku → Kamakura (55 min, ¥970) | Direct. Sit left side for sea views approaching Kamakura. |
-| 09:55 | Arrive Kamakura Station | |
-| 10:00 | Walk 5 min → **Tsurugaoka Hachimangu Shrine** | Free. Grand lotus-pond approach. |
-| 10:05–10:45 | Explore Tsurugaoka Hachimangu | |
-| 10:50 | Bus from Kamakura Station (line 2 or 7) → Daibutsu-mae stop (15 min, ¥230) | Or 30 min walk west |
-| 11:10–11:55 | ⚠️ **Kotoku-in — Great Buddha** (¥300 + ¥50 to enter inside statue) | 13.35m bronze. Busier by late morning, but still fine. Interior: cramped but worth ¥50. |
-| 12:00 | Walk 5 min → **Hase-dera Temple** (¥400) | |
-| 12:00–12:45 | Hase-dera — sea views from garden, Kannon statue, cave walkway | |
-| 12:50 | Walk back toward Kamakura Station or bus | ~30 min scenic walk or bus |
-| 13:15 | 🍜 Lunch — **Komachi-dori** (main shopping street from station) | Shirasu (whitebait) donburi is the local speciality. ¥1,200–2,000. |
-| 14:15–15:00 | Komachi-dori shopping — pottery, sweets, souvenirs | |
-| 15:00–16:00 | Optional: **Yuigahama Beach** (10 min walk south of station) | July beach — warm, popular, not too crowded |
-| 16:00 | JR Shonan-Shinjuku: Kamakura → Shinjuku (55 min, ¥970) | |
-| 17:00 | Arrive Shinjuku | |
-| 17:00–18:30 | Rest at hotel, freshen up | |
+| 09:00 | Wake | |
+| 09:20 | Relaxed breakfast — hotel or konbini | |
+| 09:55 | Depart Shinjuku | |
+| 10:00 | JR Shonan-Shinjuku Line: Shinjuku → Kamakura (55 min, ¥970) | Direct. Sit left side for sea views approaching Kamakura. |
+| 10:55 | Arrive Kamakura Station | |
+| 11:00 | Walk 5 min → **Tsurugaoka Hachimangu Shrine** | Free. Grand lotus-pond approach. |
+| 11:05–11:45 | Explore Tsurugaoka Hachimangu | |
+| 11:50 | Bus from Kamakura Station (line 2 or 7) → Daibutsu-mae stop (15 min, ¥230) | Or 30 min walk west |
+| 12:10–12:55 | ⚠️ **Kotoku-in — Great Buddha** (¥300 + ¥50 to enter inside statue) | 13.35m bronze. Busy midday, but manageable. Interior: cramped but worth ¥50. |
+| 13:00 | Walk 5 min → **Hase-dera Temple** (¥400) | |
+| 13:00–13:45 | Hase-dera — sea views from garden, Kannon statue, cave walkway | |
+| 13:50 | Walk back toward Kamakura Station or bus | ~30 min scenic walk or bus |
+| 14:15 | 🍜 Lunch — **Komachi-dori** (main shopping street from station) | Shirasu (whitebait) donburi is the local speciality. ¥1,200–2,000. |
+| 15:15–15:45 | Komachi-dori shopping — pottery, sweets, souvenirs | |
+| 15:45–16:15 | Optional: **Yuigahama Beach** (10 min walk south of station) — if time | July beach — warm, popular. Skip if running late. |
+| 16:20 | JR Shonan-Shinjuku: Kamakura → Shinjuku (55 min, ¥970) | |
+| 17:20 | Arrive Shinjuku | |
+| 17:20–18:30 | Rest at hotel, freshen up | |
 | 18:30 | 🍜 **Dinner — Omoide Yokocho (Memory Lane), all 4** | Tiny yakitori alley, Shinjuku west exit under the tracks. ¥2,000–3,000/person incl drinks. This is the last proper Tokyo evening before Osaka — the whole group together. |
 | 19:30–21:00 | Optional — **Golden Gai** for drinks after | 5 min walk from Omoide Yokocho (opposite side of Shinjuku Station). Bars open ~18:00. |
 | 21:00 | ⚠️ Pack bags — checkout tomorrow 10:00 | Luggage forwarding bags should already be collected (arranged today or tomorrow morning at hotel desk) |
@@ -231,13 +231,13 @@
 
 ## Day 7 — Sun 12 Jul · Check Out → Shinkansen to Osaka
 
-**Wake: 08:00**
+**Wake: 09:00**
 
 | Time | Event | Notes |
 |------|-------|-------|
-| 08:00 | Wake | |
-| 08:20 | Breakfast | Last Tokyo morning |
-| 08:50 | ⚠️ Final pack — checkout is 10:00 | Forwarded bags already sent; travel with carry-on only, so packing is light |
+| 09:00 | Wake | |
+| 09:10 | Quick breakfast | Last Tokyo morning |
+| 09:30 | ⚠️ Final pack — checkout is 10:00 | Forwarded bags already sent; travel with carry-on only, so packing is quick |
 | 09:45 | Check out Onsen House 新宿. Return keys. | |
 | 09:50 | Walk to Shinjuku Station with bags | |
 | 10:00 | JR Yamanote: Shinjuku → Shinagawa (13 min, ¥200) | |
@@ -320,42 +320,44 @@
 
 🔀 **Chosen over Kobe, Nara, and an Osaka-local rest day.** Arashiyama pairs well if the 13 Jul Kyoto day felt rushed; Kobe/Nara are shorter and lower-key if a rest day is wanted instead.
 
-**Wake: 07:30** — earlier start here is deliberate: it puts you in the bamboo grove before the tour buses, and the whole day still finishes earlier and more relaxed.
+**Wake: 09:00**
+
+> ⚠️ **Crowd tradeoff:** a 9am wake puts you in the bamboo grove ~11:40, when it's busy with tour groups. If you want the grove quiet, this is the one day worth an exception — wake 07:30, leave 08:15, and you're there ~10:00 nearly alone. Your call.
 
 | Time | Event | Notes |
 |------|-------|-------|
-| 07:30 | Wake | |
-| 07:50 | Breakfast — apartment or local café | |
-| 08:15 | Leave apartment | |
-| 08:20 | Osaka Metro Midosuji: Namba → Umeda (10 min, ¥240) | |
-| 08:35 | Hankyu Kyoto Line: Umeda → Kyoto Kawaramachi (45 min, ¥630) | Private rail — buy ticket at machine, Suica may not work |
-| 09:20 | Arrive Kyoto Kawaramachi | |
-| 09:25 | Bus 11 or 28: Kawaramachi → Arashiyama (~40 min, ¥230) | Or taxi ~¥2,500 |
-| 10:05 | Arrive Arashiyama | |
-| 10:10–11:00 | ⚠️ **Arashiyama Bamboo Grove** | Free. Arriving ~10:00 genuinely beats the crowds — much quieter than late morning. Grove is 5 min walk from main stop. |
-| 11:00–12:00 | 🍜 Lunch — Arashiyama riverside | Tofu kaiseki at Shigetsu/Tenryu-ji (¥3,300, vegetarian), or simpler riverside options. ¥1,500–3,000. |
-| 12:00–13:00 | **Tenryu-ji Temple + garden** (¥500 garden, +¥300 for buildings) | UNESCO garden. Pond reflection of Arashiyama hills. |
-| 13:00–13:30 | **Togetsukyo Bridge** — the postcard view | Free. 5 min walk. |
-| 13:30–14:30 | **Jojakko-ji** or **Nison-in** — quieter bamboo-adjacent temples (¥500 each) | Less crowded alternative to main grove |
-| 14:30 | Bus back to Kyoto Kawaramachi or Shijo | |
-| 15:15 | Optional: quick **Nishiki Market** pass-through (if missed on Day 8) | |
-| 16:00 | Hankyu: Kyoto → Umeda (45 min) | |
-| 16:50 | Osaka Metro: Umeda → Namba (10 min) | |
-| 17:05 | Back at apartment | |
-| 18:30 | 🍜 Dinner — **Kuromon Ichiba Market** area | Fresh sashimi, wagyu skewers, tamagoyaki — evening snack circuit. ¥2,000–3,000. |
-| 20:00 | ⚠️ Pack for Fukuoka — checkout tomorrow by 10:45 | |
+| 09:00 | Wake | |
+| 09:20 | Breakfast — apartment or local café | |
+| 09:45 | Leave apartment | |
+| 09:50 | Osaka Metro Midosuji: Namba → Umeda (10 min, ¥240) | |
+| 10:05 | Hankyu Kyoto Line: Umeda → Kyoto Kawaramachi (45 min, ¥630) | Private rail — buy ticket at machine, Suica may not work |
+| 10:50 | Arrive Kyoto Kawaramachi | |
+| 10:55 | Bus 11 or 28: Kawaramachi → Arashiyama (~40 min, ¥230) | Or taxi ~¥2,500 |
+| 11:35 | Arrive Arashiyama | |
+| 11:40–12:30 | **Arashiyama Bamboo Grove** | Free. Busy at this hour — see crowd note above. Grove is 5 min walk from main stop. |
+| 12:30–13:30 | 🍜 Lunch — Arashiyama riverside | Tofu kaiseki at Shigetsu/Tenryu-ji (¥3,300, vegetarian), or simpler riverside options. ¥1,500–3,000. |
+| 13:30–14:30 | **Tenryu-ji Temple + garden** (¥500 garden, +¥300 for buildings) | UNESCO garden. Pond reflection of Arashiyama hills. |
+| 14:30–15:00 | **Togetsukyo Bridge** — the postcard view | Free. 5 min walk. |
+| 15:00–16:00 | **Jojakko-ji** or **Nison-in** — quieter bamboo-adjacent temples (¥500 each) | Less crowded alternative to main grove |
+| 16:00 | Bus back to Kyoto Kawaramachi or Shijo | |
+| 16:45 | Optional: quick **Nishiki Market** pass-through (if missed on Day 8) | |
+| 17:30 | Hankyu: Kyoto → Umeda (45 min) | |
+| 18:20 | Osaka Metro: Umeda → Namba (10 min) | |
+| 18:35 | Back at apartment | |
+| 19:00 | 🍜 Dinner — **Kuromon Ichiba Market** area | Fresh sashimi, wagyu skewers, tamagoyaki — evening snack circuit. ¥2,000–3,000. |
+| 20:30 | ⚠️ Pack for Fukuoka — checkout tomorrow by 10:45 | |
 
 ---
 
 ## Day 11 — Thu 16 Jul · Osaka → Fukuoka
 
-**Wake: 08:30**
+**Wake: 09:00**
 
 | Time | Event | Notes |
 |------|-------|-------|
-| 08:30 | Wake | |
-| 08:45 | Breakfast — apartment | Use up any food left |
-| 09:30 | ⚠️ Final pack, clean apartment (Airbnb checkout conditions apply) | Contact Amanda (+66 96 714 5871) with any questions |
+| 09:00 | Wake | |
+| 09:15 | Breakfast — apartment | Use up any food left |
+| 09:45 | ⚠️ Final pack, clean apartment (Airbnb checkout conditions apply) | Contact Amanda (+66 96 714 5871) with any questions |
 | 10:45 | Check out — leave apartment | |
 | 11:00 | Osaka Metro Midosuji: Namba → Shin-Osaka (20 min, ¥320) | |
 | 11:25 | Arrive Shin-Osaka | Buy Shinkansen tickets here if not already done (Green Window) |
@@ -372,15 +374,15 @@
 
 ## Day 12 — Fri 17 Jul · Fukuoka
 
-**Wake: 08:30**
+**Wake: 09:00**
 
 | Time | Event | Notes |
 |------|-------|-------|
-| 08:30 | Wake | |
-| 09:00 | 🍜 Breakfast — local Hakata café | Try mentaiko onigiri |
-| 09:30 | **Kushida Shrine** (if not seen yesterday) — free, 5 min walk | |
-| 10:15 | Walk to **Canal City Hakata** | Browse before Ramen Stadium opens at 11:00 |
-| 11:00–12:30 | 🍜 Lunch — **Canal City Ramen Stadium** | 8 regional ramen stalls. Try Hakata-style (thin noodles, milky pork broth). ¥1,000–1,500. |
+| 09:00 | Wake | |
+| 09:30 | 🍜 Breakfast — local Hakata café | Try mentaiko onigiri |
+| 10:00 | **Kushida Shrine** (if not seen yesterday) — free, 5 min walk | |
+| 10:45 | Walk to **Canal City Hakata** | Browse before/after Ramen Stadium opens at 11:00 |
+| 11:15–12:30 | 🍜 Lunch — **Canal City Ramen Stadium** | 8 regional ramen stalls. Try Hakata-style (thin noodles, milky pork broth). ¥1,000–1,500. |
 | 12:30 | Fukuoka Subway: Hakata → Tenjin (2 min, ¥210) | |
 | 13:00–15:30 | **Daimyo + Tenjin** — independent cafes, fashion, record stores | |
 | 15:30 | Optional: **Ohori Park** (15 min subway from Tenjin) | Free. Large lake park, former castle ruins. Good evening walk. |
@@ -435,23 +437,23 @@
 
 ## Day 15 — Sun 19 Jul · Jeju South Coast Loop (all 4)
 
-**Wake: 07:30** — last full day together
+**Wake: 09:00** — last full day together
 
 | Time | Stop | Notes |
 |------|------|-------|
-| 07:30 | Wake | |
-| 07:50 | 🍜 Breakfast — Airbnb | |
-| 08:30 | ⚠️ Depart Aewol — drive south via Route 16 or 1100 Road | ~50 min to Seogwipo |
-| 09:20 | **Cheonjiyeon Waterfall** | KRW 2,000 entry. 10 min walk from carpark. Go before tour buses arrive. |
-| 09:50 | **Jeongbang Waterfall** (~5 min drive) | Falls directly into the sea. KRW 2,000. 15 min walk. |
-| 10:30 | **Seogwipo Maeil Olle Market** (~5 min drive) | |
-| 10:30–11:45 | 🍜 Brunch at Olle Market | Haemul kalguksu, tteokbokki, Jeju fish. Cash. KRW 10,000–15,000. |
-| 11:50 | **Oedolgae Rock** (~10 min drive) | Lone basalt sea stack. Free. 15 min walk. |
-| 12:30 | **Jusangjeolli Cliff** (~10 min drive) | Hexagonal basalt columns. KRW 2,000. |
-| 13:20 | **Jungmun Saekdal Beach** (~5 min drive) | Blue-green water, beach clubs. Best afternoon swim of the trip. |
-| 13:30–16:00 | Beach time — sunbeds available | |
-| 16:00 | Drive back to Aewol (~50 min) | |
-| 17:00 | Arrive Aewol. Freshen up. | |
+| 09:00 | Wake | |
+| 09:20 | 🍜 Breakfast — Airbnb | |
+| 10:00 | ⚠️ Depart Aewol — drive south via Route 16 or 1100 Road | ~50 min to Seogwipo |
+| 10:50 | **Cheonjiyeon Waterfall** | KRW 2,000 entry. 10 min walk from carpark. Busier late morning — self-drive means you set the pace. |
+| 11:20 | **Jeongbang Waterfall** (~5 min drive) | Falls directly into the sea. KRW 2,000. 15 min walk. |
+| 12:00 | **Seogwipo Maeil Olle Market** (~5 min drive) | |
+| 12:00–13:15 | 🍜 Lunch at Olle Market | Haemul kalguksu, tteokbokki, Jeju fish. Cash. KRW 10,000–15,000. |
+| 13:20 | **Oedolgae Rock** (~10 min drive) | Lone basalt sea stack. Free. 15 min walk. |
+| 14:00 | **Jusangjeolli Cliff** (~10 min drive) | Hexagonal basalt columns. KRW 2,000. |
+| 14:50 | **Jungmun Saekdal Beach** (~5 min drive) | Blue-green water, beach clubs. Best afternoon swim of the trip. |
+| 15:00–17:00 | Beach time — sunbeds available | |
+| 17:00 | Drive back to Aewol (~50 min) | |
+| 18:00 | Arrive Aewol. Freshen up. | |
 | 19:00 | 🍜 **Last dinner together as a group of 4** | Something memorable — Korean BBQ or seafood in Aewol or Jeju City. KRW 20,000–30,000/person. |
 | 21:00 | ⚠️ Pack bags. Coordinate morning departures. | Angela & Ceci: bags ready for 05:30. Aleks & Ralph: bags for 08:30. |
 | 22:00 | Early night — 05:15 wake for Angela & Ceci | |
@@ -502,19 +504,19 @@
 
 ## Day 17 — Tue 21 Jul · Busan + Night Train to Seoul
 
-**Wake: 08:00**
+**Wake: 09:00**
 
 | Time | Activity | Notes |
 |------|----------|-------|
-| 08:00 | Wake | |
-| 08:30 | 🍜 Breakfast — local haejangguk (해장국) place | Rice + soup + banchan. KRW 8,000–12,000. |
-| 09:00 | ⚠️ Depart for **Haedong Yonggungsa Temple** | ~35 min taxi each way (KRW 25,000–30,000). Gets very crowded by 11:00 — go now. |
-| 09:35 | Arrive Haedong — explore sea-cliff temple, dragon statues, shrines | Free entry. Stunning coastal setting. Allow 75 min. |
-| 10:50 | Return taxi to central Busan (~35 min) | |
-| 11:30 | **Gukje (International) Market** + **BIFF Square** | Cheap, varied street food, clothing, souvenirs |
-| 12:00 | 🍜 Lunch — Gukje Market street food | Tteokbokki, bindaetteok, soondae. KRW 8,000–12,000. |
-| 13:00–15:00 | Choose one: **Haeundae Beach** (40 min subway, Line 2) or **Spa Land** at Centum City (KRW 15,000–18,000, ~25 min subway) | Haeundae: beach. Spa Land: jjimjilbang-style sauna/spa — good for tired legs. |
-| 15:30 | Return to Lion Hotel — shower and pack overnight bag for KTX | |
+| 09:00 | Wake | |
+| 09:30 | 🍜 Breakfast — local haejangguk (해장국) place | Rice + soup + banchan. KRW 8,000–12,000. |
+| 10:00 | ⚠️ Depart for **Haedong Yonggungsa Temple** | ~35 min taxi each way (KRW 25,000–30,000). Note: busiest 11:00–14:00 — at this hour it'll be lively rather than quiet. |
+| 10:35 | Arrive Haedong — explore sea-cliff temple, dragon statues, shrines | Free entry. Stunning coastal setting. Allow 75 min. |
+| 11:50 | Return taxi to central Busan (~35 min) | |
+| 12:30 | **Gukje (International) Market** + **BIFF Square** | Cheap, varied street food, clothing, souvenirs |
+| 12:45 | 🍜 Lunch — Gukje Market street food | Tteokbokki, bindaetteok, soondae. KRW 8,000–12,000. |
+| 14:00–16:00 | Choose one: **Haeundae Beach** (40 min subway, Line 2) or **Spa Land** at Centum City (KRW 15,000–18,000, ~25 min subway) | Haeundae: beach. Spa Land: jjimjilbang-style sauna/spa — good for tired legs. |
+| 16:30 | Return to Lion Hotel — shower and pack overnight bag for KTX | |
 | 18:00 | Vacate hotel room (checkout before 22:00) | Store main bags at reception or take to Busan Station |
 | 19:00–20:30 | 🍜 Dinner — Busan Station area | Korean BBQ or naengmyeon (cold noodles — excellent in summer heat). KRW 15,000–25,000/person. |
 | 21:15 | ⚠️ Depart for Busan Station (KTX) | ~10–20 min walk/taxi from Jungang area |
@@ -529,15 +531,15 @@
 
 ## Day 18 — Wed 22 Jul · Seoul → Incheon Airport
 
-**Wake: 08:30** (~7h sleep after 01:30)
+**Wake: 09:00** (~7.5h sleep after 01:30)
 
 | Time | Event | Notes |
 |------|-------|-------|
-| 08:30 | Wake | |
-| 09:00 | 🍜 Breakfast — Myeongdong street vendors or café | Vendors from ~08:00: hotteok, egg toast, tteokbokki. |
-| 09:30 | Taxi or Metro Line 3 → Anguk Station (~20 min) | |
-| 09:45–11:00 | **Bukchon Hanok Village** | Traditional tile-roof hanok. Walk the alleys. Keep voices low — residents live here. Best light in the morning. |
-| 11:00–13:00 | **Myeongdong** | Cosmetics street, street food, fashion. 5 min walk from Hotel Manu. Very busy midday. |
+| 09:00 | Wake | |
+| 09:30 | 🍜 Breakfast — Myeongdong street vendors or café | Vendors from ~08:00: hotteok, egg toast, tteokbokki. |
+| 10:00 | Taxi or Metro Line 3 → Anguk Station (~20 min) | |
+| 10:15–11:30 | **Bukchon Hanok Village** | Traditional tile-roof hanok. Walk the alleys. Keep voices low — residents live here. |
+| 11:30–13:00 | **Myeongdong** | Cosmetics street, street food, fashion. 5 min walk from Hotel Manu. Very busy midday. |
 | 13:00 | ⚠️ Check out Hotel Manu Seoul | ❓ Confirm exact checkout time — if 11:00, swap order: check out at 11:00, leave bags at hotel, then do Bukchon, collect bags before Seoul Station. |
 | 13:30 | Taxi or Metro to Seoul Station (~15 min) | Store bags at **T-Luggage counter, Level 1** (KRW 3,000–7,000/bag) |
 | 14:00–17:30 | Choose one: **Gyeongbokgung Palace** (KRW 3,000, closes 18:00 — hanbok rental at gate) or **Insadong** (antiques, galleries, teahouses) | Gyeongbokgung is 5 min from Anguk (already there from Bukchon) — easiest combo |
