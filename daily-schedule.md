@@ -201,24 +201,24 @@
 
 🔀 **Chosen over full-day Disneyland (all 4), Asakusa + Ueno, and Odaiba.** Note: Angela's own itinerary doc in Google Drive shows 11 Jul as a full-day Disneyland visit — worth reconciling. If Disneyland instead, tickets need buying now.
 
-**Wake: 07:30**
+**Wake: 08:00**
 
 | Time | Event | Notes |
 |------|-------|-------|
-| 07:30 | Wake | |
-| 07:50 | Quick breakfast — hotel or konbini | |
-| 08:30 | Depart Shinjuku | |
-| 08:35 | JR Shonan-Shinjuku Line: Shinjuku → Kamakura (55 min, ¥970) | Direct. Sit left side for sea views approaching Kamakura. |
-| 09:30 | Arrive Kamakura Station | |
-| 09:35 | Walk 5 min → **Tsurugaoka Hachimangu Shrine** | Free. Grand lotus-pond approach. |
-| 09:40–10:20 | Explore Tsurugaoka Hachimangu | |
-| 10:25 | Bus from Kamakura Station (line 2 or 7) → Daibutsu-mae stop (15 min, ¥230) | Or 30 min walk west |
-| 10:45–11:30 | ⚠️ **Kotoku-in — Great Buddha** (¥300 + ¥50 to enter inside statue) | 13.35m bronze. Arrive before tour buses pile in. Interior: cramped but worth ¥50. |
-| 11:35 | Walk 5 min → **Hase-dera Temple** (¥400) | |
-| 11:35–12:20 | Hase-dera — sea views from garden, Kannon statue, cave walkway | |
-| 12:30 | Walk back toward Kamakura Station or bus | ~30 min scenic walk or bus |
-| 13:00 | 🍜 Lunch — **Komachi-dori** (main shopping street from station) | Shirasu (whitebait) donburi is the local speciality. ¥1,200–2,000. |
-| 14:00–15:00 | Komachi-dori shopping — pottery, sweets, souvenirs | |
+| 08:00 | Wake | |
+| 08:20 | Relaxed breakfast — hotel or konbini | |
+| 08:55 | Depart Shinjuku | |
+| 09:00 | JR Shonan-Shinjuku Line: Shinjuku → Kamakura (55 min, ¥970) | Direct. Sit left side for sea views approaching Kamakura. |
+| 09:55 | Arrive Kamakura Station | |
+| 10:00 | Walk 5 min → **Tsurugaoka Hachimangu Shrine** | Free. Grand lotus-pond approach. |
+| 10:05–10:45 | Explore Tsurugaoka Hachimangu | |
+| 10:50 | Bus from Kamakura Station (line 2 or 7) → Daibutsu-mae stop (15 min, ¥230) | Or 30 min walk west |
+| 11:10–11:55 | ⚠️ **Kotoku-in — Great Buddha** (¥300 + ¥50 to enter inside statue) | 13.35m bronze. Busier by late morning, but still fine. Interior: cramped but worth ¥50. |
+| 12:00 | Walk 5 min → **Hase-dera Temple** (¥400) | |
+| 12:00–12:45 | Hase-dera — sea views from garden, Kannon statue, cave walkway | |
+| 12:50 | Walk back toward Kamakura Station or bus | ~30 min scenic walk or bus |
+| 13:15 | 🍜 Lunch — **Komachi-dori** (main shopping street from station) | Shirasu (whitebait) donburi is the local speciality. ¥1,200–2,000. |
+| 14:15–15:00 | Komachi-dori shopping — pottery, sweets, souvenirs | |
 | 15:00–16:00 | Optional: **Yuigahama Beach** (10 min walk south of station) | July beach — warm, popular, not too crowded |
 | 16:00 | JR Shonan-Shinjuku: Kamakura → Shinjuku (55 min, ¥970) | |
 | 17:00 | Arrive Shinjuku | |
@@ -231,13 +231,13 @@
 
 ## Day 7 — Sun 12 Jul · Check Out → Shinkansen to Osaka
 
-**Wake: 07:30**
+**Wake: 08:00**
 
 | Time | Event | Notes |
 |------|-------|-------|
-| 07:30 | Wake | |
-| 07:45 | Breakfast | Last Tokyo morning |
-| 08:30 | ⚠️ Final pack — checkout is 10:00 | Forwarded bags already sent; travel with carry-on only |
+| 08:00 | Wake | |
+| 08:20 | Breakfast | Last Tokyo morning |
+| 08:50 | ⚠️ Final pack — checkout is 10:00 | Forwarded bags already sent; travel with carry-on only, so packing is light |
 | 09:45 | Check out Onsen House 新宿. Return keys. | |
 | 09:50 | Walk to Shinjuku Station with bags | |
 | 10:00 | JR Yamanote: Shinjuku → Shinagawa (13 min, ¥200) | |
@@ -320,28 +320,28 @@
 
 🔀 **Chosen over Kobe, Nara, and an Osaka-local rest day.** Arashiyama pairs well if the 13 Jul Kyoto day felt rushed; Kobe/Nara are shorter and lower-key if a rest day is wanted instead.
 
-**Wake: 08:00**
+**Wake: 07:30** — earlier start here is deliberate: it puts you in the bamboo grove before the tour buses, and the whole day still finishes earlier and more relaxed.
 
 | Time | Event | Notes |
 |------|-------|-------|
-| 08:00 | Wake | |
-| 08:30 | Breakfast — apartment or local café | Less rushed today |
-| 09:15 | Leave apartment | |
-| 09:20 | Osaka Metro Midosuji: Namba → Umeda (10 min, ¥240) | |
-| 09:35 | Hankyu Kyoto Line: Umeda → Kyoto Kawaramachi (45 min, ¥630) | Private rail — buy ticket at machine, Suica may not work |
-| 10:20 | Arrive Kyoto Kawaramachi | |
-| 10:30 | Bus 11 or 28: Kawaramachi → Arashiyama (~40 min, ¥230) | Or taxi ~¥2,500 |
-| 11:10 | Arrive Arashiyama | |
-| 11:15–12:00 | ⚠️ **Arashiyama Bamboo Grove** | Free. Go immediately on arrival before midday crowds. Grove is 5 min walk from main stop. |
-| 12:00–13:00 | 🍜 Lunch — Arashiyama riverside | Tofu kaiseki at Shigetsu/Tenryu-ji (¥3,300, vegetarian), or simpler riverside options. ¥1,500–3,000. |
-| 13:00–14:00 | **Tenryu-ji Temple + garden** (¥500 garden, +¥300 for buildings) | UNESCO garden. Pond reflection of Arashiyama hills. |
-| 14:00–14:30 | **Togetsukyo Bridge** — the postcard view | Free. 5 min walk. |
-| 14:30–15:30 | **Jojakko-ji** or **Nison-in** — quieter bamboo-adjacent temples (¥500 each) | Less crowded alternative to main grove |
-| 15:30 | Bus back to Kyoto Kawaramachi or Shijo | |
-| 16:15 | Optional: quick **Nishiki Market** pass-through (if missed on Day 8) | |
-| 17:00 | Hankyu: Kyoto → Umeda (45 min) | |
-| 17:50 | Osaka Metro: Umeda → Namba (10 min) | |
-| 18:05 | Back at apartment | |
+| 07:30 | Wake | |
+| 07:50 | Breakfast — apartment or local café | |
+| 08:15 | Leave apartment | |
+| 08:20 | Osaka Metro Midosuji: Namba → Umeda (10 min, ¥240) | |
+| 08:35 | Hankyu Kyoto Line: Umeda → Kyoto Kawaramachi (45 min, ¥630) | Private rail — buy ticket at machine, Suica may not work |
+| 09:20 | Arrive Kyoto Kawaramachi | |
+| 09:25 | Bus 11 or 28: Kawaramachi → Arashiyama (~40 min, ¥230) | Or taxi ~¥2,500 |
+| 10:05 | Arrive Arashiyama | |
+| 10:10–11:00 | ⚠️ **Arashiyama Bamboo Grove** | Free. Arriving ~10:00 genuinely beats the crowds — much quieter than late morning. Grove is 5 min walk from main stop. |
+| 11:00–12:00 | 🍜 Lunch — Arashiyama riverside | Tofu kaiseki at Shigetsu/Tenryu-ji (¥3,300, vegetarian), or simpler riverside options. ¥1,500–3,000. |
+| 12:00–13:00 | **Tenryu-ji Temple + garden** (¥500 garden, +¥300 for buildings) | UNESCO garden. Pond reflection of Arashiyama hills. |
+| 13:00–13:30 | **Togetsukyo Bridge** — the postcard view | Free. 5 min walk. |
+| 13:30–14:30 | **Jojakko-ji** or **Nison-in** — quieter bamboo-adjacent temples (¥500 each) | Less crowded alternative to main grove |
+| 14:30 | Bus back to Kyoto Kawaramachi or Shijo | |
+| 15:15 | Optional: quick **Nishiki Market** pass-through (if missed on Day 8) | |
+| 16:00 | Hankyu: Kyoto → Umeda (45 min) | |
+| 16:50 | Osaka Metro: Umeda → Namba (10 min) | |
+| 17:05 | Back at apartment | |
 | 18:30 | 🍜 Dinner — **Kuromon Ichiba Market** area | Fresh sashimi, wagyu skewers, tamagoyaki — evening snack circuit. ¥2,000–3,000. |
 | 20:00 | ⚠️ Pack for Fukuoka — checkout tomorrow by 10:45 | |
 
