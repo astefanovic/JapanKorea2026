@@ -236,8 +236,7 @@ const DAYS = [
 
  {n:3,date:"Wed 8 Jul",title:"DisneySea · Harajuku, nails & Shibuya",who:"Ralph & Angela: DisneySea · Aleks & Ceci: options below",
   pick:true,
-  markers:[acc(P.onsen,"Onsen House (base)"),food(P.bf_tokyo,"Breakfast — Harajuku",[{name:"Fuglen Tokyo",dish:"Coffee",note:"Nordic coffee, Tomigaya"},{name:"Onigiri Gonbei",dish:"Onigiri",note:"handmade near Harajuku"}]),m(P.disneysea,"DisneySea — R&A","08:30","Tokyo DisneySea"),m(P.meiji,"Meiji Shrine","10:15","Meiji Shrine"),
-           m(P.sinden,"Sin Den — Ceci nails","12:30"),m(P.shibuya,"Shibuya","15:15","Shibuya Crossing")],
+  base:[acc(P.onsen,"Onsen House (base)"),food(P.bf_tokyo,"Breakfast — Harajuku",[{name:"Fuglen Tokyo",dish:"Coffee",note:"Nordic coffee, Tomigaya"},{name:"Onigiri Gonbei",dish:"Onigiri",note:"handmade near Harajuku"}]),m(P.disneysea,"DisneySea — R&A","08:30","Tokyo DisneySea")],
   tl:[["08:30","Ralph & Angela — DisneySea rope drop"],
       ["10:15","Aleks & Ceci — Meiji Shrine + Takeshita St"],
       ["12:30","Ceci: nail appointment @ Sin Den (English-run)"],
@@ -284,7 +283,7 @@ const DAYS = [
 
  {n:"5–6",date:"Fri 10 & Sat 11 Jul",title:"Two full days in/around Tokyo",who:"Pick any two — one for Friday, one for Saturday",
   pick:true,poolFirst:true,
-  markers:[acc(P.onsen,"Onsen House, Shinjuku (base)")],
+  base:[acc(P.onsen,"Onsen House, Shinjuku (base)"),food(P.bf_tokyo,"Breakfast — Shinjuku",[{name:"Cafe Aaliya",dish:"French toast",note:"famed Shinjuku French toast"},{name:"Onigiri Bongo",dish:"Onigiri",note:"legendary rice balls"}])],
   tl:[["","These two days are interchangeable. Browse the pool below and choose two."]],
   note:"Currently pencilled: Yokohama+Nakano (Fri) and Kamakura (Sat). Swap freely — tap to compare.",
   optsLabel:"The full-day pool — choose two",
@@ -342,7 +341,7 @@ const DAYS = [
   note:"Reserve the Super Nintendo World Area Timed Entry in the USJ app as early as it allows."},
 
  {n:10,date:"Wed 15 Jul",title:"Osaka free day",who:"Pick one — options below",pick:true,
-  markers:[acc(P.tsurumibashi,"Osaka apartment (base)"),food(P.bf_osaka,"Breakfast — Osaka",[{name:"Takamura Coffee",dish:"Coffee",note:"warehouse specialty cafe"},{name:"Kuromon tamago-sando",dish:"Sandwich",note:"market egg sandwich"}]),m(P.arashiyama,"Arashiyama (current)","11:35","Arashiyama")],
+  base:[acc(P.tsurumibashi,"Osaka apartment (base)"),food(P.bf_osaka,"Breakfast — Osaka",[{name:"Takamura Coffee",dish:"Coffee",note:"warehouse specialty cafe"},{name:"Kuromon tamago-sando",dish:"Sandwich",note:"market egg sandwich"}])],
   tl:[["","Unplanned buffer day. Current pick is Arashiyama — browse the alternatives."]],
   note:"Whatever you choose, pack for Fukuoka tonight (checkout tomorrow 10:45).",
   optsLabel:"Choose the day",
@@ -547,7 +546,8 @@ function activateOption(di,oi){
   if(det){det.classList.add('show');
     det.innerHTML=`<h4>${o.label}</h4><div class="blurb">${o.blurb}</div>`+
       '<ul class="tl">'+o.tl.map(r=>`<li><span class="t">${r[0]}</span><span class="e">${r[1]}</span></li>`).join('')+'</ul>';}
-  showMarkers(o.markers,'alt',o.center,o.zoom);
+  // always show the day's base (accommodation + breakfast) alongside the chosen option
+  showMarkers([...(d.base||[]),...o.markers],'alt',o.center,o.zoom);
 }
 
 /* option chip clicks */
