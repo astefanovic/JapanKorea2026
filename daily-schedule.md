@@ -38,6 +38,7 @@
 | 23:20 | ✅ Withdraw JPY — 7-Eleven ATM, T3 arrivals hall (2F). ¥30,000–50,000/person | |
 | 23:30 | Keikyu Airport Line: Haneda T3 → Shinagawa (29 min, ¥470) | Last trains ~midnight |
 | 23:59 | JR Yamanote: Shinagawa → Shinjuku (13 min, ¥200) | |
+| 00:10+1 | Late supper near Bentencho — **Matsu no Ya Edogawabashi** or konbini backup | 24h tonkatsu/curry fallback after the flight; skip if immigration or trains run late |
 | 00:15+1 | Arrive Onsen House 新宿 — late check-in is fine | |
 | 00:30+1 | Sleep | |
 

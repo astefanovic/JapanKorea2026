@@ -61,12 +61,14 @@ Angela (Filipino) and Ceci (Vietnamese) are **not** visa-exempt for Japan — un
 | 22:35 | Arrive HND Terminal 3 |
 | ~23:15–23:45 | Clear immigration + baggage (allow 40–60 min; late-night queues are usually shorter) |
 | ~23:50–00:20 | Transfer to Shinjuku |
+| ~00:10 | Late supper near Bentencho — Matsu no Ya Edogawabashi or konbini backup |
 
 **HND T3 → Shinjuku:**
 Keikyu Airport Line from Haneda Airport T3 station (below the terminal) → Shinagawa (29 min, ¥470), then JR Yamanote Line → Shinjuku (13 min, ¥200). Total ~45 min, ~¥670. Trains run until around midnight from HND T3 — if through immigration by 23:40 you should be fine. If it runs long: taxi to Shinjuku ~¥6,000–8,000, ~40 min.
 
 ⚠️ **Set up Suica at the airport** — Keikyu station machines are in the basement of T3 arrivals; also Apple Wallet if not done before departure.
 ⚠️ **Withdraw JPY cash at HND** — 7-Eleven ATM is in the arrivals hall (2F). Draw ¥30,000–50,000 per person tonight while you remember.
+🍜 **Off-plane food:** Matsu no Ya Edogawabashi is the 24h tonkatsu/curry fallback near the accommodation; if immigration or trains run late, grab 7-Eleven/Lawson food and eat in the room.
 TODO: **Buy Shinkansen tickets** (Ghibli 9 Jul return + Tokyo→Osaka 12 Jul) first chance on 7 or 8 Jul at Shinagawa or Tokyo Station Green Window.
 
 ---

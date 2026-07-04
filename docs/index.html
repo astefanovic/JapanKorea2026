@@ -31,7 +31,8 @@
   .hint{display:inline-flex;gap:8px;align-items:center;background:var(--panel);border:1px solid var(--line);
     border-radius:999px;padding:7px 13px;font-size:12.5px;color:var(--muted);margin-top:8px}
   section.day{background:var(--panel);border:1px solid var(--line);border-radius:16px;
-    padding:18px 18px 16px;margin:26px 0;scroll-margin-top:70px;box-shadow:0 8px 30px #0006;
+    padding:18px 18px 16px;margin:26px 0;scroll-margin-top:64px;scroll-snap-align:start;
+    scroll-snap-stop:always;box-shadow:0 8px 30px #0006;
     transition:opacity .3s,box-shadow .3s,border-color .3s}
   .dhead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:2px}
   .dnum{font-size:12px;font-weight:700;color:var(--bg);background:var(--accent);border-radius:6px;
@@ -99,18 +100,21 @@
   .fmeta{flex:1;min-width:0;font-size:12px;line-height:1.28}
   .fmeta .sub{display:block;color:var(--muted);font-size:11px;margin-top:1px}
   @media (max-width:860px){
+    html{scroll-snap-type:y proximity;scroll-padding-top:calc(46vh + 58px)}
     .wrap{flex-direction:column}
     .mapcol{position:sticky;top:49px;height:46vh;width:100%;flex:none;z-index:800;
       border-bottom:1px solid var(--line)}
     .content{max-width:none;width:100%;padding:0 14px 60vh}
     .intro{padding:24px 2px 6px}
     .intro h2{font-size:24px}
+    section.day{scroll-margin-top:calc(46vh + 58px)}
   }
   /* desktop: snap between day cards + dim everything but the day driving the map,
      so it's obvious which card you're "on" while scrolling a tall list */
   @media (min-width:861px){
-    html{scroll-snap-type:y proximity}
-    section.day{margin:40px 0;scroll-snap-align:center;opacity:.5}
+    html{scroll-snap-type:y proximity;scroll-padding-top:70px}
+    section.day{margin:40px 0;opacity:.5}
+    #days{padding-top:18vh}
     section.day.active{opacity:1;border-color:var(--accent2);
       box-shadow:0 14px 44px #000c,0 0 0 1px var(--accent2)}
   }
@@ -206,7 +210,7 @@ const P = {
   narapark:[34.6851,135.8430], kasuga:[34.6817,135.8483], naramachi:[34.6785,135.8290], nakatanidou:[34.6822,135.8272],
   shinsekai:[34.6524,135.5063], umedasky:[34.7052,135.4903], dendentown:[34.6600,135.5060],
   /* food spots (coords near where you eat) */
-  omoide:[35.6935,139.6996], nagoyafood:[35.1700,136.8820], hakataramen:[33.5910,130.3992],
+  omoide:[35.6935,139.6996], edogawabashi:[35.7098,139.7330], nagoyafood:[35.1700,136.8820], hakataramen:[33.5910,130.3992],
   jejubbq:[33.4635,126.3085], seomyeon:[35.1577,129.0595], seoulbbq:[37.5636,126.9848],
   /* breakfast spots (near each accommodation / on the way) */
   bf_tokyo:[35.6945,139.7005], bf_osaka:[34.6662,135.5012], bf_kyoto:[35.0032,135.7802],
@@ -227,11 +231,12 @@ const food=(coord,meal,picks,branch)=>({coord,label:"🍴 "+meal,food:true,
 /* ---------- scenes ---------- */
 const DAYS = [
  {n:1,date:"Mon 6 Jul",title:"Fly Melbourne → Tokyo",fixed:true,
-  markers:[m(P.hnd,"Land HND Terminal 3","22:35","Haneda Airport"),acc(P.onsen,"Onsen House, Shinjuku")],
+  markers:[m(P.hnd,"Land HND Terminal 3","22:35","Haneda Airport"),food(P.edogawabashi,"Late supper — near Bentencho",[{name:"Matsu no Ya Edogawabashi",dish:"Tonkatsu",note:"24h tonkatsu/curry fallback after the flight"},{name:"Konbini backup",dish:"Onigiri",note:"7-Eleven/Lawson if everyone just wants food in the room"}]),acc(P.onsen,"Onsen House, Shinjuku")],
   tl:[["22:35","Arrive Haneda T3 — immigration, Suica, cash"],
       ["23:30","Keikyu → Shinagawa → JR Yamanote → Shinjuku"],
+      ["00:10","Late supper near Bentencho — Matsu no Ya or konbini backup"],
       ["00:15","Check in, sleep",]],
-  note:"Long travel day. Bags 20kg + 7kg carry-on. Withdraw ¥30–50k at the 7-Eleven ATM in arrivals."},
+  note:"Long travel day. Bags 20kg + 7kg carry-on. Withdraw ¥30–50k at the 7-Eleven ATM in arrivals. If immigration or trains run late, skip the sit-down meal and grab konbini food before check-in."},
 
  {n:2,date:"Tue 7 Jul",title:"Shinkansen tickets · Gyoen · Akihabara",who:"All 4 · Disneyland eve (Ralph & Angela)",
   markers:[acc(P.onsen,"Onsen House (base)"),food(P.bf_tokyo,"Breakfast — Shinjuku",[{name:"Cafe Aaliya",dish:"French toast",note:"famed Shinjuku French toast"},{name:"Onigiri Bongo",dish:"Onigiri",note:"legendary rice balls (~15 min)"}]),m(P.shinagawa,"Shinkansen tickets","10:20","Shinagawa Station"),m(P.gyoen,"Shinjuku Gyoen","11:20","Shinjuku Gyoen National Garden"),
@@ -592,30 +597,49 @@ host.addEventListener('click',e=>{
 });
 
 /* scroll-driven activation */
-let current=-1;
-const io=new IntersectionObserver((entries)=>{
-  entries.forEach(en=>{
-    if(en.isIntersecting){
-      en.target.classList.add('active');
-      const idx=+en.target.dataset.idx;
-      if(idx===current)return; current=idx;
-      const d=DAYS[idx];
-      if(d.options){
-        // show ONE option by default (the current pick, else the first) — not all at once
-        let oi=d.options.findIndex(o=>o.chosen); if(oi<0)oi=0;
-        activateOption(idx,oi);
-      } else {
-        showMarkers(d.markers, d.fixed?'':(d.pick?'gold':''));
-      }
-    } else {
-      en.target.classList.remove('active');
-    }
+let current=-1, ticking=false;
+const daySections=[...document.querySelectorAll('section.day')];
+function activationLine(){
+  return window.matchMedia('(max-width:860px)').matches
+    ? Math.min(window.innerHeight-80, window.innerHeight*0.46+76)
+    : window.innerHeight*0.38;
+}
+function setActiveDay(idx){
+  if(idx===current)return;
+  current=idx;
+  daySections.forEach((s,i)=>s.classList.toggle('active',i===idx));
+  const d=DAYS[idx];
+  if(d.options){
+    // show ONE option by default (the current pick, else the first) — not all at once
+    let oi=d.options.findIndex(o=>o.chosen); if(oi<0)oi=0;
+    activateOption(idx,oi);
+  } else {
+    showMarkers(d.markers, d.fixed?'':(d.pick?'gold':''));
+  }
+}
+function updateActiveDay(){
+  ticking=false;
+  const y=activationLine();
+  let best=0, bestDist=Infinity;
+  daySections.forEach((sec,idx)=>{
+    const rect=sec.getBoundingClientRect();
+    const clamped=Math.max(rect.top, Math.min(y, rect.bottom));
+    const dist=Math.abs(y-clamped);
+    if(dist<bestDist){best=idx;bestDist=dist;}
   });
-},{rootMargin:'-45% 0px -45% 0px',threshold:0});
-document.querySelectorAll('section.day').forEach(s=>io.observe(s));
+  setActiveDay(best);
+}
+function scheduleActiveDay(){
+  if(ticking)return;
+  ticking=true;
+  requestAnimationFrame(updateActiveDay);
+}
+window.addEventListener('scroll',scheduleActiveDay,{passive:true});
+window.addEventListener('resize',scheduleActiveDay);
 
 /* first paint */
 showMarkers(DAYS[0].markers,'');
+updateActiveDay();
 /* map can render at 0-size before layout settles (sticky/flex); force a recalc */
 setTimeout(()=>map.invalidateSize(),200);
 window.addEventListener('load',()=>setTimeout(()=>map.invalidateSize(),300));
