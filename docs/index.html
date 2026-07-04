@@ -144,8 +144,8 @@
       Pin colours — <b style="color:#57c98a">green</b> = your accommodation (🏠, first point each day) ·
       <b style="color:#e0574d">red</b> = food (🍴, tap for 2–3 local picks incl. breakfast) · <b style="color:#e8734a">orange</b> = sights ·
       <b style="color:#4aa3e8">blue</b> = an option you’re previewing. Tap any pin for a photo.
-      On the day the group splits (20 Jul), the route forks at Jeju Airport into two coloured lines —
-      <b style="color:#4aa3e8">blue</b> for Aleks &amp; Ralph → Busan, <b style="color:#e8bf4a">gold</b> for Angela &amp; Ceci → Manila.
+      On days the group splits (7, 8 &amp; 20 Jul), the route forks at the split point into two
+      coloured lines, one per pair — check that day’s timeline for who goes where.
     </div>
   </div>
 </div>
@@ -235,7 +235,7 @@ const DAYS = [
 
  {n:2,date:"Tue 7 Jul",title:"Shinkansen tickets · Gyoen · Akihabara",who:"All 4 · Disneyland eve (Ralph & Angela)",
   markers:[acc(P.onsen,"Onsen House (base)"),food(P.bf_tokyo,"Breakfast — Shinjuku",[{name:"Cafe Aaliya",dish:"French toast",note:"famed Shinjuku French toast"},{name:"Onigiri Bongo",dish:"Onigiri",note:"legendary rice balls (~15 min)"}]),m(P.shinagawa,"Shinkansen tickets","10:20","Shinagawa Station"),m(P.gyoen,"Shinjuku Gyoen","11:20","Shinjuku Gyoen National Garden"),
-           m(P.akihabara,"Akihabara","14:00","Akihabara"),m(P.goldengai,"Golden Gai (eve)","16:15","Golden Gai"),food(P.omoide,"Dinner — Omoide Yokocho",[{name:"Omoide Yokocho yakitori",dish:"Yakitori",note:"lantern-lit alley stalls"},{name:"Kabukicho late-night ramen",dish:"Ramen",note:"post-drinks bowl"}]),m(P.disneyland,"Disneyland — R&A","17:00","Tokyo Disneyland")],
+           m(P.akihabara,"Akihabara","14:00","Akihabara"),m(P.goldengai,"Golden Gai (eve)","16:15","Golden Gai","b"),food(P.omoide,"Dinner — Omoide Yokocho",[{name:"Omoide Yokocho yakitori",dish:"Yakitori",note:"lantern-lit alley stalls"},{name:"Kabukicho late-night ramen",dish:"Ramen",note:"post-drinks bowl"}],"b"),m(P.disneyland,"Disneyland — R&A","17:00","Tokyo Disneyland","a")],
   tl:[["09:00","Wake — lie-in after the late arrival"],
       ["10:20","Buy Shinkansen tickets @ Shinagawa Green Window",""],
       ["11:20","Shinjuku Gyoen (¥500)"],
@@ -246,8 +246,8 @@ const DAYS = [
   note:"Buy 9 Jul (Ghibli) + 12 Jul (Osaka) Shinkansen seats today — the Sunday Osaka train fills up."},
 
  {n:3,date:"Wed 8 Jul",title:"DisneySea · Harajuku, nails & Shibuya",who:"Ralph & Angela: DisneySea · Aleks & Ceci: options below",
-  pick:true,
-  base:[acc(P.onsen,"Onsen House (base)"),food(P.bf_tokyo,"Breakfast — Harajuku",[{name:"Fuglen Tokyo",dish:"Coffee",note:"Nordic coffee, Tomigaya"},{name:"Onigiri Gonbei",dish:"Onigiri",note:"handmade near Harajuku"}]),m(P.disneysea,"DisneySea — R&A","08:30","Tokyo DisneySea")],
+  pick:true,optionBranch:"b",
+  base:[acc(P.onsen,"Onsen House (base)"),food(P.bf_tokyo,"Breakfast — Harajuku",[{name:"Fuglen Tokyo",dish:"Coffee",note:"Nordic coffee, Tomigaya"},{name:"Onigiri Gonbei",dish:"Onigiri",note:"handmade near Harajuku"}],"b"),m(P.disneysea,"DisneySea — R&A","08:30","Tokyo DisneySea","a")],
   tl:[["08:30","Ralph & Angela — DisneySea rope drop"],
       ["10:15","Aleks & Ceci — Meiji Shrine + Takeshita St"],
       ["12:30","Ceci: nail appointment @ Sin Den (English-run)"],
@@ -577,8 +577,12 @@ function activateOption(di,oi){
   if(det){det.classList.add('show');
     det.innerHTML=`<h4>${o.label}</h4><div class="blurb">${o.blurb}</div>`+
       '<ul class="tl">'+o.tl.map(r=>`<li><span class="t">${r[0]}</span><span class="e">${r[1]}</span></li>`).join('')+'</ul>';}
-  // always show the day's base (accommodation + breakfast) alongside the chosen option
-  showMarkers([...(d.base||[]),...o.markers],'alt',o.center,o.zoom);
+  // always show the day's base (accommodation + breakfast) alongside the chosen option.
+  // if the day forks (optionBranch set, e.g. Day 3 — R&A do DisneySea while A&C browse
+  // the options), tag every option marker with that branch so it draws as a continuation
+  // of the base's matching branch rather than merging back into the shared trunk line.
+  const optMarkers=d.optionBranch?o.markers.map(mk=>mk.branch?mk:{...mk,branch:d.optionBranch}):o.markers;
+  showMarkers([...(d.base||[]),...optMarkers],'alt',o.center,o.zoom);
 }
 
 /* option chip clicks */
