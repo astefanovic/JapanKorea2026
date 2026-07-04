@@ -72,10 +72,11 @@ rendered into a scrollytelling timeline with a sticky Leaflet map.
   title just yields no photo (graceful).
 
 ### Data model / helpers (in the inline `<script>`)
-- `m(coord,label,time,wiki)` — a normal numbered stop. `wiki` = Wikipedia title for its photo.
-- `acc(coord,label)` — accommodation. Renders a **green 🏠 pin**, no photo. Should be the
-  **first** marker of each day.
-- `food(coord,meal,picks)` — a **red 🍴 pin**. `picks` is an array of
+- `m(coord,label,time,wiki,branch)` — a normal numbered stop. `wiki` = Wikipedia title for
+  its photo. `branch` is optional (see "Split days" below).
+- `acc(coord,label,branch)` — accommodation. Renders a **green 🏠 pin**, no photo. Should be
+  the **first** marker of each day.
+- `food(coord,meal,picks,branch)` — a **red 🍴 pin**. `picks` is an array of
   `{name, dish, note}`; `dish` is a Wikipedia title for that pick's thumbnail. The popup
   is a compact list of the picks (this is the "2+ options to browse" UI — keep it inside
   the popup; do NOT add it to the timeline/screen).
@@ -93,6 +94,29 @@ rendered into a scrollytelling timeline with a sticky Leaflet map.
 - ⚠️ Section index ≠ day number: Days 5 & 6 are a single combined card, so everything
   after it is shifted by one (e.g. `n:10` Osaka is DOM section idx 8). When testing by
   index, account for this.
+
+### Split days (the group forks — currently only Day 16)
+- Pass a `branch` string (`"a"` or `"b"`) as the last arg to `m()`/`acc()`/`food()` for
+  every marker *after* the fork point. Markers with no `branch` are the shared "trunk".
+- `showMarkers()` draws the trunk as the usual dashed orange line, then draws one extra
+  dashed polyline per branch, starting from the last trunk point, in that branch's colour
+  (`BRANCH_COLOR = {a:'#4aa3e8' (blue), b:'#e8bf4a' (gold)}` — same hex as the existing
+  `alt`/`gold` marker icon classes, so pins and lines match). Non-food branch markers also
+  get the matching icon colour; `home`/`food` styling still takes priority over branch
+  colour for accommodation/food pins.
+- This assumes markers are ordered trunk-then-branch-then-branch in the array (true for
+  Day 16). If a future split day interleaves them, the "last trunk point" anchor logic in
+  `showMarkers()` needs revisiting.
+
+### Desktop card focus (dim + highlight the active day)
+- On screens ≥861px, `section.day` sits at `opacity:.5` by default; the IntersectionObserver
+  adds an `active` class to whichever day is currently driving the map (same intersection
+  logic that already picks which day's markers to show), which bumps it to `opacity:1` with
+  a blue (`--accent2`) border/box-shadow. This was added because with many similarly-styled
+  cards in a row it was hard to tell which one you were "on" while scrolling.
+- Desktop cards also got `scroll-snap-align:center` + `html{scroll-snap-type:y proximity}`
+  for a light snap-to-card feel. `proximity` (not `mandatory`) so it doesn't fight normal
+  scrolling or trap the user on a card. Mobile layout is untouched.
 
 ---
 

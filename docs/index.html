@@ -31,7 +31,8 @@
   .hint{display:inline-flex;gap:8px;align-items:center;background:var(--panel);border:1px solid var(--line);
     border-radius:999px;padding:7px 13px;font-size:12.5px;color:var(--muted);margin-top:8px}
   section.day{background:var(--panel);border:1px solid var(--line);border-radius:16px;
-    padding:18px 18px 16px;margin:26px 0;scroll-margin-top:70px;box-shadow:0 8px 30px #0006}
+    padding:18px 18px 16px;margin:26px 0;scroll-margin-top:70px;box-shadow:0 8px 30px #0006;
+    transition:opacity .3s,box-shadow .3s,border-color .3s}
   .dhead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:2px}
   .dnum{font-size:12px;font-weight:700;color:var(--bg);background:var(--accent);border-radius:6px;
     padding:2px 8px;letter-spacing:.4px}
@@ -105,6 +106,14 @@
     .intro{padding:24px 2px 6px}
     .intro h2{font-size:24px}
   }
+  /* desktop: snap between day cards + dim everything but the day driving the map,
+     so it's obvious which card you're "on" while scrolling a tall list */
+  @media (min-width:861px){
+    html{scroll-snap-type:y proximity}
+    section.day{margin:40px 0;scroll-snap-align:center;opacity:.5}
+    section.day.active{opacity:1;border-color:var(--accent2);
+      box-shadow:0 14px 44px #000c,0 0 0 1px var(--accent2)}
+  }
 </style>
 </head>
 <body>
@@ -135,6 +144,8 @@
       Pin colours — <b style="color:#57c98a">green</b> = your accommodation (🏠, first point each day) ·
       <b style="color:#e0574d">red</b> = food (🍴, tap for 2–3 local picks incl. breakfast) · <b style="color:#e8734a">orange</b> = sights ·
       <b style="color:#4aa3e8">blue</b> = an option you’re previewing. Tap any pin for a photo.
+      On the day the group splits (20 Jul), the route forks at Jeju Airport into two coloured lines —
+      <b style="color:#4aa3e8">blue</b> for Aleks &amp; Ralph → Busan, <b style="color:#e8bf4a">gold</b> for Angela &amp; Ceci → Manila.
     </div>
   </div>
 </div>
@@ -204,14 +215,14 @@ const P = {
   /* accommodations */
   onsen:[35.7016,139.7036], manu:[37.5603,126.9843]
 };
-// destination marker: coord, label, time, wikiTitle (for photo)
-const m=(coord,label,time,wiki)=>({coord,label,time,wiki});
+// destination marker: coord, label, time, wikiTitle (for photo), branch ('a'/'b' once the group splits)
+const m=(coord,label,time,wiki,branch)=>({coord,label,time,wiki,branch});
 // accommodation marker: green home pin, no photo
-const acc=(coord,label)=>({coord,label:"🏠 "+label,home:true});
+const acc=(coord,label,branch)=>({coord,label:"🏠 "+label,home:true,branch});
 // food marker: red 🍴 pin with 2+ browsable picks. Each pick: {name, dish, note}
 // where `dish` is a Wikipedia article used for the little thumbnail photo.
-const food=(coord,meal,picks)=>({coord,label:"🍴 "+meal,food:true,
-  picks:Array.isArray(picks)?picks:[{name:meal,dish:picks}]});
+const food=(coord,meal,picks,branch)=>({coord,label:"🍴 "+meal,food:true,
+  picks:Array.isArray(picks)?picks:[{name:meal,dish:picks}],branch});
 
 /* ---------- scenes ---------- */
 const DAYS = [
@@ -414,7 +425,9 @@ const DAYS = [
   note:"Coordinate tomorrow’s split early: Angela & Ceci leave 05:45, Aleks & Ralph 08:45."},
 
  {n:16,date:"Mon 20 Jul",title:"The group splits",who:"Angela & Ceci → Manila · Aleks & Ralph → Busan",fixed:true,
-  markers:[acc(P.aewol,"Lafauza, Aewol (leave)"),m(P.cju,"CJU — both flights","07:30","Jeju International Airport"),m(P.gimhae,"Busan (Gimhae) — A&R","11:45","Gimhae International Airport"),food(P.jagalchi,"Lunch — Jagalchi Market",[{name:"Pick-and-grill upstairs",dish:"Hoe (food)",note:"choose downstairs, eat up"},{name:"Ssiat hotteok (BIFF)",dish:"Hotteok",note:"seed-stuffed sweet pancake"}]),acc(P.lionhotel,"Lion Hotel (check in)"),m(P.manila,"Manila — A&C","20:10","Manila")],
+  markers:[acc(P.aewol,"Lafauza, Aewol (leave)"),m(P.cju,"CJU — both flights","07:30","Jeju International Airport"),
+           m(P.gimhae,"Busan (Gimhae) — A&R","11:45","Gimhae International Airport","a"),food(P.jagalchi,"Lunch — Jagalchi Market",[{name:"Pick-and-grill upstairs",dish:"Hoe (food)",note:"choose downstairs, eat up"},{name:"Ssiat hotteok (BIFF)",dish:"Hotteok",note:"seed-stuffed sweet pancake"}],"a"),acc(P.lionhotel,"Lion Hotel (check in)","a"),
+           m(P.manila,"Manila — A&C","20:10","Manila","b")],
   tl:[["05:45","Angela & Ceci → CJU (07:30 flt via HKG)"],
       ["08:45","Aleks & Ralph → CJU, return car"],
       ["10:45","Depart CJU → Busan (7C504)"],
@@ -493,6 +506,9 @@ map.on('popupopen',e=>{
   });
 });
 
+// branch colours for days where the group splits (see day.n:16) — 'a' matches the
+// existing blue "alt" marker style, 'b' the existing gold marker style
+const BRANCH_COLOR={a:'#4aa3e8',b:'#e8bf4a'};
 function showMarkers(markers,kind,center,zoom){
   layer.clearLayers();
   const pts=[];
@@ -500,15 +516,30 @@ function showMarkers(markers,kind,center,zoom){
   markers.forEach((mk)=>{
     let cls,content;
     if(mk.food){cls='food';content='🍴';}
-    else{num++;cls=mk.home?'home':(kind||'');content=String(num);}
+    else{
+      num++;
+      cls=mk.home?'home':(mk.branch==='a'?'alt':mk.branch==='b'?'gold':(kind||''));
+      content=String(num);
+    }
     const mm=L.marker(mk.coord,{icon:iconFor(content,cls)}).addTo(layer);
     mm.bindTooltip(mk.label,{className:'mtip',direction:'top',offset:[0,-10]});
     mm.bindPopup(popupHtml(mk),{minWidth:210,maxWidth:220});
     pts.push(mk.coord);
   });
-  if(markers.length>1){
-    L.polyline(pts,{color:'#e8734a',weight:2,opacity:.5,dashArray:'4 6'}).addTo(layer);
-  }
+  // route line(s): the shared "trunk" in orange, then — on days the group splits —
+  // each branch forks off in its own colour starting from the last shared point
+  const trunk=[]; const branches={}; let lastTrunk=null;
+  markers.forEach(mk=>{
+    if(!mk.branch){trunk.push(mk.coord);lastTrunk=mk.coord;}
+    else{
+      if(!branches[mk.branch])branches[mk.branch]=lastTrunk?[lastTrunk]:[];
+      branches[mk.branch].push(mk.coord);
+    }
+  });
+  if(trunk.length>1)L.polyline(trunk,{color:'#e8734a',weight:2,opacity:.5,dashArray:'4 6'}).addTo(layer);
+  Object.keys(branches).forEach(b=>{
+    if(branches[b].length>1)L.polyline(branches[b],{color:BRANCH_COLOR[b]||'#57c98a',weight:2.5,opacity:.7,dashArray:'4 6'}).addTo(layer);
+  });
   if(center){map.flyTo(center,zoom||13,{duration:.8});}
   else if(pts.length){map.flyToBounds(L.latLngBounds(pts).pad(0.35),{duration:.8,maxZoom:14});}
 }
@@ -561,6 +592,7 @@ let current=-1;
 const io=new IntersectionObserver((entries)=>{
   entries.forEach(en=>{
     if(en.isIntersecting){
+      en.target.classList.add('active');
       const idx=+en.target.dataset.idx;
       if(idx===current)return; current=idx;
       const d=DAYS[idx];
@@ -571,6 +603,8 @@ const io=new IntersectionObserver((entries)=>{
       } else {
         showMarkers(d.markers, d.fixed?'':(d.pick?'gold':''));
       }
+    } else {
+      en.target.classList.remove('active');
     }
   });
 },{rootMargin:'-45% 0px -45% 0px',threshold:0});

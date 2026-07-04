@@ -3,7 +3,7 @@
 ## Workflow
 
 - Push directly to `master`. No PRs.
-- **Before making changes, read `AGENT-NOTES.md`** — it records decisions already made and
+- **Before making changes, read `AGENTS.md`** — it records decisions already made and
   the gotchas (sandbox egress limits, GitHub Pages deploy flakiness, Leaflet vendoring)
   that will otherwise cost you real time.
 
@@ -13,7 +13,7 @@
 - `daily-schedule.md` — hour-by-hour operational plan for each day
 - `bookings-audit.md` — all flights and accommodation verified against booking PDFs
 - `docs/index.html` — interactive map + timeline site (GitHub Pages, served from `/docs`)
-- `AGENT-NOTES.md` — decisions, site conventions & gotchas for anyone editing the above
+- `AGENTS.md` — decisions, site conventions & gotchas for anyone editing the above
 
 ## Overview
 
