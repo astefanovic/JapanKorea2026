@@ -32,7 +32,7 @@
     border-radius:999px;padding:7px 13px;font-size:12.5px;color:var(--muted);margin-top:8px}
   section.day{background:var(--panel);border:1px solid var(--line);border-radius:16px;
     padding:18px 18px 16px;margin:26px 0;scroll-margin-top:64px;scroll-snap-align:start;
-    scroll-snap-stop:always;box-shadow:0 8px 30px #0006;
+    box-shadow:0 8px 30px #0006;
     transition:opacity .3s,box-shadow .3s,border-color .3s}
   .dhead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:2px}
   .dnum{font-size:12px;font-weight:700;color:var(--bg);background:var(--accent);border-radius:6px;
@@ -600,9 +600,18 @@ host.addEventListener('click',e=>{
 let current=-1, ticking=false;
 const daySections=[...document.querySelectorAll('section.day')];
 function activationLine(){
-  return window.matchMedia('(max-width:860px)').matches
-    ? Math.min(window.innerHeight-80, window.innerHeight*0.46+76)
-    : window.innerHeight*0.38;
+  // Focus the day whose card sits at the middle of the *readable* area. On mobile
+  // the sticky map covers the top of the viewport, so only the strip below it is
+  // readable — anchor to the centre of that uncovered strip so the map doesn't flip
+  // to the next day until you've actually scrolled the current card past centre
+  // (i.e. reached its lower half). On desktop the map is a side column, so the whole
+  // viewport is readable; use a point a bit above centre so cards focus promptly.
+  if(window.matchMedia('(max-width:860px)').matches){
+    const map=document.querySelector('.mapcol');
+    const mapBottom=map?map.getBoundingClientRect().bottom:0;
+    return mapBottom+(window.innerHeight-mapBottom)/2;
+  }
+  return window.innerHeight*0.42;
 }
 function setActiveDay(idx){
   if(idx===current)return;
