@@ -470,7 +470,11 @@ const DAYS = [
 ];
 
 /* ---------- map ---------- */
-const map = L.map('map',{zoomControl:true,scrollWheelZoom:false}).setView([35.5,137],5);
+// keyboard:false removes the map container's tabindex. Otherwise clicking a marker
+// focuses the sticky map container and the browser scroll-into-views it, nudging the
+// page and yanking the scroll-driven active day to the wrong card. We don't use
+// arrow-key map panning, so dropping keyboard focus is harmless.
+const map = L.map('map',{zoomControl:true,scrollWheelZoom:false,keyboard:false}).setView([35.5,137],5);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{
   attribution:'© OpenStreetMap © CARTO',subdomains:'abcd',maxZoom:19}).addTo(map);
 let layer = L.layerGroup().addTo(map);
@@ -526,7 +530,9 @@ function showMarkers(markers,kind,center,zoom){
       cls=mk.home?'home':(mk.branch==='a'?'alt':mk.branch==='b'?'gold':(kind||''));
       content=String(num);
     }
-    const mm=L.marker(mk.coord,{icon:iconFor(content,cls)}).addTo(layer);
+    // keyboard:false — markers are tabindex=0 divs; keep them out of the focus/scroll
+    // path too (see the map's keyboard:false note). We don't use marker keyboard nav.
+    const mm=L.marker(mk.coord,{icon:iconFor(content,cls),keyboard:false}).addTo(layer);
     mm.bindTooltip(mk.label,{className:'mtip',direction:'top',offset:[0,-10]});
     mm.bindPopup(popupHtml(mk),{minWidth:210,maxWidth:220});
     pts.push(mk.coord);
