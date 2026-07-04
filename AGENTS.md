@@ -88,14 +88,19 @@ rendered into a scrollytelling timeline with a sticky Leaflet map.
 ### Option days (Day 3, Days 5–6 pool, Day 10)
 - These use `base:[...]` + `options:[...]` instead of a plain `markers:[...]`.
 - `base` = the always-on pins (accommodation + breakfast, plus any fixed stop like
-  DisneySea on Day 3). `activateOption()` renders `[...base, ...option.markers]`.
-- On scroll-in, an option day shows **exactly one option** (the `chosen:true` one, else
-  the first) — NOT all options pooled. This was an explicit fix; don't revert it.
+  DisneySea on Day 3). `showOptionOnMap()` renders `[...base, ...option.markers]`.
+- **No option is chosen by default — the pick stays open.** On scroll-in, an option day
+  shows **exactly one option on the map** (`showOptionOnMap`, defaulting to the first, or
+  the one whose chip the traveller already tapped) — NOT all options pooled. Scroll-in must
+  **not** expand the `.detail` panel: only an explicit chip click (`activateOption()`) does
+  that. This matters because expanding the panel changes the card height, and that reflow
+  shifts the *following* day's card off-centre (it caused a "Day 11 not centred" bug). Don't
+  reintroduce a `chosen:true` default or expand detail on scroll.
 - ⚠️ Section index ≠ day number: Days 5 & 6 are a single combined card, so everything
   after it is shifted by one (e.g. `n:10` Osaka is DOM section idx 8). When testing by
   index, account for this.
 
-### Split days (the group forks — currently only Day 16)
+### Split days (the group forks — currently only Day 15, the 20 Jul Jeju→Busan/Manila split)
 - Pass a `branch` string (`"a"` or `"b"`) as the last arg to `m()`/`acc()`/`food()` for
   every marker *after* the fork point. Markers with no `branch` are the shared "trunk".
 - `showMarkers()` draws the trunk as the usual dashed orange line, then draws one extra
@@ -105,7 +110,7 @@ rendered into a scrollytelling timeline with a sticky Leaflet map.
   get the matching icon colour; `home`/`food` styling still takes priority over branch
   colour for accommodation/food pins.
 - This assumes markers are ordered trunk-then-branch-then-branch in the array (true for
-  Day 16). If a future split day interleaves them, the "last trunk point" anchor logic in
+  Day 15). If a future split day interleaves them, the "last trunk point" anchor logic in
   `showMarkers()` needs revisiting.
 
 ### Desktop card focus (dim + highlight the active day)

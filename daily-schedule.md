@@ -13,7 +13,7 @@
 |-----|--------------------|--------------------|
 | **Japan entry (6 Jul, Day 1)** | ✅ Visa confirmed in-hand. | ✅ Visa confirmed in-hand. |
 | **Jeju entry (18 Jul, Day 13)** | ✅ Covered by Jeju's visa-waiver program — flight lands direct at CJU without transiting mainland Korea. | ✅ Same — covered, provided arrival stays direct to CJU. |
-| **Hong Kong transit (20 Jul, Day 16)** | ✅ Visa-free in HK up to 14 days, even leaving the airport. | ⚠️ Ordinary passport needs a HK visa unless transiting airside within 24h — 8h10m layover fits, but must not leave the terminal. Confirm TWOV conditions with HK Express/HK Immigration. |
+| **Hong Kong transit (20 Jul, Day 15)** | ✅ Visa-free in HK up to 14 days, even leaving the airport. | ⚠️ Ordinary passport needs a HK visa unless transiting airside within 24h — 8h10m layover fits, but must not leave the terminal. Confirm TWOV conditions with HK Express/HK Immigration. |
 | **Manila entry (20–23 Jul)** | ✅ Own passport, no issue. | ❓ Unverified — check Philippine Bureau of Immigration for Vietnamese-passport entry rules. |
 
 ---
@@ -395,9 +395,9 @@
 
 ---
 
-## Day 13 — Sat 18 Jul · Fly Fukuoka → Jeju
+## Day 13 — Sat 18 Jul · Fly Fukuoka → Jeju + north-coast drive
 
-**Wake: 07:30**
+**Wake: 07:30** — one calendar day: morning flight out of Fukuoka, then the Jeju north-coast drive straight from the airport.
 
 | Time | Event | Notes |
 |------|-------|-------|
@@ -415,13 +415,6 @@
 | 11:50–12:30 | Korean immigration + baggage claim | Fill out paper arrival card on the plane (Aleks & Ralph — visa-exempt). Angela & Ceci: covered under Jeju's visa-waiver program since this flight lands direct at CJU without transiting mainland Korea — no Korean visa needed for this leg. |
 | 12:30 | ✅ Pick up rental car at CJU arrivals | ❓ Booking ref needed — confirm before departure |
 | 12:35 | ✅ Buy KRW cash — Global ATM at CJU arrivals | Card acceptance patchy in Jeju |
-
----
-
-## Day 14 — Sat 18 Jul · Jeju (continued from airport)
-
-| Time | Activity | Notes |
-|------|----------|-------|
 | 12:45 | Drive → **Iho Tewoo Beach** (~10 min from airport) | Two white horse sculptures, black sand. 30 min stop. |
 | 13:20 | Drive → **Yongduam Rock** (~10 min) | Basalt sea stack. Free. 5 min walk from carpark. |
 | 13:45 | Drive → **Dongmun Traditional Market** (~10 min) | |
@@ -437,7 +430,7 @@
 
 ---
 
-## Day 15 — Sun 19 Jul · Jeju South Coast Loop (all 4)
+## Day 14 — Sun 19 Jul · Jeju South Coast Loop (all 4)
 
 **Wake: 09:00** — last full day together
 
@@ -462,7 +455,7 @@
 
 ---
 
-## Day 16 — Mon 20 Jul · Group Splits
+## Day 15 — Mon 20 Jul · Group Splits
 
 ### Angela & Ceci — CJU → HKG → Manila
 
@@ -504,7 +497,7 @@
 
 ---
 
-## Day 17 — Tue 21 Jul · Busan + Night Train to Seoul
+## Day 16 — Tue 21 Jul · Busan + Night Train to Seoul
 
 **Wake: 09:00**
 
@@ -531,7 +524,7 @@
 
 ---
 
-## Day 18 — Wed 22 Jul · Seoul → Incheon Airport
+## Day 17 — Wed 22 Jul · Seoul → Incheon Airport
 
 **Wake: 09:00** (~7.5h sleep after 01:30)
 
@@ -552,11 +545,11 @@
 | ~22:51 | Arrive Incheon T2 | |
 | ~23:05 | Walk to ibis Styles — connected landside to T2 | |
 | ~23:30 | ✅ **Check in — ibis Styles Ambassador Incheon T2** · Conf: 5179.287.373 · PIN: 6613 | |
-| 23:45 | Sleep | ⚠️ ibis Styles is at T2. Your flight departs T1. Free shuttle connects them — see Day 19. |
+| 23:45 | Sleep | ⚠️ ibis Styles is at T2. Your flight departs T1. Free shuttle connects them — see Day 18. |
 
 ---
 
-## Day 19 — Thu 23 Jul · Fly Home
+## Day 18 — Thu 23 Jul · Fly Home
 
 **Wake: 04:30**
 
@@ -585,17 +578,17 @@ Fill these in before 6 Jul:
 |---|---------|-----------------|--------|
 | A | **Kimono rental appointment time** | Day 8 (13 Jul) | ❓ Entire Kyoto day schedule pivots on this — fill in when booking confirmed |
 | B | **Kimono rental booking confirmed?** | Day 8 | ⚠️ Not confirmed as booked. Book at wargo.jp immediately. |
-| C | **Who drives Angela & Ceci to CJU at 05:45?** | Day 16 | ❓ Decide: Aleks or Ralph |
-| D | **Angela & Ceci HKG layover plan** | Day 16 | ❓ Airside only, or go into Hong Kong? Airport Express to central HK ~24 min |
+| C | **Who drives Angela & Ceci to CJU at 05:45?** | Day 15 | ❓ Decide: Aleks or Ralph |
+| D | **Angela & Ceci HKG layover plan** | Day 15 | ❓ Airside only, or go into Hong Kong? Airport Express to central HK ~24 min |
 | E | **Shibuya Sky pre-booked?** | Day 3 | ❓ Book at shibuya-sky.com — sellout risk |
 | F | **Cup Noodles Museum pre-booked?** | Day 5 | ❓ Book at cupnoodles-museum.jp |
 | G | **USJ Super Nintendo World ATT window time** | Day 9 | ❓ Reserve via USJ app ASAP after 7 Jul. Determines the day's park order. |
 | H | **Exact Nozomi departure times** | Days 4, 7, 11 | ❓ Confirmed when tickets are bought — schedule uses approximate times |
-| I | **Hotel Manu Seoul checkout time** | Day 18 | ❓ If 11:00 AM (not 12:00+), swap morning order: check out first, then Bukchon |
-| J | **Ceci meeting point at MNL T3** | Day 19 | ❓ Agree before parting in Jeju so there's no confusion on arrival |
+| I | **Hotel Manu Seoul checkout time** | Day 17 | ❓ If 11:00 AM (not 12:00+), swap morning order: check out first, then Bukchon |
+| J | **Ceci meeting point at MNL T3** | Day 18 | ❓ Agree before parting in Jeju so there's no confusion on arrival |
 | K | **Jeju rental car booking + reference** | Days 13–16 | ⚠️ Not confirmed in bookings tracker — book before departure if not done |
 | L | **Home departure time (Day 1)** | Day 1 | ❓ Adjust 03:30 departure based on actual suburb to airport transit time |
-| N | **Ceci Hong Kong TWOV conditions** | Day 16 | ❓ Confirm with HK Express/HK Immigration whether the 8h10m CJU→HKG→MNL connection qualifies for visa-free airside transit for a Vietnamese ordinary passport, and whether pre-arrangement is needed |
-| O | **Ceci entry to Philippines** | Day 16 onward | ❓ Verify Vietnamese-passport entry rules for Manila with Philippine Bureau of Immigration |
+| N | **Ceci Hong Kong TWOV conditions** | Day 15 | ❓ Confirm with HK Express/HK Immigration whether the 8h10m CJU→HKG→MNL connection qualifies for visa-free airside transit for a Vietnamese ordinary passport, and whether pre-arrangement is needed |
+| O | **Ceci entry to Philippines** | Day 15 onward | ❓ Verify Vietnamese-passport entry rules for Manila with Philippine Bureau of Immigration |
 | P | **Aleks & Ceci 7 Jul dinner: robatayaki or sushi omakase?** | Day 2 | ❓ Decide between the two. If sushi omakase, book a table now — good counters sell out. |
 | Q | **Ceci's nail appointment time (Sin Den, 8 Jul)** | Day 3 | ❓ Book via sinden.com and confirm the exact slot — the rest of the afternoon (Shibuya Sky vs Daikanyama) is built around it |

@@ -261,7 +261,7 @@ const DAYS = [
   note:"Sin Den (3-9-3 Jingumae) is fully English-operated — book at sinden.com. Nail time TBC; the afternoon flexes around it.",
   optsLabel:"Aleks & Ceci — swap the afternoon block",
   options:[
-    {label:"Harajuku + Shibuya",sub:"current plan",chosen:true,center:P.shibuya,zoom:14,
+    {label:"Harajuku + Shibuya",sub:"current plan",center:P.shibuya,zoom:14,
      markers:[m(P.meiji,"Meiji Shrine","","Meiji Shrine"),m(P.sinden,"Sin Den nails"),m(P.omotesando,"Omotesando","","Omotesando"),m(P.shibuya,"Shibuya","","Shibuya Crossing"),m(P.daikanyama,"Daikanyama","","Daikanyama")],
      blurb:"Meiji Shrine → Takeshita → nails at Sin Den → Shibuya Crossing → Shibuya Sky or Daikanyama.",
      tl:[["10:15","Meiji Shrine + Takeshita St"],["12:30","Sin Den nails / Aleks Omotesando"],["15:15","Shibuya + Daikanyama"]]},
@@ -304,11 +304,11 @@ const DAYS = [
   note:"Currently pencilled: Yokohama+Nakano (Fri) and Kamakura (Sat). Swap freely — tap to compare.",
   optsLabel:"The full-day pool — choose two",
   options:[
-    {label:"Yokohama + Nakano",sub:"pencilled: Fri",chosen:true,center:P.yokohama,zoom:12,
+    {label:"Yokohama + Nakano",sub:"pencilled: Fri",center:P.yokohama,zoom:12,
      markers:[m(P.yokohama,"Minato Mirai","","Minato Mirai 21"),m(P.cupnoodles,"Cup Noodles Museum","","Cup Noodles Museum"),m(P.yamashita,"Yamashita Park","","Yamashita Park"),food(P.chinatown,"Lunch — Yokohama Chinatown",[{name:"Yum cha / dim sum",dish:"Dim sum",note:"Japan's biggest Chinatown"},{name:"Nikuman (Edosei)",dish:"Baozi",note:"giant steamed pork buns"}]),m(P.nakano,"Nakano Broadway","","Nakano Broadway")],
      blurb:"Minato Mirai waterfront → Yokohama Chinatown lunch → Cup Noodles Museum → Nakano Broadway for retro/anime in the afternoon.",
      tl:[["10:00","Train to Yokohama"],["10:40","Minato Mirai + Yamashita Park"],["12:00","Chinatown lunch"],["13:30","Cup Noodles Museum"],["15:45","Nakano Broadway"]]},
-    {label:"Kamakura",sub:"pencilled: Sat",chosen:true,center:P.kamakura,zoom:14,
+    {label:"Kamakura",sub:"pencilled: Sat",center:P.kamakura,zoom:14,
      markers:[m(P.kamakura,"Tsurugaoka Hachimangu","","Tsurugaoka Hachimangu"),m(P.greatbuddha,"Great Buddha","","Kotoku-in"),m(P.hasedera,"Hase-dera","","Hase-dera"),food(P.komachi,"Lunch — Komachi-dori",[{name:"Shirasu-don",dish:"Shirasu",note:"Kamakura whitebait bowl"},{name:"Murasaki-imo soft serve",dish:"Sweet potato",note:"purple-yam ice cream"}]),m(P.yuigahama,"Yuigahama Beach","","Yuigahama")],
      blurb:"Coastal day trip — Tsurugaoka Hachimangu, the Great Buddha at Kotoku-in, Hase-dera, Komachi-dori lunch, optional Yuigahama beach.",
      tl:[["10:00","Train to Kamakura (~55m)"],["11:00","Tsurugaoka Hachimangu"],["12:10","Great Buddha + Hase-dera"],["14:15","Komachi-dori shirasu-don lunch + shops"],["15:15","Yuigahama Beach"],["16:20","Back to Tokyo"]]},
@@ -362,7 +362,7 @@ const DAYS = [
   note:"Whatever you choose, pack for Fukuoka tonight (checkout tomorrow 10:45).",
   optsLabel:"Choose the day",
   options:[
-    {label:"Arashiyama",sub:"west Kyoto",chosen:true,center:P.arashiyama,zoom:14,
+    {label:"Arashiyama",sub:"west Kyoto",center:P.arashiyama,zoom:14,
      markers:[m(P.arashiyama,"Bamboo Grove","","Arashiyama"),m(P.nonomiya,"Nonomiya Shrine","","Nonomiya Shrine"),m(P.tenryuji,"Tenryu-ji garden","","Tenryu-ji"),m(P.togetsukyo,"Togetsukyo Bridge","","Togetsukyo Bridge"),food(P.kimonoforest,"Lunch — Arashiyama",[{name:"Shoraan yudofu",dish:"Yudofu",note:"riverside tofu kaiseki"},{name:"Yoshimura soba",dish:"Soba",note:"buckwheat + bridge views"}])],
      blurb:"Bamboo Grove, Nonomiya Shrine, Tenryu-ji garden, Togetsukyo Bridge, riverside tofu lunch. Pairs well if the Kyoto day felt rushed. (Grove is busy by late morning — early start optional.)",
      tl:[["10:05","Hankyu to Kyoto → bus"],["11:40","Bamboo Grove + Nonomiya Shrine"],["12:30","Riverside yudofu lunch"],["13:30","Tenryu-ji + Togetsukyo"]]},
@@ -400,26 +400,22 @@ const DAYS = [
       ["19:00","Tonkotsu ramen dinner"]],
   note:"Confirm with the bell desk tonight that bags can be stored for an 08:00 pickup tomorrow."},
 
- {n:13,date:"Sat 18 Jul",title:"Fly Fukuoka → Jeju",who:"All 4",fixed:true,
-  markers:[acc(P.trad,"Hotel Trad Hakata (check out 08:15)"),m(P.fukuoka_air,"FUK Intl — TW228","10:30","Fukuoka Airport"),m(P.cju,"Jeju (CJU)","11:50","Jeju International Airport")],
+ {n:13,date:"Sat 18 Jul",title:"Fly Fukuoka → Jeju + north-coast drive",who:"All 4 · self-drive",fixed:true,
+  markers:[acc(P.trad,"Hotel Trad Hakata (check out 08:15)"),m(P.fukuoka_air,"FUK Intl — TW228","10:30","Fukuoka Airport"),m(P.cju,"Jeju (CJU) — arrive & pick up car","11:50","Jeju International Airport"),m(P.iho,"Iho Tewoo Beach","12:45","Iho Beach"),m(P.yongduam,"Yongduam Rock","13:20","Yongduam Rock"),food(P.dongmun,"Lunch — Dongmun Market",[{name:"Jeju black-pork noodles",dish:"Korean noodles",note:"covered market stalls"},{name:"Hallabong + hodu-gwaja",dish:"Citrus",note:"Jeju mandarin treats"}]),m(P.hamdeok,"Hamdeok Beach","15:30","Hamdeok Beach"),acc(P.aewol,"Lafauza, Aewol (check in)"),food(P.jejubbq,"Dinner — Jeju black pork",[{name:"Heukdwaeji BBQ",dish:"Korean barbecue",note:"black pig, charcoal-grilled"},{name:"Dombe-gogi",dish:"Bossam",note:"boiled pork, myeolchi dip"}])],
   tl:[["07:30","Wake, collect bags"],
       ["08:15","Check out, subway to airport"],
       ["08:45","Intl check-in — Tway TW228 (early cutoff!)"],
       ["10:30","Depart FUK → CJU (1h20)"],
-      ["11:50","Arrive Jeju — pick up rental car"]],
-  note:"warn|International bag-drop closes ~09:30–09:45 — this is the tight one. Go straight to the International terminal."},
-
- {n:14,date:"Sat 18 Jul",title:"Jeju — north coast drive",who:"All 4 · self-drive",
-  markers:[m(P.cju,"CJU — pick up car","12:30","Jeju International Airport"),m(P.iho,"Iho Tewoo Beach","12:45","Iho Beach"),m(P.yongduam,"Yongduam Rock","13:20","Yongduam Rock"),food(P.dongmun,"Lunch — Dongmun Market",[{name:"Jeju black-pork noodles",dish:"Korean noodles",note:"covered market stalls"},{name:"Hallabong + hodu-gwaja",dish:"Citrus",note:"Jeju mandarin treats"}]),m(P.hamdeok,"Hamdeok Beach","15:30","Hamdeok Beach"),acc(P.aewol,"Lafauza, Aewol (check in)"),food(P.jejubbq,"Dinner — Jeju black pork",[{name:"Heukdwaeji BBQ",dish:"Korean barbecue",note:"black pig, charcoal-grilled"},{name:"Dombe-gogi",dish:"Bossam",note:"boiled pork, myeolchi dip"}])],
-  tl:[["12:45","Iho Tewoo Beach"],
+      ["11:50","Arrive Jeju — pick up rental car"],
+      ["12:45","Iho Tewoo Beach"],
       ["13:20","Yongduam Rock"],
       ["13:50","Dongmun Market lunch — black pork"],
       ["15:30","Hamdeok Beach swim"],
       ["18:00","Check in Airbnb, Aewol"],
       ["19:30","Jeju black pork BBQ dinner"]],
-  note:"warn|Rental car must be booked + IDP in hand. Korea drives on the RIGHT. Use Kakao Maps."},
+  note:"warn|Two tight anchors today: FUK international bag-drop closes ~09:30–09:45 (go straight to the International terminal), and the Jeju rental needs the car booked + IDP in hand — Korea drives on the RIGHT, use Kakao Maps."},
 
- {n:15,date:"Sun 19 Jul",title:"Jeju — south coast loop",who:"All 4 · last day together",
+ {n:14,date:"Sun 19 Jul",title:"Jeju — south coast loop",who:"All 4 · last day together",
   markers:[acc(P.aewol,"Lafauza, Aewol (base)"),food(P.bf_jeju,"Breakfast — Aewol cafes",[{name:"Monsant Aewol",dish:"Coffee",note:"oceanfront glass cafe"},{name:"Bomnal Cafe",dish:"Coffee",note:"Aewol coast views"}]),m(P.cheonjiyeon,"Cheonjiyeon Falls","10:50","Cheonjiyeon Falls"),m(P.jeongbang,"Jeongbang Falls","11:20","Jeongbang Falls"),food(P.seogwipo,"Lunch — Seogwipo Olle Market",[{name:"Haemul kalguksu",dish:"Kalguksu",note:"seafood knife-noodle soup"},{name:"Jeju eomuk + mandarin",dish:"Eomuk",note:"market fishcake snacks"}]),m(P.jusangjeolli,"Jusangjeolli Cliff","14:00","Jusangjeolli Cliff"),m(P.jungmun,"Jungmun Beach","14:50","Jungmun Saekdal Beach")],
   tl:[["10:00","Drive south (~50m)"],
       ["10:50","Cheonjiyeon + Jeongbang waterfalls"],
@@ -429,7 +425,7 @@ const DAYS = [
       ["19:00","Last group dinner"]],
   note:"Coordinate tomorrow’s split early: Angela & Ceci leave 05:45, Aleks & Ralph 08:45."},
 
- {n:16,date:"Mon 20 Jul",title:"The group splits",who:"Angela & Ceci → Manila · Aleks & Ralph → Busan",fixed:true,
+ {n:15,date:"Mon 20 Jul",title:"The group splits",who:"Angela & Ceci → Manila · Aleks & Ralph → Busan",fixed:true,
   markers:[acc(P.aewol,"Lafauza, Aewol (leave)"),m(P.cju,"CJU — both flights","07:30","Jeju International Airport"),
            m(P.gimhae,"Busan (Gimhae) — A&R","11:45","Gimhae International Airport","a"),food(P.jagalchi,"Lunch — Jagalchi Market",[{name:"Pick-and-grill upstairs",dish:"Hoe (food)",note:"choose downstairs, eat up"},{name:"Ssiat hotteok (BIFF)",dish:"Hotteok",note:"seed-stuffed sweet pancake"}],"a"),acc(P.lionhotel,"Lion Hotel (check in)","a"),
            m(P.manila,"Manila — A&C","20:10","Manila","b")],
@@ -440,7 +436,7 @@ const DAYS = [
       ["13:30","Jagalchi Fish Market lunch"]],
   note:"warn|Ceci (Vietnamese passport): stay airside during the HKG layover. Manila entry rules still to verify."},
 
- {n:17,date:"Tue 21 Jul",title:"Busan + night train to Seoul",who:"Aleks & Ralph",
+ {n:16,date:"Tue 21 Jul",title:"Busan + night train to Seoul",who:"Aleks & Ralph",
   markers:[acc(P.lionhotel,"Lion Hotel (base)"),food(P.bf_busan,"Breakfast — Busan",[{name:"Momos Coffee",dish:"Coffee",note:"World Barista Champ roaster"},{name:"Ssiat hotteok",dish:"Hotteok",note:"Busan seed-stuffed pancake"}]),m(P.haedong,"Haedong Yonggungsa","10:35","Haedong Yonggungsa"),m(P.gukje,"Gukje Market","12:30","Gukje Market"),m(P.haeundae,"Haeundae / Spa Land","14:00","Haeundae Beach"),food(P.seomyeon,"Dinner — Busan",[{name:"Seomyeon galbi",dish:"Galbi",note:"grill street"},{name:"Milmyeon",dish:"Naengmyeon",note:"Busan cold wheat noodles"},{name:"Dwaeji-gukbap",dish:"Gukbap",note:"Busan pork-soup rice"}]),m(P.busanstn,"KTX → Seoul","22:00","Busan Station")],
   tl:[["10:00","Taxi to Haedong Yonggungsa temple"],
       ["12:30","Gukje Market + BIFF Square lunch"],
@@ -449,7 +445,7 @@ const DAYS = [
       ["22:00","KTX 072 → Seoul (arr 00:27)"]],
   note:"Vacate the hotel room before the KTX; store bags at reception or the station."},
 
- {n:18,date:"Wed 22 Jul",title:"Seoul → Incheon Airport",who:"Aleks & Ralph",
+ {n:17,date:"Wed 22 Jul",title:"Seoul → Incheon Airport",who:"Aleks & Ralph",
   markers:[acc(P.manu,"Hotel Manu Seoul (base)"),food(P.bf_seoul,"Breakfast — near Bukchon",[{name:"Onion Anguk",dish:"Coffee",note:"cafe in a restored hanok"},{name:"Myeongdong gimbap",dish:"Gimbap",note:"quick local classic"}]),m(P.bukchon,"Bukchon Hanok Village","10:15","Bukchon Hanok Village"),m(P.myeongdong,"Myeongdong","11:30","Myeongdong"),m(P.gyeongbok,"Gyeongbokgung","14:00","Gyeongbokgung"),food(P.seoulbbq,"Dinner — Seoul BBQ",[{name:"Samgyeopsal",dish:"Samgyeopsal",note:"grilled pork belly"},{name:"Galbi",dish:"Galbi",note:"marinated short rib"}]),acc(P.icn,"ibis Styles ICN T2 (check in)")],
   tl:[["09:00","Wake at Hotel Manu"],
       ["10:15","Bukchon Hanok Village"],
@@ -459,7 +455,7 @@ const DAYS = [
       ["22:00","AREX → Incheon T2, check in ibis"]],
   note:"warn|Confirm the last AREX Express time (~22:43). ibis is at T2 but the flight leaves T1."},
 
- {n:19,date:"Thu 23 Jul",title:"Fly home",who:"Aleks & Ralph (+ Ceci from Manila)",fixed:true,
+ {n:18,date:"Thu 23 Jul",title:"Fly home",who:"Aleks & Ralph (+ Ceci from Manila)",fixed:true,
   markers:[acc(P.icn,"ibis ICN T2 (wake 04:30)"),m(P.manila,"Manila — meet Ceci","09:55","Manila")],
   tl:[["04:30","Wake, T2→T1 free shuttle (05:00)"],
       ["06:35","Depart ICN → Manila (Cebu Pacific)"],
@@ -515,7 +511,7 @@ map.on('popupopen',e=>{
   });
 });
 
-// branch colours for days where the group splits (see day.n:16) — 'a' matches the
+// branch colours for days where the group splits (see day.n:15) — 'a' matches the
 // existing blue "alt" marker style, 'b' the existing gold marker style
 const BRANCH_COLOR={a:'#4aa3e8',b:'#e8bf4a'};
 function showMarkers(markers,kind,center,zoom){
@@ -578,7 +574,19 @@ DAYS.forEach((d,idx)=>{
   host.appendChild(sec);
 });
 
-/* activate a single option: highlight chip, fill detail panel, focus map */
+// show an option day's map view: the day's base (accommodation + breakfast) plus one
+// option's markers. If the day forks (optionBranch set, e.g. Day 3 — R&A do DisneySea
+// while A&C browse the options), tag every option marker with that branch so it draws as
+// a continuation of the base's matching branch rather than merging into the trunk line.
+function showOptionOnMap(di,oi){
+  const d=DAYS[di], o=d.options[oi];
+  const optMarkers=d.optionBranch?o.markers.map(mk=>mk.branch?mk:{...mk,branch:d.optionBranch}):o.markers;
+  showMarkers([...(d.base||[]),...optMarkers],'alt',o.center,o.zoom);
+}
+/* explicit user pick (chip click): highlight the chip, expand its detail panel, map it.
+   This is the ONLY path that expands the detail panel — scroll-in must not, or the extra
+   height would reflow and shift the following day's card off-centre. No option is picked
+   by default; the choice stays open until the traveller taps a chip. */
 function activateOption(di,oi){
   const d=DAYS[di], o=d.options[oi];
   document.querySelectorAll(`.chip[data-d="${di}"]`).forEach(c=>c.classList.remove('active'));
@@ -588,12 +596,7 @@ function activateOption(di,oi){
   if(det){det.classList.add('show');
     det.innerHTML=`<h4>${o.label}</h4><div class="blurb">${o.blurb}</div>`+
       '<ul class="tl">'+o.tl.map(r=>`<li><span class="t">${r[0]}</span><span class="e">${r[1]}</span></li>`).join('')+'</ul>';}
-  // always show the day's base (accommodation + breakfast) alongside the chosen option.
-  // if the day forks (optionBranch set, e.g. Day 3 — R&A do DisneySea while A&C browse
-  // the options), tag every option marker with that branch so it draws as a continuation
-  // of the base's matching branch rather than merging back into the shared trunk line.
-  const optMarkers=d.optionBranch?o.markers.map(mk=>mk.branch?mk:{...mk,branch:d.optionBranch}):o.markers;
-  showMarkers([...(d.base||[]),...optMarkers],'alt',o.center,o.zoom);
+  showOptionOnMap(di,oi);
 }
 
 /* option chip clicks */
@@ -625,9 +628,12 @@ function setActiveDay(idx){
   daySections.forEach((s,i)=>s.classList.toggle('active',i===idx));
   const d=DAYS[idx];
   if(d.options){
-    // show ONE option by default (the current pick, else the first) — not all at once
-    let oi=d.options.findIndex(o=>o.chosen); if(oi<0)oi=0;
-    activateOption(idx,oi);
+    // Map one option so the view isn't empty, but DON'T expand the detail panel here —
+    // that reflow would shift the next card off-centre. No default pick (choice stays
+    // open); if the traveller already tapped a chip, keep showing that one.
+    const picked=document.querySelector(`.chip.active[data-d="${idx}"]`);
+    const oi=picked?+picked.dataset.o:0;
+    showOptionOnMap(idx,oi);
   } else {
     showMarkers(d.markers, d.fixed?'':(d.pick?'gold':''));
   }

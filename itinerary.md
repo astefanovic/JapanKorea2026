@@ -370,36 +370,12 @@ TODO: **Buy Shin-Osaka→Hakata Shinkansen tickets** at Shin-Osaka Green Window 
 
 ---
 
-### Day 13 — Sat 18 Jul · Fly Fukuoka → Jeju
+### Day 13 — Sat 18 Jul · Fly Fukuoka → Jeju + north-coast drive
+
+The Fukuoka→Jeju flight and the Jeju north-coast drive are the **same calendar day** — one long transition day that starts in Japan and ends on Jeju's northwest coast.
 
 **Hotel checkout: ⚠️ Leave by 09:00** (Flight 10:30 · official checkout time 11:00 — need to leave 2h early)
-
-| Time | Event |
-|------|-------|
-| **17 Jul evening** | Store bags with hotel bell desk for overnight (confirm the night before) |
-| 08:00 | Wake, collect bags from bell desk |
-| 08:15 | **Check out Hotel Trad Hakata** |
-| 08:25 | Fukuoka Subway from Gion Station (1 min walk from hotel) → Fukuoka Airport (2 stops, 5 min, ¥260) | Or taxi: ¥1,200–1,500 |
-| 08:35 | Arrive Fukuoka Airport — **go directly to International Terminal** | International is separate from domestic; connected by covered walkway (~5 min walk) |
-| 08:40–09:15 | Check-in + bag drop (Tway Air TW228 — international budget carrier, closes check-in **45–60 min before departure** = by ~09:30–09:45) |
-| 09:15–10:00 | Security + immigration (international departure) |
-| 10:30 | **Depart FUK → CJU — TW228 (Tway Air)** (1h 20m) |
-| 11:50 | **Arrive Jeju City Airport (CJU)** |
-
-⚠️ The subway to FUK (2 stops from Gion/Hakata) is more reliable than taxi for this timing. Don't depend on taxis in morning Fukuoka traffic.
-⚠️ Confirm with Hotel Trad Hakata (eve of 17 Jul) that bags can be stored overnight with the bell desk.
-⚠️ Tway Air is a Korean budget carrier — international check-in rules apply. **Do not miss the 09:30–09:45 bag drop cutoff.**
-
----
-
-## Korea (18 Jul – 23 Jul)
-
-### Day 14 — Sat 18 Jul · Arrive Jeju
-
-**Sleep:** Lafauza Airbnb, 611-30 Haso-ro, Aewol, Jeju 63067 (check-in from 16:00)
-Aewol is on the northwest coast, ~25 min drive from CJU airport and Jeju City. All north-coast activities are within 20–40 min of the Airbnb. The car makes the location ideal.
-
-**Car rental:** Pick up at CJU airport arrivals on landing.
+**Sleep:** Lafauza Airbnb, 611-30 Haso-ro, Aewol, Jeju 63067 (check-in from 16:00). Aewol is on the northwest coast, ~25 min drive from CJU; all north-coast stops below are within 20–40 min of the Airbnb.
 
 > ⚠️ **CRITICAL — Jeju rental car:**
 > - Has a car been booked? (Not in the expenses tracker.) **If not, book immediately** — July is peak season and cars sell out. See Q6.
@@ -408,26 +384,36 @@ Aewol is on the northwest coast, ~25 min drive from CJU airport and Jeju City. A
 > - Use **Kakao Maps** (download before arrival) — much more accurate than Google Maps for Korean roads.
 > - Petrol stations: many are unmanned "셀프" (self-service) — pay by card at pump.
 
-| Time | Activity |
-|------|----------|
-| 11:50 | Arrive CJU — Korean immigration (have K-ETA ready — Aleks & Ralph) |
-| ~12:45 | Collect baggage + pick up rental car at arrivals hall |
-| 13:00 | **Iho Tewoo Beach** (~10 min drive from airport) — two white-horse sculptures, black sandy beach, good swim stop |
-| 13:40 | **Yongduam Rock** (Dragon Head Rock) (~10 min from Iho) — short walk from carpark, dramatic basalt stack |
-| 14:15 | **Dongmun Traditional Market** (Jeju City, ~10 min drive) — covered street market: black pork, hallabong citrus, haemul pajeon (seafood pancake). Lunch here. Open all day but busiest mid-morning to late afternoon. |
-| 15:30 | **Hamdeok Beach** (~30 min north-east of Jeju City) — turquoise water, shallow entry, popular. Goes quieter after 16:00. |
-| 17:00 | Drive back toward Aewol (25–30 min) |
-| 17:30 | **Sarabong Park** — hilltop park in Jeju City with panoramic views. Sunset is ~20:00 in July; optional stop on the way. |
-| ~18:00 | **Check in at Lafauza, Aewol** |
-| 19:30 | **Black pork BBQ dinner** — Heuk Dwaeji (흑돼지) is Jeju's signature: Jeju black pig, charcoal-grilled, eaten with garlic, kimchi, ssam leaves. Dongmun Market area or local Aewol restaurants. Budget KRW 15,000–25,000/person. |
+| Time | Activity | Notes |
+|------|----------|-------|
+| **17 Jul evening** | Store bags with hotel bell desk overnight (confirm the night before) | |
+| 08:00 | Wake, collect bags from bell desk | |
+| 08:15 | **Check out Hotel Trad Hakata** | |
+| 08:25 | Fukuoka Subway from Gion Station (1 min walk) → Fukuoka Airport (2 stops, 5 min, ¥260) | More reliable than a taxi for this timing |
+| 08:35 | Arrive Fukuoka Airport — **go directly to International Terminal** | Separate from domestic; ~5 min covered walkway |
+| 08:40–09:15 | Check-in + bag drop (Tway Air TW228 — closes **45–60 min before departure** ≈ 09:30–09:45) | ⚠️ Do not miss this cutoff |
+| 09:15–10:00 | Security + immigration (international departure) | |
+| 10:30 | **Depart FUK → CJU — TW228 (Tway Air)** (1h 20m) | |
+| 11:50 | **Arrive Jeju (CJU)** — Korean immigration (K-ETA ready: Aleks & Ralph) | |
+| ~12:45 | Collect baggage + **pick up rental car** at arrivals | |
+| 13:00 | **Iho Tewoo Beach** (~10 min from airport) — black-sand beach, white-horse sculptures, swim stop | |
+| 13:40 | **Yongduam Rock** (Dragon Head Rock, ~10 min) — dramatic basalt stack | |
+| 14:15 | **Dongmun Traditional Market** (Jeju City, ~10 min) — black pork, hallabong citrus, haemul pajeon. Lunch here. | Busiest mid-morning to late afternoon |
+| 15:30 | **Hamdeok Beach** (~30 min NE) — turquoise water, shallow entry | Quieter after 16:00 |
+| 17:00 | Drive back toward Aewol (25–30 min) — optional **Sarabong Park** hilltop views on the way | Sunset ~20:00 in July |
+| ~18:00 | **Check in at Lafauza, Aewol** | |
+| 19:30 | **Black pork BBQ dinner** — Heuk Dwaeji (흑돼지): Jeju black pig, charcoal-grilled, with garlic/kimchi/ssam | KRW 15,000–25,000 pp |
 
-⚠️ Airbnb check-in from 16:00. If arriving before 16:00 and host hasn't approved early check-in, leave bags in the car and sightsee — all activities above are done on the drive from airport to Airbnb anyway.
+⚠️ Confirm with Hotel Trad Hakata (eve of 17 Jul) that bags can be stored overnight with the bell desk.
+⚠️ Airbnb check-in from 16:00 — but every stop above is on the airport→Aewol drive, so an early arrival is fine (leave bags in the car and sightsee).
 ⚠️ Buy KRW cash at CJU airport (Global ATMs at arrivals, or exchange counters). T-money cards are less useful in Jeju (car-based).
-⚠️ **20 Jul morning logistics — plan tonight:** Angela & Ceci need to leave for CJU by 05:45 (07:30 flight). Decide who drives them. Aleks & Ralph leave for CJU by 09:30. Plan car return at CJU — most rental companies are in the airport carpark (30 min before check-in should be fine if dropoff is quick). Checkout Airbnb: 11:00, but all 4 will have left before then.
+⚠️ **20 Jul morning logistics — plan tonight:** Angela & Ceci need to leave for CJU by 05:45 (07:30 flight). Decide who drives them. Aleks & Ralph leave for CJU by 09:30. Plan car return at CJU — most rental companies are in the airport carpark. Airbnb checkout is 11:00, but all 4 will have left before then.
 
 ---
 
-### Day 15 — Sun 19 Jul · Jeju — South Coast Loop
+## Korea (18 Jul – 23 Jul)
+
+### Day 14 — Sun 19 Jul · Jeju — South Coast Loop
 
 **Sleep:** Lafauza, Aewol (last night all 4 together)
 
@@ -455,7 +441,7 @@ Drive south via Jeju's cross-island road (Route 16 / 1100 Road or Route 11):
 
 ---
 
-### Day 16 — Mon 20 Jul · Group Splits at Jeju
+### Day 15 — Mon 20 Jul · Group Splits at Jeju
 
 #### Angela & Ceci — Jeju → Hong Kong → Manila
 
@@ -500,7 +486,7 @@ Check-in Lion Hotel from 15:00 (special request: ~13:00–14:00). If room not re
 
 ---
 
-### Day 17 — Mon 20 Jul · Busan (afternoon)
+### Day 16 — Mon 20 Jul · Busan (afternoon)
 
 **Sleep:** Lion Hotel, Busanjin-gu · Confirmation: 6923.302.739 · PIN: 3733
 
@@ -517,7 +503,7 @@ Evening: Explore Seomyeon (Busan's central nightlife district) or Haeundae (beac
 
 ---
 
-### Day 18 — Tue 21 Jul · Busan + Night Train to Seoul
+### Day 17 — Tue 21 Jul · Busan + Night Train to Seoul
 
 **Sleep:** Board KTX at 22:00 (arrive Seoul 00:27, then Hotel Manu Seoul)
 **Lion Hotel checkout:** 22 Jul by 12:00 — leaving on 21 Jul night; just vacate and go.
@@ -536,7 +522,7 @@ Evening: Explore Seomyeon (Busan's central nightlife district) or Haeundae (beac
 
 ---
 
-### Day 19 — Wed 22 Jul · Seoul → Incheon Airport
+### Day 18 — Wed 22 Jul · Seoul → Incheon Airport
 
 **Check in:** Hotel Manu Seoul (late, ~01:00) — late check-in confirmed
 **Check out:** Hotel Manu Seoul (confirm exact checkout time with hotel — see Q10)
@@ -574,12 +560,12 @@ Evening: Explore Seomyeon (Busan's central nightlife district) or Haeundae (beac
 | ~23:30 | **Check in — ibis Styles Ambassador Incheon T2** · Confirmation: 5179.287.373 · PIN: 6613 |
 
 ⚠️ Confirm exact last AREX Express time (typically ~22:40–22:43). The itinerary has "23:00" — this may be after the last express. If so, take the All-Stop train (runs later, slower, T-money works).
-⚠️ **ibis Styles is at Terminal 2. Flight departs Terminal 1.** Free shuttle connects them — allow time. See Day 20.
+⚠️ **ibis Styles is at Terminal 2. Flight departs Terminal 1.** Free shuttle connects them — allow time. See Day 19.
 ⚠️ Confirm Hotel Manu checkout time (see Q10) — if it's 11:00 AM, you have ~9.5h from arrival at 01:00. Ask about a late checkout (~13:00) when you arrive, or when booking.
 
 ---
 
-### Day 20 — Thu 23 Jul · Fly Home
+### Day 19 — Thu 23 Jul · Fly Home
 
 **Sleep:** ibis Styles Ambassador Incheon T2 (early departure)
 
