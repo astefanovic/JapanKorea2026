@@ -3,11 +3,17 @@
 ## Workflow
 
 - Push directly to `master`. No PRs.
+- **Before making changes, read `AGENT-NOTES.md`** — it records decisions already made and
+  the gotchas (sandbox egress limits, GitHub Pages deploy flakiness, Leaflet vendoring)
+  that will otherwise cost you real time.
 
 ## Repo Files
 
 - `itinerary.md` — day-by-day plans, activity suggestions, transport tips
+- `daily-schedule.md` — hour-by-hour operational plan for each day
 - `bookings-audit.md` — all flights and accommodation verified against booking PDFs
+- `docs/index.html` — interactive map + timeline site (GitHub Pages, served from `/docs`)
+- `AGENT-NOTES.md` — decisions, site conventions & gotchas for anyone editing the above
 
 ## Overview
 
