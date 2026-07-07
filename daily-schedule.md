@@ -100,7 +100,9 @@
 | 19:30 | Depart Maihama → Shinjuku (~40 min) | |
 | 20:15 | Back at hotel | |
 
-### Aleks & Ceci — Harajuku + Shibuya (+ Ceci's nail appointment)
+### Aleks & Ceci — Harajuku + Omotesando/Cat Street + Shibuya
+
+Ceci's nails are already done (7 Jul) — full day together, no split.
 
 **Wake: 09:00**
 
@@ -111,21 +113,16 @@
 | 10:00 | JR Yamanote: Shinjuku → Harajuku (4 min, ¥160) | |
 | 10:10–11:15 | **Meiji Shrine** — forested approach, peaceful. Free. | 5 min walk from Harajuku station |
 | 11:15–12:15 | **Takeshita Street** — harajuku fashion, crepes, kawaii | 2 min walk from Meiji Shrine exit |
-| 12:15 | 🍜 Lunch — Takeshita or Omotesando | ¥800–1,200 |
-| 13:00 | Walk to Omotesando/Jingumae (~10 min from Takeshita St) | |
-| ❓ 13:00–15:00 | **Ceci — nail appointment, Sin Den** (3-9-3 Jingumae, Shibuya-ku) | Hair/makeup/nail salon in Omotesando, fully English-operated (stylists have lived/worked overseas). Book ahead: sinden.com or +81 3-3405-4409. ❓ Exact time TBC once booked — adjust the rest of the afternoon around it. |
-| 13:00–15:00 | **Aleks — solo, Omotesando/Cat Street** (see options below) | |
-| 15:00 | Reconvene, walk or JR to Shibuya (~10 min) | |
-| 15:15–16:00 | **Shibuya Scramble Crossing** — watch from Starbucks 2F | |
-| 16:00–17:00 | ❓ Pick one: **Shibuya Sky** (¥2,000, book at shibuya-sky.com — sellout risk) or **Daikanyama** (T-Site bookshop, boutiques, coffee, 10 min walk south of Shibuya) | Afternoon is compressed by the nail appointment — probably not time for both |
-| 17:00 | JR Yamanote: Shibuya → Shinjuku (7 min, ¥160) | |
+| 12:15–13:00 | 🍜 Lunch — Takeshita or Omotesando | ¥800–1,200 |
+| 13:00 | Walk to Omotesando (~10 min from Takeshita St) | |
+| 13:10–13:50 | **Omotesando architecture walk** — Omotesando Hills (Tadao Ando), Prada Aoyama (Herzog & de Meuron's glass-diamond facade), tree-lined avenue | |
+| 13:50–14:50 | **MoMA Design Store** (3F, GYRE building, 5-10-1 Jingumae, Shibuya-ku, 11:00–20:00) — design-forward homewares, MoMA-exclusive goods, good gift shopping | On Omotesando's main avenue, ~5 min from Omotesando Hills |
+| 14:50–16:00 | **Cat Street** — walk the full stretch toward Shibuya, browsing vintage/thrift (Chicago Thrift Store, RAGTAG consignment) and small design boutiques | Cat Street runs directly from near the GYRE building down to Shibuya — no backtracking needed |
+| 16:00–16:45 | **Shibuya Scramble Crossing** — watch from Starbucks 2F | Cat Street ends a few minutes' walk from the crossing |
+| 16:45–18:00 | **Shibuya Sky** (¥2,000, book ahead at shibuya-sky.com — sellout risk) — no longer squeezed for time, so this can run long; catch it near golden hour | Or swap for Daikanyama (T-Site bookshop, boutiques, coffee, 10 min walk south) if Sky isn't booked |
+| 18:00 | JR Yamanote: Shibuya → Shinjuku (7 min, ¥160) | |
 
-**Aleks's solo options while Ceci is at Sin Den (all within ~10–15 min walk of Omotesando/Jingumae):**
-- **Omotesando architecture walk** — Omotesando Hills (Tadao Ando), Prada Aoyama (Herzog & de Meuron's glass-diamond facade), tree-lined avenue
-- **Design Festa Gallery** — free, chaotic indie art gallery, several minutes off Cat Street
-- **Cat Street vintage/thrift** — Chicago Thrift Store, RAGTAG consignment, small design boutiques
-- **Nezu Museum** (¥1,300) — quiet art museum with a genuinely excellent traditional garden; a good contrast to Meiji Shrine's crowds, 15 min walk
-- **Omotesando Koffee / Streamer Coffee** — specialty coffee, good spot to just sit and wait it out
+**If there's extra time to fill** (all off Omotesando/Cat Street, so easy to slot in): Design Festa Gallery (free, chaotic indie art gallery), Nezu Museum (¥1,300 — art + traditional garden, quieter than Meiji Shrine), Omotesando Koffee / Streamer Coffee.
 
 **🔀 Niche/further-out alternatives** — if you want to swap out the standard Harajuku/Shibuya block (this day, or another free day) for something less touristy:
 - **Shimokitazawa** — vintage clothing, vinyl record shops, indie theatre and live music venues, laid-back cafes. 15 min from Shibuya on the Keio Inokashira Line. (Top Coat's other English-friendly nail branch is here too — could combine nails + neighborhood in one trip.)
@@ -133,7 +130,8 @@
 - **Nakameguro** — Meguro River canal walk (famous for cherry blossoms, but pleasant year-round), boutique cafes and small fashion labels. 15 min from Shibuya.
 - **Koenji** — Tokyo's punk/vintage clothing neighborhood, dense secondhand shops, dive bars, indie music scene. 10 min from Shinjuku on the JR Chuo Line.
 - **Kichijoji** — Inokashira Park (rowboats on the pond), Harmonica Yokocho (retro alley bars/eateries), independent shops. ~20 min from Shinjuku, consistently ranks as one of Tokyo's most liveable neighbourhoods.
-| 18:30 | 🍜 Dinner — Shinjuku ramen or izakaya | ¥1,500–2,500 |
+
+18:30 — 🍜 Dinner back at Shinjuku (ramen or izakaya), ¥1,500–2,500.
 
 ---
 
@@ -591,4 +589,3 @@ Fill these in before 6 Jul:
 | N | **Ceci Hong Kong TWOV conditions** | Day 15 | ❓ Confirm with HK Express/HK Immigration whether the 8h10m CJU→HKG→MNL connection qualifies for visa-free airside transit for a Vietnamese ordinary passport, and whether pre-arrangement is needed |
 | O | **Ceci entry to Philippines** | Day 15 onward | ❓ Verify Vietnamese-passport entry rules for Manila with Philippine Bureau of Immigration |
 | P | **Aleks & Ceci 7 Jul dinner: robatayaki or sushi omakase?** | Day 2 | ❓ Decide between the two. If sushi omakase, book a table now — good counters sell out. |
-| Q | **Ceci's nail appointment time (Sin Den, 8 Jul)** | Day 3 | ❓ Book via sinden.com and confirm the exact slot — the rest of the afternoon (Shibuya Sky vs Daikanyama) is built around it |
