@@ -115,6 +115,15 @@ TODO (Q1): **Decide whether Aleks & Ceci are joining Disneyland on 7 Jul.** Chec
 
 With the nail appointment gone, the afternoon isn't compressed — no need to pick just one of Shibuya Sky/Daikanyama; see `daily-schedule.md` for the fleshed-out hour-by-hour.
 
+**Lunch (~12:15, near Takeshita St):**
+- **Harajuku Gyozaro** — crispy pan-fried gyoza just off Takeshita St, ¥400/6pc, fast counter service
+- **Afuri** (Harajuku/Omotesando branch) — yuzu shio ramen, light citrus broth, ~¥1,200
+
+**Dinner (~18:30) — no need to backtrack to Shinjuku, pick a location:**
+- **Stay in Shibuya: Nonbei Yokocho** ("Drunkard's Alley") — tiny 1950s yakitori/izakaya bars wedged beside Shibuya Station, ¥2,000–3,000
+- **Back in Shinjuku: Fuunji** — legendary tsukemen (dipping ramen), expect a queue but it moves fast, ~¥900
+- **Back in Shinjuku: Menya Sho** — chicken shio ramen, ~¥1,000
+
 **Also nearby if there's spare time:** Design Festa Gallery (free indie art gallery, off Cat Street), Nezu Museum (¥1,300 — art + traditional garden, quieter than Meiji Shrine), Omotesando Koffee / Streamer Coffee.
 
 **🔀 Niche/further-out alternatives** — if swapping the standard Harajuku/Shibuya block for something less touristy (this day, or another free day):

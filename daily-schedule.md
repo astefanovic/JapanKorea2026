@@ -113,14 +113,15 @@ Ceci's nails are already done (7 Jul) — full day together, no split.
 | 10:00 | JR Yamanote: Shinjuku → Harajuku (4 min, ¥160) | |
 | 10:10–11:15 | **Meiji Shrine** — forested approach, peaceful. Free. | 5 min walk from Harajuku station |
 | 11:15–12:15 | **Takeshita Street** — harajuku fashion, crepes, kawaii | 2 min walk from Meiji Shrine exit |
-| 12:15–13:00 | 🍜 Lunch — Takeshita or Omotesando | ¥800–1,200 |
+| 12:15–13:00 | 🍜 Lunch — pick one: **Harajuku Gyozaro** (crispy pan-fried gyoza, just off Takeshita St, ¥400/6pc) or **Afuri** (yuzu shio ramen, Harajuku/Omotesando branch, ~¥1,200) | Both fast counter-service — fit easily in 45 min |
 | 13:00 | Walk to Omotesando (~10 min from Takeshita St) | |
 | 13:10–13:50 | **Omotesando architecture walk** — Omotesando Hills (Tadao Ando), Prada Aoyama (Herzog & de Meuron's glass-diamond facade), tree-lined avenue | |
 | 13:50–14:50 | **MoMA Design Store** (3F, GYRE building, 5-10-1 Jingumae, Shibuya-ku, 11:00–20:00) — design-forward homewares, MoMA-exclusive goods, good gift shopping | On Omotesando's main avenue, ~5 min from Omotesando Hills |
 | 14:50–16:00 | **Cat Street** — walk the full stretch toward Shibuya, browsing vintage/thrift (Chicago Thrift Store, RAGTAG consignment) and small design boutiques | Cat Street runs directly from near the GYRE building down to Shibuya — no backtracking needed |
 | 16:00–16:45 | **Shibuya Scramble Crossing** — watch from Starbucks 2F | Cat Street ends a few minutes' walk from the crossing |
 | 16:45–18:00 | **Shibuya Sky** (¥2,000, book ahead at shibuya-sky.com — sellout risk) — no longer squeezed for time, so this can run long; catch it near golden hour | Or swap for Daikanyama (T-Site bookshop, boutiques, coffee, 10 min walk south) if Sky isn't booked |
-| 18:00 | JR Yamanote: Shibuya → Shinjuku (7 min, ¥160) | |
+| 18:15 | 🍜 Dinner — pick one: **Nonbei Yokocho** (Shibuya, stay put — tiny yakitori/izakaya "Drunkard's Alley" right beside Shibuya Station, ¥2,000–3,000) or head back to Shinjuku for **Fuunji** (legendary tsukemen, ~¥900, expect a fast-moving queue) or **Menya Sho** (chicken shio ramen, ~¥1,000) | Staying in Shibuya skips the backtrack; Shinjuku options are a 7 min Yamanote ride |
+| 19:15 | If dinner was in Shibuya: JR Yamanote back to Shinjuku (7 min, ¥160) | |
 
 **If there's extra time to fill** (all off Omotesando/Cat Street, so easy to slot in): Design Festa Gallery (free, chaotic indie art gallery), Nezu Museum (¥1,300 — art + traditional garden, quieter than Meiji Shrine), Omotesando Koffee / Streamer Coffee.
 
@@ -130,8 +131,6 @@ Ceci's nails are already done (7 Jul) — full day together, no split.
 - **Nakameguro** — Meguro River canal walk (famous for cherry blossoms, but pleasant year-round), boutique cafes and small fashion labels. 15 min from Shibuya.
 - **Koenji** — Tokyo's punk/vintage clothing neighborhood, dense secondhand shops, dive bars, indie music scene. 10 min from Shinjuku on the JR Chuo Line.
 - **Kichijoji** — Inokashira Park (rowboats on the pond), Harmonica Yokocho (retro alley bars/eateries), independent shops. ~20 min from Shinjuku, consistently ranks as one of Tokyo's most liveable neighbourhoods.
-
-18:30 — 🍜 Dinner back at Shinjuku (ramen or izakaya), ¥1,500–2,500.
 
 ---
 
