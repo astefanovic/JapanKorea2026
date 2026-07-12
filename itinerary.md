@@ -277,21 +277,21 @@ TODO: **Buy Shinagawa→Shin-Osaka Shinkansen tickets** (4 reserved seats) on 7 
 
 | Time | Activity | Transport |
 |------|----------|-----------|
-| 07:00 | Leave apartment | |
-| 07:15 | Osaka Metro Midosuji Line: Namba → Umeda/Osaka (~10 min, ¥240) | |
-| 07:30 | JR Kyoto Line **Special Rapid**: Osaka → Kyoto (29 min, ¥580) | IC card or Kansai Pass |
-| 08:00 | JR Nara Line: Kyoto → Inari Station (5 min, ¥150) | |
-| 08:05–09:45 | **Fushimi Inari Taisha** — walk the lower torii tunnel immediately (free, 24h access). Go at minimum to Yotsutsuji (the mid-hill lookout, ~30 min up). After 09:30 the crowds arrive and the magic fades. | Walk from Inari Station (~5 min) |
-| 10:00 | Keihan Line: Fushimi Inari → Gion-Shijo (9 min, ¥200) | Buy Keihan ticket at Fushimi-Inari station (different from JR/IC card) |
-| 10:15 | Navigate to kimono rental shop in Gion | Walk from Gion-Shijo |
-| 10:30–12:00 | **Kimono rental** — dress, hair, accessories. Budget 45–90 min for the fitting process. | Pre-booked (see TODO below) |
-| 12:00–14:00 | **Nishiki Market** in kimono — 400m covered shopping street ("Kyoto's kitchen"). Snack lunch: mochi, dashimaki tamago, pickles, crab claw. Gets packed ~noon. | 20 min walk from Gion-Shijo |
-| 14:00–17:00 | **Gion & Hanamikoji-dori** in kimono — most likely to spot maiko in late afternoon (16:00–17:00). Kiyomizudera option (¥500, 20 min walk east of Gion). Maruyama Park (free, 5 min from Gion). | Walk |
-| 17:00–18:30 | Return kimono (most shops: return by 17:00–18:00 — confirm with your booking). **Pontocho Alley** — lantern-lit narrow lane, restaurants open 17:30+. Budget ¥3,000–5,000/person for dinner. | Walk from Gion |
-| 19:00 | JR Kyoto → Osaka (~29 min), Metro → apartment | |
+| 10:00 | Leave apartment | |
+| 10:05 | Osaka Metro Midosuji Line: Namba → Umeda/Osaka (~10 min, ¥240) | |
+| 10:20 | JR Kyoto Line **Special Rapid**: Osaka → Kyoto (29 min, ¥580) | IC card or Kansai Pass |
+| 10:55 | JR Nara Line: Kyoto → Inari Station (5 min, ¥150) | |
+| 11:00–12:25 | **Fushimi Inari Taisha** — walk the lower torii tunnel (free, 24h access). Go at minimum to Yotsutsuji (the mid-hill lookout, ~30 min up). Arriving after 09:30 means the lower tunnels are already crowded — push higher to thin out. | Walk from Inari Station (~5 min) |
+| 12:25 | Keihan Line: Fushimi Inari → Gion-Shijo (9 min, ¥200) | Buy Keihan ticket at Fushimi-Inari station (different from JR/IC card) |
+| 12:40 | Navigate to kimono rental shop in Gion | Walk from Gion-Shijo |
+| ~12:55–13:55 | **Kimono rental** — dress, hair, accessories. Budget 45–90 min for the fitting process. | See TODO below — not yet booked |
+| 13:55–15:25 | **Nishiki Market** in kimono — 400m covered shopping street ("Kyoto's kitchen"). Snack lunch: mochi, dashimaki tamago, pickles, crab claw. Gets packed ~noon. | 20 min walk from Gion-Shijo |
+| 15:25–17:10 | **Gion & Hanamikoji-dori** in kimono — most likely to spot maiko in late afternoon. Kiyomizudera option (¥500, 20 min walk east of Gion). Maruyama Park (free, 5 min from Gion). Trimmed shorter than the dawn-start version — see return-time warning below. | Walk |
+| 17:10–18:30 | Return kimono (⚠️ Wargo Gion Shijo's latest return is 17:30 — tight with this later start). **Pontocho Alley** — lantern-lit narrow lane, restaurants open 17:30+. Budget ¥3,000–5,000/person for dinner. | Walk from Gion |
+| 19:30 | JR Kyoto → Osaka (~29 min), Metro → apartment | |
 
-⚠️ **Kimono rental must be pre-booked** — popular shops sell out weeks ahead in summer. If not yet booked, do it immediately. Recommended: Kyoto Kimono Rental Wargo (multiple Gion locations, English support, from ~¥3,000), or Okamoto Kimono Rental Gion (mentioned in group's own planning docs). Book online before 6 Jul.
-⚠️ Confirm **return time** with the rental shop — many are 17:00–18:00. Plan Pontocho around the return time.
+⚠️ **Kimono rental not yet booked as of 12 Jul.** Book tonight: Kyoto Kimono Rental Wargo (kyotokimonorental.com, Gion Shijo store, English support, from ~¥3,000) takes same-day online bookings, hours 10:00–17:30. Fallback: Okamoto Kimono Rental Gion (near Yasaka Shrine) accepts walk-ins same-day, no booking required.
+⚠️ **Return deadline is tight with a 10am start.** Wargo's latest return is 17:30 — don't linger in Gion past ~17:00. Ask about next-day return as a backup when booking.
 ⚠️ Fushimi Inari: No charge, no ticket needed. Very slippery in wet weather — wear sensible shoes (the kimono visit comes after).
 ⚠️ Keihan Line is a separate operator — Suica works on it (IC card interoperability).
 
@@ -607,7 +607,7 @@ Evening: Explore Seomyeon (Busan's central nightlife district) or Haeundae (beac
 | 3 | ⏸ **Jeju car rental** — not in expenses tracker | ⏸ Deferred | Book before departure. July peak season. Confirm driver(s) and IDP when actioning. |
 | 4 | ⏸ **IDP (International Driving Permit)** — required to rent/drive in Korea | ⏸ Deferred with #3 | Driver(s) obtain from RACV/NRMA/RAA. Present with Australian licence at car rental counter. |
 | 5 | ✅ **K-ETA** (Aleks & Ralph) — not required for Australians | ✅ No action | Visa-exempt. Skipping K-ETA is fine — just fill out the paper arrival card on the plane to Jeju. |
-| 6 | ⚠️ **Kimono rental** (13 Jul Kyoto) — not confirmed as booked | 🟡 Soon | Book online now: Kyoto Kimono Rental Wargo (wargo.jp, English, from ¥3,000), or Okamoto Kimono Rental Gion |
+| 6 | ⚠️ **Kimono rental** (13 Jul Kyoto) — not confirmed as booked | 🔴 Tonight | Book online now: Kyoto Kimono Rental Wargo (kyotokimonorental.com, Gion Shijo, same-day booking OK, English, from ¥3,000, hours 10:00–17:30). Fallback: Okamoto Kimono Rental Gion — walk-ins accepted, no booking needed. |
 | 7 | ⚠️ **Shinkansen tickets** (4 legs) — none confirmed as purchased | 🟡 On arrival | Buy at Shinagawa/Shin-Osaka Green Windows. Buy Ghibli + Tokyo→Osaka tickets on 7 or 8 Jul. |
 | 8 | ✅ **Kansai Pass** — confirmed as attractions pass, not rail | ✅ No Shinkansen coverage | "Have Fun in Kansai 1-Week Free Pass" (Trip.com, order 1164184078) — 4 tickets × 3 facilities each, 7-day window from first scan. **Zero rail coverage.** All 4 Shinkansen legs must be purchased individually. Activate on 12 Jul (first day in Osaka). |
 | 9 | ⚠️ **USJ Super Nintendo World ATT** — not confirmed as reserved | 🟡 7 Jul onward | Log into USJ app with booking. Reserve Area Timed Entry for 14 Jul as soon as the app allows (typically opens 7 days before or from park open on the day). |

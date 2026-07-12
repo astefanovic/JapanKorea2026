@@ -257,33 +257,33 @@ Ceci's nails are already done (7 Jul) — full day together, no split.
 
 **Wake: 09:00**
 
-> ⚠️ **Crowd tradeoff:** the 06:30 start was there to hit Fushimi Inari before ~09:30, when the torii tunnels are near-empty and genuinely magical. Arriving ~10:30 instead, the lower tunnels will be shoulder-to-shoulder — still worth doing, but you won't get the quiet-photo version. If Fushimi-at-dawn matters to you, this is the day to keep the early wake (06:30, as previously planned). Otherwise, 9am it is.
+> ⚠️ **Crowd tradeoff:** the 06:30 start was there to hit Fushimi Inari before ~09:30, when the torii tunnels are near-empty and genuinely magical. With a 10:00 leave, arrival is ~11:00 — the lower tunnels will be shoulder-to-shoulder — still worth doing, but you won't get the quiet-photo version. If Fushimi-at-dawn matters to you, this is the day to keep the early wake (06:30, as previously planned). Otherwise, 10am it is.
 
 | Time | Event | Notes |
 |------|-------|-------|
 | 09:00 | Wake | |
-| 09:20 | Quick breakfast — konbini | Pack snacks — lunch not until Nishiki Market |
-| 09:35 | Leave apartment | |
-| 09:40 | Osaka Metro Midosuji: Namba → Umeda (10 min, ¥240) | |
-| 09:55 | JR Kyoto Line Special Rapid: Osaka → Kyoto (29 min, ¥580) | Suica works |
-| 10:25 | Arrive Kyoto Station | |
-| 10:30 | JR Nara Line: Kyoto → Inari (5 min, ¥150) | 1 stop south |
-| 10:35 | **Fushimi Inari Taisha** | Free, 24h. Busy at this hour — see crowd note above. Push past the lower tunnels to thin out the crowds higher up. |
-| 10:35–12:00 | Fushimi Inari — walk lower tunnel (20 min), push to Yotsutsuji lookout (~30 min up) | Bring water. Steep steps. Slippery if wet. Go as high as time allows. |
-| 12:00 | Keihan Line: Fushimi Inari → Gion-Shijo (9 min, ¥200) | Suica works on Keihan |
-| 12:15 | Navigate to kimono rental shop in Gion | |
-| ❓ ~12:30 | ⚠️ **Kimono rental appointment** | ❓ UNKNOWN — exact time not confirmed. Build the afternoon around this slot. Fitting takes 45–90 min. |
-| ❓ ~13:30 | Out of shop, dressed | Adjust all times below based on actual appointment |
-| 13:30–15:00 | 🍜 Lunch + **Nishiki Market** in kimono | 400m covered street — mochi, dashimaki tamago, pickles, crab claw. ¥1,500–2,500 grazing. |
-| 15:00–17:00 | **Gion & Hanamikoji-dori** in kimono | Maiko most likely 16:00–17:00. Option: Kiyomizudera (¥500, 20 min walk east), Maruyama Park (free). |
-| ❓ 17:00–18:00 | ⚠️ **Return kimono** | ❓ Confirm hard return deadline with shop — usually 17:00–18:00. Do not be late. |
+| 09:30 | Breakfast — konbini | Pack snacks — lunch not until Nishiki Market |
+| 10:00 | Leave apartment | |
+| 10:05 | Osaka Metro Midosuji: Namba → Umeda (10 min, ¥240) | |
+| 10:20 | JR Kyoto Line Special Rapid: Osaka → Kyoto (29 min, ¥580) | Suica works |
+| 10:50 | Arrive Kyoto Station | |
+| 10:55 | JR Nara Line: Kyoto → Inari (5 min, ¥150) | 1 stop south |
+| 11:00 | **Fushimi Inari Taisha** | Free, 24h. Busy at this hour — see crowd note above. Push past the lower tunnels to thin out the crowds higher up. |
+| 11:00–12:25 | Fushimi Inari — walk lower tunnel (20 min), push to Yotsutsuji lookout (~30 min up) | Bring water. Steep steps. Slippery if wet. Go as high as time allows. |
+| 12:25 | Keihan Line: Fushimi Inari → Gion-Shijo (9 min, ¥200) | Suica works on Keihan |
+| 12:40 | Navigate to kimono rental shop in Gion | |
+| ~12:55 | ⚠️ **Kimono rental appointment** | Book tonight: **Wargo** (Gion Shijo, kyotokimonorental.com) takes same-day online bookings, 24/7 — hours 10:00–17:30. If slots are thin, **Okamoto** (Gion, near Yasaka Shrine) takes walk-ins, no booking needed. Fitting takes 45–90 min. |
+| ~13:55 | Out of shop, dressed | Adjust all times below based on actual appointment |
+| 13:55–15:25 | 🍜 Lunch + **Nishiki Market** in kimono | 400m covered street — mochi, dashimaki tamago, pickles, crab claw. ¥1,500–2,500 grazing. |
+| 15:25–17:10 | **Gion & Hanamikoji-dori** in kimono | Maiko most likely late afternoon. Option: Kiyomizudera (¥500, 20 min walk east), Maruyama Park (free). Trimmed to leave buffer before Wargo's close — see warning below. |
+| 17:10–17:30 | ⚠️ **Return kimono** | ⚠️ **TIGHT:** Wargo's Gion Shijo store closes / latest return is 17:30 — with a 10am start this leaves almost no slack. Ask when booking whether next-day return is available as a backup if you're running late. Okamoto's return deadline wasn't confirmed by search — check at booking/check-in. |
 | 18:00–19:00 | 🍜 Dinner — **Pontocho Alley** | Lantern-lit lane parallel to Kamo River. Restaurants open ~17:30. ¥3,000–5,000. Book or queue early. |
 | 19:15 | Walk to Kyoto Station (~20 min) or taxi (¥1,500) | |
 | 19:30 | JR Kyoto Line: Kyoto → Osaka (29 min, ¥580) | |
 | 20:00 | Osaka Metro: Umeda → Namba (10 min) | |
 | 20:15 | Back at apartment | |
 
-❓ **CRITICAL:** Kimono rental time and booking status unknown — the Kyoto afternoon schedule pivots around this. Confirm or book at wargo.jp immediately. If the shop can only fit you in the morning, you may need the early Fushimi start anyway.
+⚠️ **Kimono still not confirmed booked as of 12 Jul.** Book Wargo online tonight for a slot around 13:00; if unavailable, Okamoto accepts walk-ins same-day. The later 10am start makes the Gion return-by-17:30 window tight — don't linger past ~17:00 in Gion.
 
 ---
 
@@ -573,8 +573,8 @@ Fill these in before 6 Jul:
 
 | # | Unknown | Day(s) Affected | Action |
 |---|---------|-----------------|--------|
-| A | **Kimono rental appointment time** | Day 8 (13 Jul) | ❓ Entire Kyoto day schedule pivots on this — fill in when booking confirmed |
-| B | **Kimono rental booking confirmed?** | Day 8 | ⚠️ Not confirmed as booked. Book at wargo.jp immediately. |
+| A | **Kimono rental appointment time** | Day 8 (13 Jul) | ❓ Pencilled ~12:55 based on 10am departure — fill in when booking confirmed |
+| B | **Kimono rental booking confirmed?** | Day 8 | ⚠️ Not confirmed as booked as of 12 Jul. Wargo (kyotokimonorental.com) takes same-day online bookings; Okamoto (Gion) takes walk-ins as a fallback. |
 | C | **Who drives Angela & Ceci to CJU at 05:45?** | Day 15 | ❓ Decide: Aleks or Ralph |
 | D | **Angela & Ceci HKG layover plan** | Day 15 | ❓ Airside only, or go into Hong Kong? Airport Express to central HK ~24 min |
 | E | **Shibuya Sky pre-booked?** | Day 3 | ❓ Book at shibuya-sky.com — sellout risk |
