@@ -273,26 +273,28 @@ TODO: **Buy Shinagawa→Shin-Osaka Shinkansen tickets** (4 reserved seats) on 7 
 
 **Sleep:** Osaka apartment (return for the night)
 
-> **Kansai Pass note:** If the pass covers JR Kyoto Line (Osaka→Kyoto Special Rapid), use it here. Verify exact pass coverage — see Q5.
+> 🔀 **Kimono first, Fushimi Inari last.** Avoids hiking Fushimi's stone steps in rental zori sandals in July heat, and turns Fushimi into a dusk/quieter visit instead of a crowded midday one. Longer day: back ~21:00 instead of ~20:15.
 
 | Time | Activity | Transport |
 |------|----------|-----------|
 | 10:00 | Leave apartment | |
-| 10:05 | Osaka Metro Midosuji Line: Namba → Umeda/Osaka (~10 min, ¥240) | |
-| 10:20 | JR Kyoto Line **Special Rapid**: Osaka → Kyoto (29 min, ¥580) | IC card or Kansai Pass |
-| 10:55 | JR Nara Line: Kyoto → Inari Station (5 min, ¥150) | |
-| 11:00–12:25 | **Fushimi Inari Taisha** — walk the lower torii tunnel (free, 24h access). Go at minimum to Yotsutsuji (the mid-hill lookout, ~30 min up). Arriving after 09:30 means the lower tunnels are already crowded — push higher to thin out. | Walk from Inari Station (~5 min) |
-| 12:25 | Keihan Line: Fushimi Inari → Gion-Shijo (9 min, ¥200) | Buy Keihan ticket at Fushimi-Inari station (different from JR/IC card) |
-| 12:40 | Navigate to kimono rental shop in Gion | Walk from Gion-Shijo |
-| ~12:55–13:55 | **Kimono rental** — dress, hair, accessories. Budget 45–90 min for the fitting process. | See TODO below — not yet booked |
-| 13:55–15:25 | **Nishiki Market** in kimono — 400m covered shopping street ("Kyoto's kitchen"). Snack lunch: mochi, dashimaki tamago, pickles, crab claw. Gets packed ~noon. | 20 min walk from Gion-Shijo |
-| 15:25–17:10 | **Gion & Hanamikoji-dori** in kimono — most likely to spot maiko in late afternoon. Kiyomizudera option (¥500, 20 min walk east of Gion). Maruyama Park (free, 5 min from Gion). Trimmed shorter than the dawn-start version — see return-time warning below. | Walk |
-| 17:10–18:30 | Return kimono (⚠️ Wargo Gion Shijo's latest return is 17:30 — tight with this later start). **Pontocho Alley** — lantern-lit narrow lane, restaurants open 17:30+. Budget ¥3,000–5,000/person for dinner. | Walk from Gion |
-| 19:30 | JR Kyoto → Osaka (~29 min), Metro → apartment | |
+| 10:05 | Osaka Metro Midosuji Line: Namba → Yodoyabashi (~8 min, ¥240) | |
+| 10:15 | Keihan Main Line **Limited Express**: Yodoyabashi → Gion-Shijo (50 min, ¥430) | Direct, no transfer |
+| 11:05 | Arrive Gion-Shijo Station | Exit 6 → onto Hanamikoji-dori |
+| 11:10 | Navigate to kimono rental shop in Gion | Walk from Gion-Shijo |
+| ~11:25–12:25 | **Kimono rental** — dress, hair, accessories. Budget 45–90 min for the fitting process. | See TODO below — not yet booked |
+| 12:25–12:45 | Walk to Nishiki Market (~20 min) | |
+| 12:45–14:15 | **Nishiki Market** in kimono — 400m covered shopping street ("Kyoto's kitchen"). Snack lunch: mochi, dashimaki tamago, pickles, crab claw. | Walk |
+| 14:15–14:35 | Walk back to Gion | |
+| 14:35–17:00 | **Gion & Hanamikoji-dori** in kimono — most likely to spot maiko in late afternoon (16:00–17:00). Kiyomizudera option (¥500, 20 min walk east of Gion). Maruyama Park (free, 5 min from Gion). | Walk |
+| 17:00–17:30 | Return kimono (⚠️ Wargo Gion Shijo's latest return is 17:30 — don't linger past 17:00). | Walk |
+| 17:35 | Keihan Line: Gion-Shijo → Fushimi Inari (9 min, ¥200) | Suica works on Keihan |
+| 17:45–19:15 | **Fushimi Inari Taisha** — walk the lower torii tunnel, push to Yotsutsuji (the mid-hill lookout, ~30 min up) as light allows. Regular shoes now — much easier on the steps than kimono/zori. Thinner crowds and dusk lantern light this late. | Walk from Inari Station (~5 min) |
+| 19:15–20:00 | Dinner near Fushimi Inari — approach-street stalls: inari-zushi, unagi, grilled sweet potato. (Swap in Pontocho instead if preferred — Keihan back to Gion-Shijo, 9 min.) | |
+| 20:05 | JR Nara Line: Inari → Kyoto (5 min), JR Kyoto Line → Osaka (29 min), Metro → apartment | |
 
 ⚠️ **Kimono rental not yet booked as of 12 Jul.** Book tonight: Kyoto Kimono Rental Wargo (kyotokimonorental.com, Gion Shijo store, English support, from ~¥3,000) takes same-day online bookings, hours 10:00–17:30. Fallback: Okamoto Kimono Rental Gion (near Yasaka Shrine) accepts walk-ins same-day, no booking required.
-⚠️ **Return deadline is tight with a 10am start.** Wargo's latest return is 17:30 — don't linger in Gion past ~17:00. Ask about next-day return as a backup when booking.
-⚠️ Fushimi Inari: No charge, no ticket needed. Very slippery in wet weather — wear sensible shoes (the kimono visit comes after).
+⚠️ Fushimi Inari: No charge, no ticket needed. Very slippery in wet weather — wear sensible shoes.
 ⚠️ Keihan Line is a separate operator — Suica works on it (IC card interoperability).
 
 ---
